@@ -1,0 +1,72 @@
+body{
+	background:#4f423d url(../img/bg_ground.jpg) repeat-x top;
+}
+
+/* BANNER  */
+#banner{
+	background: url(../img/grass_cross.jpg) no-repeat right top; 
+	width: 960px;
+	height: 330px;
+}
+#banner #logo{
+	z-index:3;
+	position:absolute;
+	background: url(../img/logos/windmillwindup2009.png) no-repeat center top; 
+	top: 0;
+	left: 2px;
+	width: 380px;
+	height: 64px;
+	text-indent:-9999em; /* text niet laten zien in het design*/
+	font-size:0px;
+	text-decoration:none;
+}
+#banner #disc{
+	position:absolute;
+	z-index:2;
+	background: url(../img/logos/disc.png) no-repeat left top; 
+	width:120px;
+	height:120px;
+	left: 750px;
+	top: 104px;
+	
+	text-indent:-9999em; /* text niet laten zien in het design*/
+}
+
+#banner #olifant{
+	position:absolute;
+	z-index:2;
+	background: url(../img/olifant.jpg) no-repeat left top; 
+	width:180px;
+	height:150px;
+	right: 280px;
+	top: 4px;
+}
+
+#banner #players{
+	position:absolute;
+	z-index:2;
+	background: url(../img/ultimate_players.jpg) no-repeat left top; 
+	width:400px;
+	height:80px;
+	left: 82px;
+	top: 72px;
+}
+
+/* VLIEGTUIG */
+#vliegtuig_wrapper{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+}
+#vliegtuig{
+	position: absolute;
+	z-index:101;
+	background: url(../img/vliegtuig.png) no-repeat left top; 
+	top: 20px;
+	left: 460px;
+	width:430px;
+	height:65px;
+}
