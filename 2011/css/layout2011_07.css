@@ -1,0 +1,598 @@
+/**
+* Elements en standaard classes
+*/
+body{
+	text-align:center; /* text-align om IE - die zich niet aan de standaarden houdt - ook te lcentreren */
+	margin:0;
+	font: normal 12px 'Helvetica Neue',Helvetica, Arial, sans-serif;
+	color: #eed2b1;
+	letter-spacing:1px;
+	line-height:17px;
+	background:#442d20 url(http://windmillwindup.com/2011/img/bg_tile.jpg) center repeat-y;
+}
+
+/* DEFAULT STYLE CLASSES /**********************************************/
+img{border: none;}
+h1{	
+	font-weight: bold;
+	font-size: 22px;
+	color: #f08201; 
+	margin: 20px 0 0 0; 
+	/*text-transform:uppercase;*/
+	letter-spacing:1px;
+	line-height: 100%;
+}
+h2{ 
+	font-weight: bold;
+	font-size: 13px;
+	color: #ffc820; 
+	margin-top: 6px; 
+	letter-spacing:1px;
+	line-height: 100%;
+}
+h2 a{
+	color: #ffc820 !important;
+}
+h3{ 
+	font-weight: bold;
+	font-size: 13px;
+	color: #ffc820; 
+	margin: 24px 0 2px 0;
+	letter-spacing:1px;
+	line-height: 100%;
+}
+h3 a{
+	font-weight: bold;
+	font-size: 13px;
+	color: #ffc820; 
+	margin: 24px 0 2px 0;
+	letter-spacing:1px;
+	line-height: 100%;
+	text-decoration:none;
+}
+h4{ 
+	font-weight: bold;
+	font-size: 13px;
+	color: #eed2b1; 
+	margin: 0;
+}
+a{ 
+	color: #eed2b1;
+	text-decoration:underline;
+	/*border-bottom:thin dotted;*/
+}
+a:hover{
+	color: #ffc820;
+}
+.highlight {
+	background-color:#eed2b1;
+	color: #000;
+}
+.ancortop{
+	text-align: right;
+}
+.linethrough{
+	text-decoration:line-through;
+}
+
+/**
+* ID's en specifieke classes
+*/
+#bg{
+	background: url(http://windmillwindup.com/2011/img/bg_sky_2011.jpg) repeat-x;
+}
+/* WRAPPER */
+#wrapper{
+	position:relative;
+	margin:0 auto; 	/*centreren: margins op auto zodat de mares even groot zijn */
+	width: 100%;
+	text-align:left;
+	background:url(http://windmillwindup.com/2011/img/bg_underground_2011.jpg) no-repeat center 229px;
+}
+/* HEADER /**********************************************/
+#newdate{
+	margin: 0;
+	margin-left: -92px;
+	margin-top: -25px;
+
+}
+#header{
+	position:relative;
+	margin: 0;
+	margin-top: -27px;
+	width: 100%;
+	height: 229px;
+	background:url(http://windmillwindup.com/2011/img/bg_header_2011.jpg) no-repeat center top;
+	text-align:center;
+	
+	cursor:pointer;
+}
+#header #banner{
+	margin-top: -20px;
+	margin-left: 0; 
+}
+.alt {
+	display:none;
+}
+#header #banner #alternateContent h1{
+	display:none;
+}
+#header #banner #alternateContent h2{
+	display: none;
+}
+#header #banner #alternateContent p{
+	display:none;
+}
+#header #banner #alternateContent #windmillwinduplogo{
+	display:none;
+}
+#header #banner #alternateContent #olifant{
+	z-index:10;
+	position:relative;
+	background:url(http://windmillwindup.com/2011/img/olifant_vliegend.png) no-repeat center 10px; 
+	margin: 0 auto;
+	width: 480px;
+	height: 200px;
+	text-indent:-9999em; /* text niet laten zien in het design*/
+	font-size:0px;
+	text-decoration:none;
+}
+
+/* SCHEDULE*/
+ul.schedule {
+	list-style: none;
+	margin: 0 0 40px 0;
+	padding: 0;
+	width: 600px;
+}
+ul.schedule li{
+	padding: 4px 0;
+}
+ul.schedule li.tableheader{
+	font-size: 10px;
+	color: #eed2b1;
+	background-color:#19100c;
+	border-bottom:solid 1px #442d20;
+}
+ul.schedule li.odd{
+	background-color:#19100c;
+}
+ul.schedule li span.time{
+	display: block;
+	width: 60px;
+	float: left;
+}
+ul.schedule li span.description{
+	width: 480px;;
+	display:block;
+	float: left;
+}
+div#textthursday, div#textfriday, div#textsaturday, div#textsunday{
+	display:block;
+}
+
+
+/* MENU /**********************************************/
+#menu_wrapper{
+	margin: 0 auto;
+	margin-top:16px;
+	width: 1000px;
+	height:40px;
+}
+#facebook_share{
+	float: left;
+	margin: 6px 0 0 10px;
+}
+#twitter{
+	background:url(http://windmillwindup.com/2011/img/logos/twitter_small-a.png) no-repeat; 
+	width: 22px;
+	height: 22px;
+	float: left;
+	margin: 3px 0 0 30px;
+	text-indent:-9999em; /* text niet laten zien in het design*/
+	font-size:0px;
+	text-decoration:none;
+}
+
+
+/*
+ul#menu{
+	width: 700px;
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+}
+ul#menu li{
+	float: left;
+	margin:0;
+	padding: 0 5px;
+	font: bold 13px Helvetica, Verdana, Arial, sans-serif;
+	letter-spacing: 1px;
+	line-height:12px;
+	min-height: 1px;
+	vertical-align: bottom;
+}
+ul#menu li a{ 
+	display: block;
+	text-decoration: none;
+	color: #fe0;
+	background: #2f2825;
+	padding: 4px 8px;
+	border-bottom: 0;
+}
+ul#menu li a:hover{
+	color: #FFF;
+}
+ul#menu li a.selected{
+	color: #FFF;
+}
+
+ul#menu li ul{
+	display:none;
+}
+*/
+
+
+/* CONTENT /**********************************************/
+#content_wrapper{
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+	text-align:left;
+}
+#content_wrapper #main{
+	float: left;
+	width: 600px;
+	margin: 0 0 0 40px;
+	padding: 10px 50px;
+}
+#content_wrapper #sidebar{
+	width: 210px;
+	margin: 0 0 0 720px;
+	padding: 10px 35px;
+}
+#content_wrapper #sidebar h2{
+	margin: 10px 0 0 0;
+	text-transform:uppercase;
+	/*font-variant: small-caps;*/
+	line-height:140%;
+	letter-spacing:0px;
+}
+/* pickup scroll list in sidebar*/
+#pscroller1{
+	width: 200px;
+	height: 60px;
+	padding: 4px 0;
+	margin-bottom: 10px;
+	border-top:1px solid #442d20;
+	border-bottom:1px solid #442d20;
+}
+.rssclass .rsstitle{
+	display:inline;
+	font-weight: bold;
+}
+.rssclass .rssdescription{
+	display:inline;
+	text-indent: 6px;
+}
+.rssclass .rssdate{
+	display:inline;
+	font-size:80%;
+}
+.rssclass a{
+
+}
+/* Twitter */
+#twitter_div {
+	width: 200px;
+	padding: 4px 0;
+	margin-bottom: 10px;
+}
+#twitter_div ul{
+	list-style: none;
+	margin: 4px 0 6px 0;
+	padding: 0;
+	letter-spacing:1px;
+	line-height:17px;
+	border-bottom:1px solid #442d20;
+}
+#twitter_div ul li {
+	padding: 6px 0;
+	border-top:1px solid #442d20;
+} 
+#twitter_div ul li a {
+}
+#twitter_div ul li a:hover {
+} 
+
+/* HOME*/
+
+/* NEWS pagina*/
+#news{
+	margin: 40px 0 40px 0;
+}
+#news .text .date{
+	/*margin-left: 10px;*/
+	margin-bottom: 6px;
+	display: block;
+	font-size: 10px;
+	color: #eed2b1;
+	/*border-bottom: solid 1px #19100c;*/
+}
+/* news op home */
+#latestnews{
+	margin: 40px 0;
+	}
+#latestnews .text{
+	width: 260px;
+	float: left;
+	margin: 0 30px 0 0;
+}
+#latestnews .text h3{
+	margin-bottom: 2px;
+	margin-bottom: 2px;
+	text-decoration:none;
+	height: 24px;
+}
+#latestnews .text .date{
+	/*margin-left: 10px;*/
+	margin-bottom: 6px;
+	display: block;
+	font-size: 10px;
+	color: #eed2b1;
+	/*border-bottom: solid 1px #19100c;*/
+}
+/* news archive*/
+#newsarchive .text h3 a{
+	font-weight: bold;
+	font-size: 13px;
+	color: #ffc820; 
+	margin: 24px 0 2px 0;
+	letter-spacing:1px;
+	line-height: 100%;
+	text-decoration:none;
+}
+/* news article*/
+#newsarticle{
+	margin: 20px 0;
+}
+#newsarticle .text .date{
+	/*margin-left: 10px;*/
+	margin-bottom: 20px;
+	display: block;
+	font-size: 12px;
+	color: #eed2b1;
+	/*border-bottom: solid 1px #19100c;*/
+}
+
+/* teams */
+#teams ol{
+	list-style-position: outside;
+	margin-left: -20px;
+	width: 600px;
+}
+#teams li{
+	height: 22px;
+	padding-top: 6px;
+}
+#teams .odd{
+	background-color:#19100c;
+}
+#teams .name{
+	display: block;
+	width: 220px;
+	float: left;
+}
+#teams .location{
+	display: block;
+	width: 200px;
+	float: left;
+}
+#teams .payement{
+}
+#photosvideo .topalbum{
+	float: left;
+	margin: 10px 20px 10px 0;
+	text-align:center;
+}
+#photosvideo .topalbum img{
+	border:solid 6px #fff;
+	margin-top: 2px;
+	width: 260px;
+}
+#photosvideo .album{
+	float: left;
+	margin: 10px 40px;
+}
+
+
+/*pickup */
+#pickup .tableheader{
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+#pickup ol{
+	margin-left:-20px	;
+}
+#pickip li{
+}
+#pickup li.odd{
+	background-color:#19100c;
+}
+#pickup div.info{
+	width: 240px;
+	float: left;
+	display:block;
+}
+#pickup div.text{
+	display:block;
+	margin-left: 240px;
+}
+#pickup span.title{
+	font-size:10px;
+}
+#pickup span.text{
+}
+#pickup .clearer{
+	height: 10px;
+}
+
+#pickup #lookingforteam{margin-top: 10px;}
+#pickup #lookingforteam span.team{display:none;}
+#pickup #lookingforplayer{margin-top: 10px;}
+#pickup #lookingforform{
+	background-color: #19100c;
+	/*color:#19100c;*/
+	padding: 12px;
+	margin-top: 20px;
+}
+/* */
+#staff div.staff{
+	width: 120px;
+	height: 160px;
+	float: left;
+	text-align:center;
+	margin: 10px;
+}
+#staff .staff .text{
+	font-size:11px;
+	line-height: 100%;
+	text-align: center;
+	display:block;
+	margin: 6px 0;
+}
+
+
+/* GOOGLE FORM */
+#volunteers form{
+	background-color: #19100c;
+	/*color:#19100c;*/
+	padding: 12px;
+	margin-top: 20px;
+	}
+.ss-text{
+}
+.ss-q-title{
+	font-weight: bold;
+	font-size: 13px;
+	color: #eed2b1; 
+	margin: 0;
+}
+.ss-q-help{
+	display: block;
+}
+.ss-choices{
+	list-style: none;
+	margin: 10px 0 40px 0;
+	padding: 0;
+	width: 600px;
+}
+.ss-required-asterisk{
+	font-size: 22px;
+	color: #f08201;
+}
+
+/* sponsors */
+#home ul.sponsorlist{
+	list-style: none;
+	margin: 0 0 40px 0;
+	padding: 0;
+}
+#home ul.sponsorlist li{
+	width: 180px;
+	height: 150px;
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 0 5px;
+	text-align:center;
+}
+#home ul.sponsorlist li a{
+	cursor:auto;
+}
+/***************/
+#sponsors ul.sponsorlist{
+	list-style: none;
+	margin: 0 0 40px 0;
+	padding: 0;
+}
+#sponsors ul.sponsorlist li{
+	margin: 0 0 60px 0;
+}
+#sponsors ul.sponsorlist li .logo{
+	margin:0 10px 0 0;
+	float:left;
+	width: 210px;
+}
+#sponsors ul.sponsorlist li span{
+	display:block;
+	width: 380px;
+	float: right;
+}
+
+/* press */
+#press .image{
+	float: left;
+	margin-right: 10px;
+}
+
+/* style voor ffindr lijst */
+#main #registration .counter{ /* die irritante bullet in de team lijst van ffindr*/
+	display:none;
+}
+#main #registration .bold{ 
+	font-weight: bold;
+}
+#main #registration .normal{
+	font-weight:normal;
+}
+#main #registration .small{
+	font-size:10px;
+}
+#main #registration .grey{
+	color: #4f423d;
+}
+
+/* FOOTER /**********************************************/
+#footer_wrapper{
+	padding: 0;
+	width: 100%;
+	height: 400px;
+	background:url(http://windmillwindup.com/2011/img/bg_footer.jpg) no-repeat center top;
+	text-align:center;
+	vertical-align:bottom;
+}
+#footer_wrapper .footertext{
+	width: 600px;
+	padding-top: 220px;
+	margin: 0 auto;
+	text-align:center;
+}
+#footer_wrapper .footertext .text{
+	width: 200px;
+	text-align:center;
+	float: left;
+}
+#footer_wrapper .footertext .textttwwoo{
+	width: 200px;
+	text-align:center;
+	float: left;
+	margin-top: 70px;
+}
+#footer_wrapper .footertext .textttwwoo a{
+	padding: 2px;
+	background-color:#eed2b1;
+	color: #000;
+	text-decoration: none;
+}
+#footer_wrapper .footertext .textttwwoo a:hover{
+	background-color: #00c2f3;
+}
+
+/**********************************************/
+.clearer{
+  height:1px;
+  overflow:hidden;
+  margin-top:-1px;
+  clear:both;
+}

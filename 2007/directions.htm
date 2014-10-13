@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<meta name="author" content="Michael Cummings" />
+	<meta name="keywords" content="windmill windup ultimate frisbee amsterdam tournament" />
+	<meta name="description" content="The official website of the Windmill Windup ultimate frisbee tournament." />
+	<meta name="robots" content="all" />
+	<title>Windmill Windup 2007: Directions</title>
+
+	<!-- to correct the unsightly Flash of Unstyled Content. http://www.bluerobot.com/web/css/fouc.asp -->
+	
+	<script language="JavaScript">
+	<!--
+	
+	function SymError()
+	{
+	return true;
+	}
+	
+	window.onerror = SymError;
+	
+	var SymRealWinOpen = window.open;
+	
+	function SymWinOpen(url, name, attributes)
+	{
+	return (new Object());
+	}
+
+	window.open = SymWinOpen;
+
+	//-->
+	</script>
+	
+	<style type="text/css" title="currentStyle" media="screen">@import "css/red-yellow-and-blue.css";</style>
+	<link rel="Shortcut Icon" type="image/x-icon" href="css/favicon.ico" />	
+
+	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA9KRyrlMrbUe69vdQnPq3PBRMF6PyjF-OiVOt9THo8HX3MISMrhQ9rdTvOcmheoI2WmNbObX7N8QgtA" type="text/javascript"></script>
+	<script type="text/javascript">
+
+	    //<![CDATA[
+
+	    function getdirections() {
+	      window.open('http://maps.google.com/maps?f=d&hl=en&saddr='+document.getElementById("d_start").value+'&daddr=Overschiestraat+192,+Amsterdam,+Netherlands')
+	    }
+
+	    function load() {
+		  var WINDOW_HTML_F = '<div style="width: 160px; line-height:100%; font-size:90%;"><b>Windmill Windup Fields</b><br>Sportpark Riekerhaven<br>Overschiestraat 192<br>1062XK Amsterdam</div>';
+		  var WINDOW_HTML_M = '<div style="width: 200px; line-height:100%; font-size:90%;"><b>Metro to City Center:</b> take metro #50 in direction "Gein". Change to metro #51 at stop "OverAmstel", direction "central station".</div>';
+		  var WINDOW_HTML_HEM = '<div style="width: 170px; line-height:100%; font-size:90%;"><b><a href="http://www.hotels.nl/amsterdam/hem/" target="_new">HEM Hotel</a></b><br>(closest hotel to the fields)<br>Voorburgstraat 250, Amsterdam</div>';
+		  if (GBrowserIsCompatible()) {
+		    var map = new GMap2(document.getElementById("map"));
+		    map.addControl(new GLargeMapControl());
+		    map.addControl(new GMapTypeControl());
+		    map.setCenter(new GLatLng(52.343547, 4.838999), 16);
+		    map.setMapType(G_HYBRID_TYPE);
+
+		    // Fields marker
+		    var markerF = new GMarker(map.getCenter());
+		    map.addOverlay(markerF);
+		    GEvent.addListener(markerF, "click", function() {
+		      markerF.openInfoWindowHtml(WINDOW_HTML_F);
+		    });
+		    markerF.openInfoWindowHtml(WINDOW_HTML_F);
+
+		    // Metro
+		    var markerM = new GMarker(new GLatLng(52.345700, 4.834600));
+		    map.addOverlay(markerM);
+		    GEvent.addListener(markerM, "click", function() {
+		      markerM.openInfoWindowHtml(WINDOW_HTML_M);
+		    });
+		    
+		    // HEM Hotel
+		    var markerHem = new GMarker(new GLatLng(52.348500, 4.842600));
+		    map.addOverlay(markerHem);
+		    GEvent.addListener(markerHem, "click", function() {
+		      markerHem.openInfoWindowHtml(WINDOW_HTML_HEM);
+		    });
+		    
+		    //route from metro
+		    var polyline = new GPolyline([
+		      new GLatLng(52.345700, 4.834600),
+		      new GLatLng(52.345500, 4.837080),
+		      new GLatLng(52.344250, 4.837080),
+		      new GLatLng(52.344250, 4.838600),
+		      new GLatLng(52.343847, 4.839250),
+		      new GLatLng(52.343547, 4.838999)
+		      ], "#FF0000", 10);
+		    map.addOverlay(polyline);
+		    
+		    //route from Hem hotel
+		    var polyline = new GPolyline([
+		      new GLatLng(52.348500, 4.842600),
+		      new GLatLng(52.348500, 4.839600),
+		      new GLatLng(52.343900, 4.839600),
+		      new GLatLng(52.343447, 4.839100)
+		      ], "#1589FF", 10);
+		    map.addOverlay(polyline);
+		  }
+		}
+
+	    //]]>
+	</script>
+</head>
+
+<body onload="load();" onunload="GUnload();">
+
+<div id="zzz">
+	<div id="container">
+
+		<div id="intro">
+				  <a href="../index.html">
+					  <div id="pageHeader">
+  						<h1><span>Windmill Windup 2007</span></h1>
+						  <h2><span>The Beauty of ultimate in Amsterdam</span></h2>
+					  </div>
+					</a>
+
+			<div id="quickSummary">
+				<p class="p1"><span></span></p>
+				<p class="p2"><span></span></p>
+			</div>
+		</div>
+
+		<div id="supportingText">
+
+			<div id="participation">
+				<h3>DIRECTIONS</h3>
+				<p class="p1">All matches will be played at the Riekerhaven sports complex in South Amsterdam. The Riekerhaven camping area is at the same location.</p>
+				<p class="p2">If driving, use the map and this custom directions generator. If coming by plane or public transport, use the map and see below the map for our written directions to the Riekerhaven sportspark and campground. If you get very lost, and I mean very lost, you can call Frans on +31-6-45628298</p>
+
+				<p class="p3">Enter your starting address here to get customised driving directions<br>
+					<input id="d_start" type="text" name="saddr" title="Start address" tabindex="1" size="44" onchange="getdirections();" maxlength="2048" />
+					<input id="d_sub" type="submit" name="btnG" tabindex="8" class="btn" value="Get Directions" onclick="getdirections();" />
+				</p>
+				<br>
+				<div id="map" style="width: 700px; height: 700px"></div>
+
+				<h3>By car</h3>
+				<p class="p1">You will approach Amsterdam from the A1, the A2, or the A4. If you are approaching from the A1 or the A2, you will get on the Amsterdam Ring-road (A10), in the direction of Exit S107. If you are approaching from the A4, you will not get on the ring road (A10). <br><br><strong>From the A1 and the A2</strong><br>Get on the A10, in the direction of exit S107. Take exit S107 Sloten. Take a left and cross over the top of the A10. Follow this road, and stay on the right as the road curves 180 degrees. At the bottom of the exit you will find yourself in the Overschiestraat. Turn right. After the viaduct you will see two office buildings on the left. You are about there. The gates to the sportspark Riekerhaven are right in front of you. You will need to park in this area and walk to the camping area at the far end of the Sportpark.. Parking on the street and in the surrounding office parking lots is free. Once you enter the sport park gates keep going straight ahead until you see the camping area in the back.
+				<br><br><strong>From the A4:</strong><br>As you are entering Amsterdam, look for and take Exit 1, Sloten. At the bottom of the ramp, turn left passing under the A4, (past McDonalds). Keep following the road, go straight at the roundabout (big weird statue in the middle) until the T-crossing. Go to the right (Laan van Vlaanderen) follow the road. It will curve left. 100 meters after the curve take a right (just before the tram crossing) onto the Lowesweg. Go straight for 300 meters until you get to a traffic light. Go straight ahead. After a while you&rsquo;ll pass under a metro-railway. Go straight on towards the roundabout. Take a right and you are in the Overschiestraat After the viaduct you will see two office buildings on the left. You are about there. The gates to the sportspark Riekerhaven are right in front of you. You will need to park in this area and walk to the camping area at the far end of the Sportpark.. Parking on the street and in the surrounding office parking lots is free. Once you enter the sport park gates keep going straight ahead until you see the camping area in the back.</p>
+				<p class="p1"><a href="pics/riekerhaven_lg.jpg">Map to Riekerhaven1 </a><br>
+									<a href="pics/riekerhaven.jpg">Map to Riekerhaven2</a> </p>
+				<h3>By Train</h3>
+				<p class="p1">From Amsterdam Central Station, take a train to station: &ldquo;Amsterdam Lelylaan&rdquo; From there, switch to the metro (download a map of the metro <a href="files/metro.pdf">here</a>) and take the 50 (direction Gein) to the stop Henk Sneevlietweg. When you get off, walk towards the pinkish group of buildings and the sloping road that leads to the Ring road of A'dam. Follow the bicycle trail that turns to the right after 600 metres or so. You will still be walking around the pinkish coloured buildings (you can also cut through them). At the end of them, you will see the fields. The entrance is around the corner to your right, just follow the water along the fields. It is about a 4 minute walk.</p>
+				<h3>By Plane</h3>
+				<p class="p1">Take a train from the airport train station to the station: &ldquo;Amsterdam Lelylaan.&rdquo; Follow the directions from this stop in the section above. Note: you can also take the train from the airport to &ldquo;Amsterdam Zuid/WTC&rdquo; and get on the 50 metro in direction Isolatorweg - get off at Henk Sneevlietweg and short walk as described above.</p>
+				<h3>By Metro</h3>
+				<p class="p1">From any of the train stations in the city, lik Central Station, Lelylaan and Station Zuid/WTC (closest to the airport), you can get to the Metro. Please see the <a href="files/metro.pdf">Metro map attached </a>for more info about the metro.</p>
+				<p class="p1">If interested in the travel times using public transport from the airport, use the dutch transport site, <a href="http://www.9292ov.nl">http://www.9292ov.nl</a> and enter treinstation &ldquo;schiphol&rdquo; as your departure address, and Overschiestraat as your destination. It will give you travel advice, timing, price, etc. a typically journey takes about 30 minutes. Taxi is also an option, but is more costly (~20 Euros)</p>
+				<h3>Bikes</h3>
+				<p class="p1">For directions to some of Amsterdam's bike rental locations, see the <a href="amsterdam.htm#bikes">Amsterdam</a> page</p>
+				<h3>Parties</h3>
+				<p class="p1">The Friday party will be held in the Nieuwmarkt area (downtown/city center).  <a href="files/metro.pdf">Download a PDF with directions via the Metro system</a> -- this map will also be posted at the organisation tent and in the team booklet which you will get after registering your team.</p>
+			</div>
+
+			<div id="adamBanner">
+				<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="240" HEIGHT="90px" id="http://www.adam-hat.com/images/banner.swf" ALIGN="">
+				<PARAM NAME=movie VALUE="http://www.adam-hat.com/images/banner.swf"> <PARAM NAME=quality VALUE=high> <EMBED src="http://www.adam-hat.com/images/banner.swf" quality=high WIDTH="240" HEIGHT="90px" NAME="http://www.adam-hat.com/images/banner.swf" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED> </OBJECT>
+				<a href="http://www.lookfly.com" target="_new"><img src="pics/lookfly.jpg" alt="Lookfly" height="90px" border="0"></a>
+			</div>
+
+			<div id="footer">
+				<ul>
+					<li><a href="../2005/results.htm">2005 Results</a></li>
+					<li><a href="../2005/photos.htm">2005 Photos</a></li>
+					<li><a href="../2006/results.htm">2006 Results</a></li>
+					<li><a href="../2006/photos.htm">2006 Photos</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="linkList">
+			<div id="button">
+				<ul>
+					<li><a href="index.htm">News</a></li>
+					<li><a href="tournament.htm">Tournament</a></li>
+					<li><a href="teams.html">Results</a></li>
+					<li><a href="amsterdam.htm">Amsterdam</a></li>
+					<li><a href="directions.htm">Directions</a></li>
+					<li><a href="photos.htm">Photos</a></li>
+					<li><a href="video.htm">Video</a></li>
+					<li><a href="lost.htm">Lost and Found</a></li>
+					<li><a href="press.htm">Press</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<!-- These extra divs/spans may be used as catch-alls to add extra imagery. -->
+<div id="extraDiv1"><span></span></div><div id="extraDiv2"><span></span></div><div id="extraDiv3"><span></span></div>
+<div id="extraDiv4"><span></span></div><div id="extraDiv5"><span></span></div><div id="extraDiv6"><span></span></div>
+
+</body>
+</html>
+<script language="JavaScript">
+<!--
+var SymRealOnLoad;
+var SymRealOnUnload;
+
+function SymOnUnload()
+{
+  window.open = SymWinOpen;
+  if(SymRealOnUnload != null)
+     SymRealOnUnload();
+}
+
+function SymOnLoad()
+{
+  if(SymRealOnLoad != null)
+     SymRealOnLoad();
+  window.open = SymRealWinOpen;
+  SymRealOnUnload = window.onunload;
+  window.onunload = SymOnUnload;
+}
+
+SymRealOnLoad = window.onload;
+window.onload = SymOnLoad;
+
+//-->
+</script>
+
+</script>

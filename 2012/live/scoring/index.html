@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8" />
+	<title>WW2012 - Livescoring</title>
+  <link rel="stylesheet" type="text/css" href="http://windmillwindup.com/2012/live/scoring/style/master.css" />
+
+  <script src="http://windmillwindup.com/2012/live/scoring/js/vendor/jquery.js"></script>
+  <script src="http://windmillwindup.com/2012/live/scoring/js/vendor/underscore.js"></script>
+  <script src="http://windmillwindup.com/2012/live/scoring/js/vendor/backbone.js"></script>  
+  <script data-main="js/main" src="http://windmillwindup.com/2012/live/scoring/js/vendor/require.js"></script>
+</head>
+<body>
+  
+
+  <div id="openscreen" class="block"></div>
+  <div id="roundlist" class="block"></div>
+  <div id="countdown" class="block"><h1>&nbsp;</h1></div>
+  <div id="time" class="block"><h1>&nbsp;</h1></div>
+
+  <div id="standings" class="block"></div>
+  <div id="games" class="block"></div>
+  <div id="results" class="block"></div>
+  
+  
+  <div id="bracket">
+    <!-- round 1 //-->
+    <div class="round1 left spot1 spot"><b>-</b><em>-</em></div>
+    <div class="round1 left spot2 spot"><b>-</b><em>-</em></div>
+    <div class="round1 left spot3 spot"><b>-</b><em>-</em></div>
+    <div class="round1 left spot4 spot"><b>-</b><em>-</em></div>
+    
+    <div class="round1 right spot1 spot"><b>-</b><em>-</em></div>
+    <div class="round1 right spot2 spot"><b>-</b><em>-</em></div>
+    <div class="round1 right spot3 spot"><b>-</b><em>-</em></div>
+    <div class="round1 right spot4 spot"><b>-</b><em>-</em></div>
+    
+    <div class="round1 left game1 info">-</div>
+    <div class="round1 left game2 info">-</div>
+    
+    <div class="round1 right game3 info">-</div>
+    <div class="round1 right game4 info">-</div>
+    
+  
+    <!-- round 2 //-->
+    <div class="round2 left spot1 spot"><b>-</b><em>-</em></div>
+    <div class="round2 left spot2 spot"><b>-</b><em>-</em></div>
+    <div class="round2 left spot3 spot"><b>-</b><em>-</em></div>
+    <div class="round2 left spot4 spot"><b>-</b><em>-</em></div>
+    
+    <div class="round2 right spot1 spot"><b>-</b><em>-</em></div>
+    <div class="round2 right spot2 spot"><b>-</b><em>-</em></div>
+    <div class="round2 right spot3 spot"><b>-</b><em>-</em></div>
+    <div class="round2 right spot4 spot"><b>-</b><em>-</em></div>
+    
+    <div class="round2 left game1 info">-</div>
+    <div class="round2 right game2 info">-</div>
+    
+    <div class="round2 left game3 info">-</div>
+    <div class="round2 right game4 info">-</div>
+    
+    <!-- round 3 //-->
+    <div class="round3 left spot1 spot"><b>-</b><em>-</em></div>
+    <div class="round3 left spot2 spot"><b>-</b><em>-</em></div>
+    <div class="round3 left spot3 spot"><b>-</b><em>-</em></div>
+    <div class="round3 left spot4 spot"><b>-</b><em>-</em></div>
+    
+    <div class="round3 right spot1 spot"><b>-</b><em>-</em></div>
+    <div class="round3 right spot2 spot"><b>-</b><em>-</em></div>
+    <div class="round3 right spot3 spot"><b>-</b><em>-</em></div>
+    <div class="round3 right spot4 spot"><b>-</b><em>-</em></div>
+    
+    <div class="round3 game1 left info">-</div>
+    <div class="round3 game2 left info">-</div>
+    
+    <div class="round3 game3 left info">-</div>
+    <div class="round3 game4 left info">-</div>
+    
+    
+  </div>
+  
+  <div id="loading"></div>
+  
+  
+  <span id="theme-color" class="hidden">#fff</span>
+</body>
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<!--<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>-->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+    <title>Livescoring - Windmill Windup Amsterdam 2011</title>
+    <link href="http://windmillwindup.com/2011/css/mobile.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body onorientationchange="updateOrientation();">
+	<a name="top"></a>
+	<div id="wrapper">
+        <div id="header">
+            <h1 class="small">WW2011</h1>
+            <a href="http://windmillwindup.com/2011/livescoring/"><h1>Live scoring</h1></a>
+            <a id="windmillwinduplogo"></a>
+
+        </div><!-- end: header -->
+        
+		<!-- CONTENT -->
+        <div id="content_wrapper">
+			<!-- 
+	Databse windmill_2010
+    Gebruikte tabellen:
+    	Schedule
+        Score
+        Standing 
+
+-->
+<script language="JavaScript">
+	function showBranch(branch){
+	
+		hideBranch();
+
+		var objBranch = document.getElementById(branch).style;
+		if(objBranch.display=="block")
+			objBranch.display="none";
+		else
+			objBranch.display="block";
+	}
+	function hideBranch(){
+		document.getElementById("womendivision").style.display="none";
+		document.getElementById("mixeddivision").style.display="none";
+		document.getElementById("opendivision").style.display="none";
+	}
+</script>
+
+<style type="text/css">#livescoring #menu #womendivision{ display:block; }</style><div id="livescoring">
+	<div id="menu">
+        <ul class='scoreNav'>
+            <li><a onClick="showBranch('womendivision');return false;" href="score.php%3Fdivision=women&amp;round=F.html#">Women</a></li>
+            <li><a onClick="showBranch('mixeddivision');return false;" href="score.php%3Fdivision=women&amp;round=F.html#">Mixed</a></li>
+            <li><a onClick="showBranch('opendivision');return false;" href="score.php%3Fdivision=women&amp;round=F.html#">Open</a></li>
+        </ul>
+
+        <div id="womendivision" class="division">
+            <form action='http://windmillwindup.com/2011/'>
+<select onchange='window.open(this.options[this.selectedIndex].value,"_top")'><option>Select women team</option>
+<option></option><option value="score.php?team=BYE&division=women">BYE</option>
+<option value="score.php?team=Chakalakas&division=women">Chakalakas</option>
+<option value="score.php?team=DNT National Team&division=women">DNT National Team</option>
+<option value="score.php?team=Denmark National Team&division=women">Denmark National Team</option>
+<option value="score.php?team=France National Team&division=women">France National Team</option>
+<option value="score.php?team=GB National Team&division=women">GB National Team</option>
+<option value="score.php?team=Holland National Team&division=women">Holland National Team</option>
+<option value="score.php?team=Hot Beaches&division=women">Hot Beaches</option>
+<option value="score.php?team=Ireland National Team&division=women">Ireland National Team</option>
+<option value="score.php?team=Italy National Team&division=women">Italy National Team</option>
+<option value="score.php?team=Russia National Team&division=women">Russia National Team</option>
+<option value="score.php?team=Seagulls&division=women">Seagulls</option>
+<option value="score.php?team=Switzerland National Team&division=women">Switzerland National Team</option>
+<option value="score.php?team=Thalys&division=women">Thalys</option>
+</select>
+</form>
+
+            <ol class='standing'><li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=women&amp;round=1'>Round: 1</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=women&amp;round=2'>Round: 2</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=women&amp;round=3'>Round: 3</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=women&amp;round=4'>Round: 4</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=women&amp;round=5'>Round: 5</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=women&amp;round=6'>Round: 6</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=women&amp;round=7'>Round: 7</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=women&amp;round=8'>Round: 8</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=women&amp;round=F.html'>Round: F</a></span>
+<span class='nextround'>&larr; next round</span></li>
+</ol>
+
+            <br />
+        </div>
+        <div id="mixeddivision" class="division">
+            <form action='http://windmillwindup.com/2011/'>
+<select onchange='window.open(this.options[this.selectedIndex].value,"_top")'><option>Select mixed team</option>
+<option></option><option value="score.php?team=Akka&division=mixed">Akka</option>
+<option value="score.php?team=Aye-Aye Ultimate (UEA)&division=mixed">Aye-Aye Ultimate (UEA)</option>
+<option value="score.php?team=Born Yesterday&division=mixed">Born Yesterday</option>
+<option value="score.php?team=Cheek2Cheek&division=mixed">Cheek2Cheek</option>
+<option value="score.php?team=Cranberry Snack&division=mixed">Cranberry Snack</option>
+<option value="score.php?team=Disco Stu&division=mixed">Disco Stu</option>
+<option value="score.php?team=Drehst'n Deckel&division=mixed">Drehst'n Deckel</option>
+<option value="score.php?team=France National Team&division=mixed">France National Team</option>
+<option value="score.php?team=Frisbee Family&division=mixed">Frisbee Family</option>
+<option value="score.php?team=Frizzly Bears&division=mixed">Frizzly Bears</option>
+<option value="score.php?team=German National Team&division=mixed">German National Team</option>
+<option value="score.php?team=Holland National Team&division=mixed">Holland National Team</option>
+<option value="score.php?team=Ireland National Team&division=mixed">Ireland National Team</option>
+<option value="score.php?team=Moscow Chapiteau&division=mixed">Moscow Chapiteau</option>
+<option value="score.php?team=Nuts'n Berries&division=mixed">Nuts'n Berries</option>
+<option value="score.php?team=PUF&division=mixed">PUF</option>
+<option value="score.php?team=Quijotes+Dulcineas&division=mixed">Quijotes+Dulcineas</option>
+<option value="score.php?team=Robiram Project&division=mixed">Robiram Project</option>
+<option value="score.php?team=Russo Turisto&division=mixed">Russo Turisto</option>
+<option value="score.php?team=Rusty Bikes&division=mixed">Rusty Bikes</option>
+<option value="score.php?team=Sexy Legs&division=mixed">Sexy Legs</option>
+<option value="score.php?team=Spirit on Lemon&division=mixed">Spirit on Lemon</option>
+<option value="score.php?team=Stockholm Syndromes&division=mixed">Stockholm Syndromes</option>
+<option value="score.php?team=Superfly&division=mixed">Superfly</option>
+<option value="score.php?team=Switzerland National Team&division=mixed">Switzerland National Team</option>
+<option value="score.php?team=TeamAustria Mixed&division=mixed">TeamAustria Mixed</option>
+<option value="score.php?team=Turkey National Team&division=mixed">Turkey National Team</option>
+<option value="score.php?team=WAF&division=mixed">WAF</option>
+</select>
+</form>
+
+            <ol class='standing'><li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=mixed&amp;round=1'>Round: 1</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=mixed&amp;round=2'>Round: 2</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=mixed&amp;round=3'>Round: 3</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=mixed&amp;round=4'>Round: 4</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=mixed&amp;round=5'>Round: 5</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=mixed&amp;round=QF'>Round: QF</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=mixed&amp;round=SF'>Round: SF</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=mixed&amp;round=F'>Round: F</a></span>
+<span class='nextround'>&larr; next round</span></li>
+</ol>
+
+            <br />
+        </div>
+        <div id="opendivision" class="division">
+            <form action='http://windmillwindup.com/2011/'>
+<select onchange='window.open(this.options[this.selectedIndex].value,"_top")'><option>Select open team</option>
+<option></option><option value="score.php?team=7 Schwaben&division=open">7 Schwaben</option>
+<option value="score.php?team=Barbastreji&division=open">Barbastreji</option>
+<option value="score.php?team=Buggoli&division=open">Buggoli</option>
+<option value="score.php?team=Bye team&division=open">Bye team</option>
+<option value="score.php?team=CUS Bologna&division=open">CUS Bologna</option>
+<option value="score.php?team=Cambo Cakes&division=open">Cambo Cakes</option>
+<option value="score.php?team=Carapedos&division=open">Carapedos</option>
+<option value="score.php?team=Denmark National Team&division=open">Denmark National Team</option>
+<option value="score.php?team=Disc Club Panthers&division=open">Disc Club Panthers</option>
+<option value="score.php?team=Flying Angels Bern (FAB)&division=open">Flying Angels Bern (FAB)</option>
+<option value="score.php?team=Flying Bisc&division=open">Flying Bisc</option>
+<option value="score.php?team=France National Master Team&division=open">France National Master Team</option>
+<option value="score.php?team=Freespeed&division=open">Freespeed</option>
+<option value="score.php?team=Friselis Club Ultimate Versailles&division=open">Friselis Club Ultimate Versailles</option>
+<option value="score.php?team=Funatics&division=open">Funatics</option>
+<option value="score.php?team=Gentle&division=open">Gentle</option>
+<option value="score.php?team=German Junior Open&division=open">German Junior Open</option>
+<option value="score.php?team=German masters&division=open">German masters</option>
+<option value="score.php?team=Gummibaerchen&division=open">Gummibaerchen</option>
+<option value="score.php?team=Hardfisch&division=open">Hardfisch</option>
+<option value="score.php?team=Holland National Team&division=open">Holland National Team</option>
+<option value="score.php?team=Iznogood&division=open">Iznogood</option>
+<option value="score.php?team=KoBOld&division=open">KoBOld</option>
+<option value="score.php?team=Les etoiles o&division=open">Les etoiles o</option>
+<option value="score.php?team=M.U.C.&division=open">M.U.C.</option>
+<option value="score.php?team=MAM Friends&division=open">MAM Friends</option>
+<option value="score.php?team=Mooncatchers&division=open">Mooncatchers</option>
+<option value="score.php?team=Pissotte&division=open">Pissotte</option>
+<option value="score.php?team=Rainbow Warriors&division=open">Rainbow Warriors</option>
+<option value="score.php?team=Rebel Ultimate&division=open">Rebel Ultimate</option>
+<option value="score.php?team=Red Lights&division=open">Red Lights</option>
+<option value="score.php?team=Russia National Team&division=open">Russia National Team</option>
+<option value="score.php?team=Silence&division=open">Silence</option>
+<option value="score.php?team=Soimii Patriei&division=open">Soimii Patriei</option>
+<option value="score.php?team=Solebang&division=open">Solebang</option>
+<option value="score.php?team=Spain National Team&division=open">Spain National Team</option>
+<option value="score.php?team=Sun&division=open">Sun</option>
+<option value="score.php?team=Tsunami Vintage&division=open">Tsunami Vintage</option>
+<option value="score.php?team=UL Ninjas&division=open">UL Ninjas</option>
+<option value="score.php?team=Ultimate deLux&division=open">Ultimate deLux</option>
+<option value="score.php?team=Xlr8rs&division=open">Xlr8rs</option>
+<option value="score.php?team=theBigEz - Vienna&division=open">theBigEz - Vienna</option>
+</select>
+</form>
+
+            <ol class='standing'><li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=open&amp;round=1'>Round: 1</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=open&amp;round=2'>Round: 2</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=open&amp;round=3'>Round: 3</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=open&amp;round=4'>Round: 4</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=open&amp;round=5'>Round: 5</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=open&amp;round=QF'>Round: QF</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=open&amp;round=SF'>Round: SF</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='http://windmillwindup.com/2011/livescoring/score.php?division=open&amp;round=F'>Round: F</a></span>
+<span class='nextround'>&larr; next round</span></li>
+</ol>
+
+            <br />
+        </div>
+		<div class="clearer"></div>
+
+		<p>
+			&uarr; Select a division for 
+            <br />scoresheet, results and standing.
+		</p>
+		<p>
+			<!--Click <a href="/2010/livescoring/">here</a> for the current schedule-->
+		</p>
+        <ul class='smallNav'>
+            <li><a href="javascript:history.go(-1)">&larr; back</a></li>
+            <li><a href='http://windmillwindup.com/2011/mobile/'>&larr; home mobile site</a></li>
+            <li><a href='http://windmillwindup.com/2011/home'>&larr; regular site</a></li>
+        </ul>
+
+	</div><!-- end:menu-->
+
+    
+    <div id="result">
+        <div id='scoresheet'><h3>THIRD FINAL PLACING POOLS - women division</h3><div class='time'>Round F on 2011-06-19<br />Games start: 12:00:00  - Games end: 13:30:00</div><ul class='standing'><li class='header'><span class='round'>field</span><span class='team'>team</span><span class='score'>score</span><span class='streepje'>&nbsp;</span><span class='against'>&nbsp;</span><span class='team'>team</span><span class='playingfor'>&nbsp;</span></li><div class="clearer"></div><li class=''>
+
+<span class='round'>7</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=GB&#32;National&#32;Team&amp;division=women'>GB National Team</a></span>
+<span class='score'>15</span>
+<span class='streepje'>-</span><span class='against'>12</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Italy&#32;National&#32;Team&amp;division=women'>Italy National T</a></span>
+<span class='playingfor'>[For place 1-2]</span></li>
+<div class="clearer"></div><li class=''>
+
+<span class='round'>4</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Ireland&#32;National&#32;Team&amp;division=women'>Ireland National</a></span>
+<span class='score'>15</span>
+<span class='streepje'>-</span><span class='against'>5</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Hot&#32;Beaches&amp;division=women'>Hot Beaches</a></span>
+<span class='playingfor'>[For place 3-4]</span></li>
+<div class="clearer"></div><li class=''>
+
+<span class='round'>5</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Denmark&#32;National&#32;Team&amp;division=women'>Denmark National</a></span>
+<span class='score'>15</span>
+<span class='streepje'>-</span><span class='against'>14</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=DNT&#32;National&#32;Team&amp;division=women'>DNT National Tea</a></span>
+<span class='playingfor'>[For place 5-6]</span></li>
+<div class="clearer"></div><li class=''>
+
+<span class='round'>9</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=France&#32;National&#32;Team&amp;division=women'>France National </a></span>
+<span class='score'>5</span>
+<span class='streepje'>-</span><span class='against'>15</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Switzerland&#32;National&#32;Team&amp;division=women'>Switzerland Nati</a></span>
+<span class='playingfor'>[For place 7-8]</span></li>
+<div class="clearer"></div><li class=''>
+
+<span class='round'>6</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Holland&#32;National&#32;Team&amp;division=women'>Holland National</a></span>
+<span class='score'>11</span>
+<span class='streepje'>-</span><span class='against'>9</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Thalys&amp;division=women'>Thalys</a></span>
+<span class='playingfor'>[Pool E]</span></li>
+<div class="clearer"></div><li class=''>
+
+<span class='round'>8</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Seagulls&amp;division=women'>Seagulls</a></span>
+<span class='score'>13</span>
+<span class='streepje'>-</span><span class='against'>15</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Russia&#32;National&#32;Team&amp;division=women'>Russia National </a></span>
+<span class='playingfor'>[Pool E]</span></li>
+<div class="clearer"></div><li class=''>
+
+<span class='round'>10</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Russia&#32;National&#32;Team&amp;division=women'>Russia National </a></span>
+<span class='score'>8</span>
+<span class='streepje'>-</span><span class='against'>1</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Chakalakas&amp;division=women'>Chakalakas</a></span>
+<span class='playingfor'>[Pool E]</span></li>
+<div class="clearer"></div></ul>
+
+</div><!--end:scoresheet-->
+<div id='standing'><h3>Final standings - Women division</h3><ol class='standing'><li class='header'><span class='rank'>&nbsp;</span><span class='team'>team</span><span class='vp' title=''>pool</span><span class='margin' title=''>win</span><span class='total' title=''>loss</span><span class='total' title=''>goals</span></li><div class="clearer"></div><li class=''>
+
+<span class='rank'>1</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=GB&#32;National&#32;Team&amp;division=women'>GB National Team</a></span>
+<span class='vp' title=''></span>
+<span class='margin' title=''></span>
+<span class='total' title=''></span>
+<span class='score'></span>
+<span class='against'></span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='rank'>2</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Italy&#32;National&#32;Team&amp;division=women'>Italy National T</a></span>
+<span class='vp' title=''></span>
+<span class='margin' title=''></span>
+<span class='total' title=''></span>
+<span class='score'></span>
+<span class='against'></span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='rank'>3</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Ireland&#32;National&#32;Team&amp;division=women'>Ireland National</a></span>
+<span class='vp' title=''></span>
+<span class='margin' title=''></span>
+<span class='total' title=''></span>
+<span class='score'></span>
+<span class='against'></span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='rank'>4</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Hot&#32;Beaches&amp;division=women'>Hot Beaches</a></span>
+<span class='vp' title=''></span>
+<span class='margin' title=''></span>
+<span class='total' title=''></span>
+<span class='score'></span>
+<span class='against'></span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='rank'>5</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Denmark&#32;National&#32;Team&amp;division=women'>Denmark National</a></span>
+<span class='vp' title=''></span>
+<span class='margin' title=''></span>
+<span class='total' title=''></span>
+<span class='score'></span>
+<span class='against'></span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='rank'>6</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=DNT&#32;National&#32;Team&amp;division=women'>DNT National Tea</a></span>
+<span class='vp' title=''></span>
+<span class='margin' title=''></span>
+<span class='total' title=''></span>
+<span class='score'></span>
+<span class='against'></span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='rank'>7</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Switzerland&#32;National&#32;Team&amp;division=women'>Switzerland Nati</a></span>
+<span class='vp' title=''></span>
+<span class='margin' title=''></span>
+<span class='total' title=''></span>
+<span class='score'></span>
+<span class='against'></span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='rank'>8</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=France&#32;National&#32;Team&amp;division=women'>France National </a></span>
+<span class='vp' title=''></span>
+<span class='margin' title=''></span>
+<span class='total' title=''></span>
+<span class='score'></span>
+<span class='against'></span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='rank'>9</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Russia&#32;National&#32;Team&amp;division=women'>Russia National </a></span>
+<span class='vp' title=''></span>
+<span class='margin' title=''></span>
+<span class='total' title=''></span>
+<span class='score'></span>
+<span class='against'></span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='rank'>10</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Holland&#32;National&#32;Team&amp;division=women'>Holland National</a></span>
+<span class='vp' title=''></span>
+<span class='margin' title=''></span>
+<span class='total' title=''></span>
+<span class='score'></span>
+<span class='against'></span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='rank'>11</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Seagulls&amp;division=women'>Seagulls</a></span>
+<span class='vp' title=''></span>
+<span class='margin' title=''></span>
+<span class='total' title=''></span>
+<span class='score'></span>
+<span class='against'></span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='rank'>12</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Thalys&amp;division=women'>Thalys</a></span>
+<span class='vp' title=''></span>
+<span class='margin' title=''></span>
+<span class='total' title=''></span>
+<span class='score'></span>
+<span class='against'></span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='rank'>13</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Chakalakas&amp;division=women'>Chakalakas</a></span>
+<span class='vp' title=''></span>
+<span class='margin' title=''></span>
+<span class='total' title=''></span>
+<span class='score'></span>
+<span class='against'></span>
+</li>
+<div class="clearer"></div></ol>
+
+</div><!--end:standing--><div id='standing'><h3>Pool E Final standing - Women division</h3><ol class='standing'><li class='header'><span class='rank'>&nbsp;</span><span class='team'>team</span><span class='vp' title=''>pool</span><span class='margin' title=''>win</span><span class='total' title=''>loss</span><span class='total' title=''>goals</span></li><div class="clearer"></div><li class=''>
+
+<span class='rank'>1</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Russia&#32;National&#32;Team&amp;division=women'>Russia National </a></span>
+<span class='vp' title=''>E</span>
+<span class='margin' title=''>4</span>
+<span class='total' title=''>0</span>
+<span class='score'>50</span>
+<span class='streepje'>-</span><span class='against'>25</span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='rank'>2</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Holland&#32;National&#32;Team&amp;division=women'>Holland National</a></span>
+<span class='vp' title=''>E</span>
+<span class='margin' title=''>3</span>
+<span class='total' title=''>1</span>
+<span class='score'>44</span>
+<span class='streepje'>-</span><span class='against'>34</span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='rank'>3</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Seagulls&amp;division=women'>Seagulls</a></span>
+<span class='vp' title=''>E</span>
+<span class='margin' title=''>2</span>
+<span class='total' title=''>2</span>
+<span class='score'>46</span>
+<span class='streepje'>-</span><span class='against'>42</span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='rank'>4</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Thalys&amp;division=women'>Thalys</a></span>
+<span class='vp' title=''>E</span>
+<span class='margin' title=''>1</span>
+<span class='total' title=''>3</span>
+<span class='score'>37</span>
+<span class='streepje'>-</span><span class='against'>41</span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='rank'>5</span>
+<span class='team'><a href='http://windmillwindup.com/2011/livescoring/score.php?team=Chakalakas&amp;division=women'>Chakalakas</a></span>
+<span class='vp' title=''>E</span>
+<span class='margin' title=''>0</span>
+<span class='total' title=''>4</span>
+<span class='score'>15</span>
+<span class='streepje'>-</span><span class='against'>50</span>
+</li>
+<div class="clearer"></div></ol>
+
+</div><!--end:standing--><div class="clearer"></div>        
+        <div class="clearer"></div>
+    </div><!-- end:result -->
+
+</div><!-- end:livescoring -->
+
+
+        	</div><!-- end:content_wrapper -->
+	</div><!-- end: wrapper -->
+
+<!-- GOOGLE ANALYTICS -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7370068-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</html>

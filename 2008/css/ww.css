@@ -1,0 +1,156 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+img {
+	border: 0;
+	vertical-align: middle;
+}
+
+#container {
+    display: table;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+#content { 
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    /*top: 24%;*/
+}
+#content p.p4 {
+	font-size: 75%;
+	margin: 0 0 0 5%;
+}
+
+#tbl 
+{
+  background: url(bg.gif) center repeat-y;
+  border-collapse: collapse;
+	font: 10px Arial, Helvetica, sans-serif;
+	width: 100%;
+}
+
+#chunk {
+  vertical-align: middle;
+  width: 760px;  
+  margin: auto;
+}
+#chunk-left {
+	float: left;
+	font-size: 100%;
+}
+#chunk-mid {
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 110%;
+}
+#chunk-right, #history {
+	float: right;
+	font-size: 120%;
+	}
+#chunk-right ul, #history ul, #chunk-mid ul {
+	list-style: none;
+	margin: 0;
+	padding: 14px;
+	border: none;
+	}
+#chunk-right li a, #chunk-mid li a , #history li a {
+	padding: 4px 14px 4px 14px;
+	background-color: #B0C4DE;
+	color: #000;
+	text-decoration: none;
+	filter:alpha(opacity=70);
+	-moz-opacity:.70;
+	opacity:.70;
+	display: block;
+	}
+#chunk-right li a, #history li a {
+	width: 78px;
+}
+#chunk-mid li a {
+	width: 120px;
+}
+#chunk-right li a:hover, #chunk-mid li a:hover, #history li a:hover {
+	color: #999;
+	background-color: #000;
+	}
+
+#orgTable {
+  width: 740px;
+  margin: 30px auto;
+	font: 10px Arial, Helvetica, sans-serif;
+/*	font-size: 100%;*/
+}
+#tit {
+	text-align: center;
+}
+#orgsRightAgain 
+{ text-align:right;
+}
+
+#deets 
+{
+	background: url(bgdeets.gif) center repeat-y;
+	font-size: 150%;
+}
+
+#participation 
+{
+	padding: 1px 20px 40px 20px;
+}
+
+#participation h3
+{
+	margin-bottom: -9px;
+}
+
+#participation h4
+{
+	margin-bottom: -10px;
+}
+
+table#tableRO   { border-collapse: collapse; width: 90%; margin-left: 5%; }
+table#tableRO CAPTION { text-align: center; caption-side: top; font-weight: bold; }
+table#tableRO TR.row0 { background-color: black; color: white; font-weight: bold; line-height: 140%; }
+table#tableRO TR.row1 { background-color: #FFFFFF; color: Black; line-height: 110%; }
+table#tableRO TR.row2 { background-color: #B0C4DE; color: Black; line-height: 105%; }
+table#tableRO TD { text-align: left; vertical-align: middle; }
+
+table#tableRW   { border-collapse: collapse; width: 90%; margin-left: 5%; }
+table#tableRW CAPTION { text-align: center; caption-side: top; font-weight: bold; }
+table#tableRW TR.row0 { background-color: black; color: white; font-weight: bold; line-height: 140%; }
+table#tableRW TR.row1 { background-color: #FFFFFF; color: Black; line-height: 110%; }
+table#tableRW TR.row2 { background-color: #B0C4DE; color: Black; line-height: 105%; }
+table#tableRW TD { text-align: left; vertical-align: middle; }
+
+table#tableVP   { border-collapse: collapse; width: 44%; margin-left: 28%; margin-right: 28%; }
+table#tableVP CAPTION { text-align: center; caption-side: top; font-weight: bold; }
+table#tableVP TR.row0 { background-color: black; color: white; font-weight: bold; line-height: 110%; }
+table#tableVP TR.row1 { background-color: #FFFFFF; color: Black; }
+table#tableVP TR.row2 { background-color: #B0C4DE; color: Black; }
+table#tableVP TD { text-align: center; vertical-align: middle; }
+
+table#tableES   { border-collapse: collapse; width: 85%; margin-left: 6%; margin-top: 16px; }
+table#tableES TR.row0 { background-color: black; color: white; line-height: normal; font-weight: bold; text-indent: 0.5%; }
+table#tableES TR.rowh { background-color: #B0C4DE; color: Black; line-height: normal; font-weight: bold; text-indent: 3%; }
+table#tableES TR.row2 { background-color: #B0C4DE; color: Black; line-height: 110%; text-indent: 3%; }
+table#tableES TD { text-align: left; vertical-align: middle; }
+
+table#tableOrg  { border-collapse: collapse; border: 0; margin-left: auto; margin-right: auto; background: url(bg.gif) center repeat-y; }
+table#tableOrg TR { color: white; }
+table#tableOrg TR.ph { vertical-align: bottom; height: 160px; }
+table#tableOrg TR.nm { vertical-align: top; }
+table#tableOrg TD { text-align: center; font-size: smaller; width: 130px; line-height: normal; }
+table#tableOrg TD IMG { height: 144px; }
+
+table#tablePhotoLinks  { border: 0; margin-left: 6%; margin-right: 10%; background: url(bg.gif) center repeat-y; }
+table#tablePhotoLinks TR { color: white; }
+table#tablePhotoLinks TR.ph { vertical-align: center; }
+table#tablePhotoLinks TD { line-height: normal; text-align: center; }
+table#tablePhotoLinks TD IMG { height: 113px; border-color: white; }
+table#tablePhotoLinks TD.txt { padding-left: 18px; padding-right: 6px; text-align: left; }
+table#tablePhotoLinks A { font-size: 120%; font-weight: bold; color: white; }

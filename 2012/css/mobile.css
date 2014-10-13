@@ -1,0 +1,266 @@
+/**
+* Elements en standaard classes
+*/
+body{
+	/*text-align:center; /* text-align om IE - die zich niet aan de standaarden houdt - ook te lcentreren */
+	margin:0;
+	font: normal 100% 'Helvetica Neue',Helvetica, Arial, sans-serif;
+	color: #eed2b1;
+	letter-spacing:1px;
+	line-height:1.2em;
+	background:#36241a url(http://windmillwindup.com/2012/img/bg_mobile_tile.jpg) repeat-x;
+}
+img{border: none;}
+h1{	
+	font: bold 1.4em Helvetica, Arial, sans-serif;
+	color: #f08201; 
+	margin: 20px 0 0 0; 
+	/*text-transform:uppercase;*/
+	letter-spacing:1px;
+	line-height: 100%;
+}
+h2{ 
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #ffc820; 
+	margin: 20px 0 10px 0; 
+	letter-spacing:1px;
+	line-height: 100%;
+}
+h2 a{
+	color: #ffc820 !important;
+}
+h3{ 
+	font-weight: bold;
+	font-size: 1.1em;
+	color: #ffc820; 
+	margin: 24px 0 2px 0;
+	letter-spacing:1px;
+	line-height: 100%;
+}
+h3 > a{
+	color: #ffc820; 
+	text-decoration:none;
+} 
+h4{ 
+	font-weight: bold;
+	font-size: 1.1em;
+	color: #eed2b1; 
+	margin: 0;
+}
+h4 > a{
+	color: #eed2b1; 
+	text-decoration:none;
+} 
+a { 
+	color: #eed2b1;
+	text-decoration:underline;
+	/*border-bottom:thin dotted;*/
+}
+a:hover{
+	color: #ffc820;
+}
+.highlight {
+	background-color:#00c2f3;
+	color: #000;
+}
+.ancortop{
+	text-align: right;
+}
+.linethrough{
+	text-decoration:line-through;
+}
+ul,ol{
+	margin: 0;
+}
+ul.sponsorlist{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	text-align: center;
+}
+ul.sponsorlist h2{
+	margin:0 0 20px 0;
+}
+/* */
+
+/* */
+#content_wrapper{
+	margin:0 10px;
+
+}
+
+/* header */
+#header{
+	background: url(http://windmillwindup.com/2012/img/bg_mobile_sky.jpg) center top repeat-x;
+	height: 120px;
+	display:block;
+	margin: 0 10px;
+	padding:0;
+}
+#header h1{
+	display: inline-block;
+	font-size: 160%;
+	color: #36241a; 
+	margin: 0;
+	padding-top: 10px;
+	/*text-transform:uppercase;*/
+	letter-spacing:-1px;
+	line-height: 1em;
+}
+#header #windmillwinduplogo{
+	display: block;
+	display: none;
+	position:absolute;
+	top: 0;
+	right: 10px;
+	height: 115px;
+	width: 120px;
+	background:url(http://windmillwindup.com/2012/img/logos/windmillwindup_logo_2011.png) no-repeat right top;
+}
+
+
+
+
+/********************/
+/* navigatie */
+
+ul.bigNav, ul.tournamentNav{
+	list-style: none;
+	width:100%;
+	margin: 0;
+	margin-bottom: 20px;
+	padding:0;
+}
+ul.bigNav li a, ul.tournamentNav li a{
+	font-weight: bold;
+	font-size: 22px;
+	color: #f08201;
+	margin:0; 
+	padding: 10px 10px 10px 20px; 
+	/*text-transform:uppercase;*/
+	letter-spacing:0px;
+	line-height: 100%;
+	text-decoration:none;
+	display:block;
+	border-bottom:solid 1px #442d20;
+}
+ul.bigNav li a:hover{
+	padding-left:20px;
+	background-color:#f08201;
+	color:#36241a;
+}
+ul.tournamentNav li a{
+	color: #ffc820;
+}
+ul.tournamentNav li a:hover{
+	padding-left:20px;
+	background-color:#ffc820;
+	color:#36241a;
+}
+ul.smallNav{
+	list-style: none;
+	width: 100%;
+	margin: 0 0 20px -40px;
+}
+ul.smallNav li{
+	display:inline-block;
+	width: 49%;
+}
+ul.smallNav li a{
+	font-weight: bold;
+	font-size: 18px;
+	margin:0;
+	padding: 6px; 
+	/*text-transform:uppercase;*/
+	letter-spacing:0px;
+	line-height: 100%;
+	text-decoration:none;
+	text-align: left;
+}
+ul.smallNav li:last-of-type{
+	text-align: right;
+}
+/* */
+#news .text .date{
+	margin-bottom: 6px;
+	display: block;
+	color: #eed2b1;
+}
+
+/* SCHEDULE*/
+ul.schedule {
+	list-style: none;
+	margin: 0;
+	margin-bottom: 3em;
+	padding: 0;
+}
+ul.schedule li{
+	padding: 0.25em 0;
+}
+ul.schedule li:first-of-type{
+	color: #eed2b1;
+	background-color:#19100c;
+	border-bottom:solid 1px #442d20;
+	font-style:italic;
+	font-weight:normal;
+}
+ul.schedule li:nth-of-type(2n){
+	background-color:#19100c;
+}
+ul.schedule li span.time{
+	display: inline-block;
+	vertical-align:top;
+	width: 3.1em;
+}
+ul.schedule li span.description{
+	/* display:block; */
+	vertical-align:top;
+}
+div#textthursday, div#textfriday, div#textsaturday, div#textsunday{
+	display:none;
+}
+
+
+/* navigatie */
+ul.scoreNav{
+	list-style: none;
+	width:240px;
+	margin: 0 0 40px 0;
+	padding:0;
+}
+ul.scoreNav li{
+	width: 80px;
+	float: left;
+}
+ul.scoreNav li a{
+	font-weight: bold;
+	font-size: 18px;
+	color: #ffc820;
+	text-align:center;
+	margin:0; 
+	padding: 10px; 
+	letter-spacing:0px;
+	line-height: 100%;
+	text-decoration:underline;
+	display:block;
+	border:solid 1px #4a3a31;
+	border-bottom-color: #36241a;
+}
+ul.scoreNav li a:hover{
+	background-color:#ffc820;
+	color:#36241a;
+	text-decoration:none;
+}
+
+
+
+
+
+/**********************************************/
+.clearer{
+  height:1px;
+  overflow:hidden;
+  margin-top:-1px;
+  clear:both;
+}

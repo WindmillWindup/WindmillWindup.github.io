@@ -1,0 +1,22 @@
+/* LAYOUT aanpassingen for pages */ /* Overrules layout settings in layout.css*/
+
+#content_wrapper #main{
+	padding: 20px 50px;
+	margin-left: 40px;
+	width: 880px;
+}
+
+#content_wrapper #sidebar{
+	display:none;
+}
+
+/* achtergrond plaatjes wide */
+body{
+	background: #442d20 url(../img/bg_tile_wide.jpg) center repeat-y;
+}
+#wrapper{
+	background:url(../img/bg_underground_wide_2011.jpg) no-repeat center 229px;
+}
+#footer_wrapper{
+	background:url(../img/bg_footer_wide.jpg) no-repeat center bottom;
+}

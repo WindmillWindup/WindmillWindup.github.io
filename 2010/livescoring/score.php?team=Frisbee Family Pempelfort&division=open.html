@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<!--<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>-->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+    <title>Livescoring - Windmill Windup Amsterdam 2010</title>
+    <link href="../css/mobile.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body onorientationchange="updateOrientation();">
+	<a name="top"></a>
+	<div id="wrapper">
+        <div id="header">
+            <h1 class="small">WW2010</h1>
+            <a href="../mobile/livescoring/index.html"><h1>Live scoring</h1></a>
+            <a id="windmillwinduplogo"></a>
+
+        </div><!-- end: header -->
+        
+		<!-- CONTENT -->
+        <div id="content_wrapper">
+			<script language="JavaScript">
+	function showBranch(branch){
+	
+		hideBranch();
+
+		var objBranch = document.getElementById(branch).style;
+		if(objBranch.display=="block")
+			objBranch.display="none";
+		else
+			objBranch.display="block";
+	}
+	function hideBranch(){
+		document.getElementById("womendivision").style.display="none";
+		document.getElementById("mixeddivision").style.display="none";
+		document.getElementById("opendivision").style.display="none";
+	}
+</script>
+
+<style type="text/css">#livescoring #menu #opendivision{ display:block; }</style><div id="livescoring">
+	<div id="menu">
+        <ul class='scoreNav'>
+            <li><a onClick="showBranch('womendivision');return false;" href="score.php%3Fteam=Frisbee&#32;Family&#32;Pempelfort&amp;division=open.html#">Women</a></li>
+            <li><a onClick="showBranch('mixeddivision');return false;" href="score.php%3Fteam=Frisbee&#32;Family&#32;Pempelfort&amp;division=open.html#">Mixed</a></li>
+            <li><a onClick="showBranch('opendivision');return false;" href="score.php%3Fteam=Frisbee&#32;Family&#32;Pempelfort&amp;division=open.html#">Open</a></li>
+        </ul>
+
+        <div id="womendivision" class="division">
+            <form action='../index.html'>
+<select onchange='window.open(this.options[this.selectedIndex].value,"_top")'><option>Select women team</option>
+<option></option><option value="score.php?team=Copenhagen&division=women">Copenhagen</option>
+<option value="score.php?team=CUSB Dumps&division=women">CUSB Dumps</option>
+<option value="score.php?team=Dirty Olive&division=women">Dirty Olive</option>
+<option value="score.php?team=Germanys Next Top Maedel&division=women">Germanys Next Top Maedel</option>
+<option value="score.php?team=Hot Beaches&division=women">Hot Beaches</option>
+<option value="score.php?team=Iso&division=women">Iso</option>
+<option value="score.php?team=Jinx&division=women">Jinx</option>
+<option value="score.php?team=Lotus Ultimate&division=women">Lotus Ultimate</option>
+<option value="score.php?team=MissB&division=women">MissB</option>
+<option value="score.php?team=Primavera&division=women">Primavera</option>
+<option value="score.php?team=Seagulls&division=women">Seagulls</option>
+<option value="score.php?team=Tequila Boom Boom&division=women">Tequila Boom Boom</option>
+<option value="score.php?team=U23 Germany&division=women">U23 Germany</option>
+<option value="score.php?team=Viima&division=women">Viima</option>
+<option value="score.php?team=Woodchicas&division=women">Woodchicas</option>
+<option value="score.php?team=Yaka&division=women">Yaka</option>
+</select>
+</form>
+
+            <ol>
+
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=women&amp;round=1.html'>Round: 1</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=women&amp;round=2.html'>Round: 2</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=women&amp;round=3.html'>Round: 3</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=women&amp;round=4.html'>Round: 4</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=women&amp;round=5.html'>Round: 5</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=women&amp;round=QF.html'>Round: QF</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=women&amp;round=SF.html'>Round: SF</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=women&amp;round=F.html'>Round: F</a></span>
+<span class='nextround'>&larr; next round</span></li>
+</ol>
+
+            <br />
+        </div>
+        <div id="mixeddivision" class="division">
+            <form action='../index.html'>
+<select onchange='window.open(this.options[this.selectedIndex].value,"_top")'><option>Select mixed team</option>
+<option></option><option value="score.php?team=Ah Ouh PUC&division=mixed">Ah Ouh PUC</option>
+<option value="score.php?team=Cranberry Snack&division=mixed">Cranberry Snack</option>
+<option value="score.php?team=DiscComfort&division=mixed">DiscComfort</option>
+<option value="score.php?team=France coed&division=mixed">France coed</option>
+<option value="score.php?team=Frankdam-Amsterfurt-Connection&division=mixed">Frankdam-Amsterfurt-Connection</option>
+<option value="score.php?team=Free Hucks&division=mixed">Free Hucks</option>
+<option value="score.php?team=Frizzly Bears&division=mixed">Frizzly Bears</option>
+<option value="score.php?team=GronicalDizziness&division=mixed">GronicalDizziness</option>
+<option value="score.php?team=Half Men Half Amazing&division=mixed">Half Men Half Amazing</option>
+<option value="score.php?team=Hungary Coed Team&division=mixed">Hungary Coed Team</option>
+<option value="score.php?team=Jabba the Huck&division=mixed">Jabba the Huck</option>
+<option value="score.php?team=Jeremy Codhand&division=mixed">Jeremy Codhand</option>
+<option value="score.php?team=Los Quijotes&division=mixed">Los Quijotes</option>
+<option value="score.php?team=OUF&division=mixed">OUF</option>
+<option value="score.php?team=Principality of Sealand&division=mixed">Principality of Sealand</option>
+<option value="score.php?team=Random Fling&division=mixed">Random Fling</option>
+<option value="score.php?team=Russo Turisto&division=mixed">Russo Turisto</option>
+<option value="score.php?team=Rusty Bikes&division=mixed">Rusty Bikes</option>
+<option value="score.php?team=Sugar-Mix&division=mixed">Sugar-Mix</option>
+<option value="score.php?team=Tallinn Frisbee Club&division=mixed">Tallinn Frisbee Club</option>
+<option value="score.php?team=Team 2600&division=mixed">Team 2600</option>
+<option value="score.php?team=Thundering Herd&division=mixed">Thundering Herd</option>
+<option value="score.php?team=ufo&division=mixed">ufo</option>
+<option value="score.php?team=Ultimate de Lux&division=mixed">Ultimate de Lux</option>
+<option value="score.php?team=WAF&division=mixed">WAF</option>
+<option value="score.php?team=Wunderteam&division=mixed">Wunderteam</option>
+<option value="score.php?team=XLR8RS&division=mixed">XLR8RS</option>
+</select>
+</form>
+
+            <ol>
+
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=mixed&amp;round=1.html'>Round: 1</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=mixed&amp;round=2.html'>Round: 2</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=mixed&amp;round=3.html'>Round: 3</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=mixed&amp;round=4.html'>Round: 4</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=mixed&amp;round=5.html'>Round: 5</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=mixed&amp;round=QF.html'>Round: QF</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=mixed&amp;round=SF.html'>Round: SF</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=mixed&amp;round=F.html'>Round: F</a></span>
+<span class='nextround'>&larr; next round</span></li>
+</ol>
+
+            <br />
+        </div>
+        <div id="opendivision" class="division">
+            <form action='../index.html'>
+<select onchange='window.open(this.options[this.selectedIndex].value,"_top")'><option>Select open team</option>
+<option></option><option value="score.php?team=Aye-Aye&division=open">Aye-Aye</option>
+<option value="score.php?team=Barry White&division=open">Barry White</option>
+<option value="score.php?team=CamboCakes&division=open">CamboCakes</option>
+<option value="score.php?team=Carapedos&division=open">Carapedos</option>
+<option value="score.php?team=CUS BOLOGNA&division=open">CUS BOLOGNA</option>
+<option value="score.php?team=Eul'chtimate&division=open">Eul'chtimate</option>
+<option value="score.php?team=Fammi un tre dita&division=open">Fammi un tre dita</option>
+<option value="score.php?team=Feldrenner&division=open">Feldrenner</option>
+<option value="score.php?team=Flyght Club&division=open">Flyght Club</option>
+<option value="score.php?team=Flying Angels Bern&division=open">Flying Angels Bern</option>
+<option value="score.php?team=Flying Bisc&division=open">Flying Bisc</option>
+<option value="score.php?team=Freespeed&division=open">Freespeed</option>
+<option value="score.php?team=Frisbee Family Pempelfort&division=open">Frisbee Family Pempelfort</option>
+<option value="score.php?team=friselis&division=open">friselis</option>
+<option value="score.php?team=Gentle&division=open">Gentle</option>
+<option value="score.php?team=Goon Squad&division=open">Goon Squad</option>
+<option value="score.php?team=Gummibaerchen&division=open">Gummibaerchen</option>
+<option value="score.php?team=Hallunken&division=open">Hallunken</option>
+<option value="score.php?team=Hardfisch&division=open">Hardfisch</option>
+<option value="score.php?team=Iznogood&division=open">Iznogood</option>
+<option value="score.php?team=Kielstock&division=open">Kielstock</option>
+<option value="score.php?team=KoBOLd&division=open">KoBOLd</option>
+<option value="score.php?team=M.U.C.&division=open">M.U.C.</option>
+<option value="score.php?team=Mooncatchers&division=open">Mooncatchers</option>
+<option value="score.php?team=Mor ho!&division=open">Mor ho!</option>
+<option value="score.php?team=Mr Friz&division=open">Mr Friz</option>
+<option value="score.php?team=Mucche al Pascolo&division=open">Mucche al Pascolo</option>
+<option value="score.php?team=My friends and Me&division=open">My friends and Me</option>
+<option value="score.php?team=PUF&division=open">PUF</option>
+<option value="score.php?team=Ragnarok&division=open">Ragnarok</option>
+<option value="score.php?team=Rebel Ultimate&division=open">Rebel Ultimate</option>
+<option value="score.php?team=Red Leicester Ultimate&division=open">Red Leicester Ultimate</option>
+<option value="score.php?team=RedLights&division=open">RedLights</option>
+<option value="score.php?team=Scunts&division=open">Scunts</option>
+<option value="score.php?team=Silence&division=open">Silence</option>
+<option value="score.php?team=Solebang&division=open">Solebang</option>
+<option value="score.php?team=Sun&division=open">Sun</option>
+<option value="score.php?team=The Vincables&division=open">The Vincables</option>
+<option value="score.php?team=thebigez&division=open">thebigez</option>
+<option value="score.php?team=Tim Burton&division=open">Tim Burton</option>
+<option value="score.php?team=Tooting Tigers&division=open">Tooting Tigers</option>
+<option value="score.php?team=Tsunami Vintage&division=open">Tsunami Vintage</option>
+<option value="score.php?team=U23 France&division=open">U23 France</option>
+<option value="score.php?team=U23 Germany&division=open">U23 Germany</option>
+<option value="score.php?team=UL Ninjas&division=open">UL Ninjas</option>
+<option value="score.php?team=Wall City&division=open">Wall City</option>
+<option value="score.php?team=YeaHaw!&division=open">YeaHaw!</option>
+</select>
+</form>
+
+            <ol>
+
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=open&amp;round=1.html'>Round: 1</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=open&amp;round=2.html'>Round: 2</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=open&amp;round=3.html'>Round: 3</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=open&amp;round=4.html'>Round: 4</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=open&amp;round=5.html'>Round: 5</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=open&amp;round=QF.html'>Round: QF</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=open&amp;round=SF.html'>Round: SF</a></span>
+</li>
+<li class=''>
+<span class='round'><a href='score.php%3Fdivision=open&amp;round=F.html'>Round: F</a></span>
+<span class='nextround'>&larr; next round</span></li>
+</ol>
+
+            <br />
+        </div>
+		<div class="clearer"></div>
+
+		<p>
+			&uarr; Select a division for 
+            <br />scoresheet, results and standing.
+		</p>
+		<p>
+			<!--Click <a href="/2010/livescoring/">here</a> for the current schedule-->
+		</p>
+        <ul class='smallNav'>
+            <li><a href="javascript:history.go(-1)">&larr; back</a></li>
+            <li><a href='../mobile/index.html'>&larr; home mobile site</a></li>
+            <li><a href='../home/index.html'>&larr; regular site</a></li>
+        </ul>
+
+	</div><!-- end:menu-->
+
+    
+    <div id="result">
+        <div id='scoresheet'><h3>Team Frisbee Family Pempelfort - Düsseldorf Germany - open division</h3><ol class='standing'><li class='header'><span class='round'>round</span><span class='team'>team</span><span class='score'>score</span><span class='against'>&nbsp;</span><span class='score'>&nbsp;</span><span class='team'>team</span><span class='playingfor'>&nbsp;</span></li><div class="clearer"></div><li class=''>
+
+<span class='round'><a href='score.php%3Fdivision=open&amp;round=1.html'>1</a></span>
+<span class='team'><a href='score.php%3Fteam=Ragnarok&amp;division=open.html'>Ragnarok</a></span>
+<span class='score'>14&nbsp;</span>
+<span class='against'>-</span><span class='score'>5&nbsp;</span>
+<span class='team'><a href='score.php%3Fteam=Frisbee&#32;Family&#32;Pempelfort&amp;division=open.html'>Frisbee Family P</a></span>
+<span class='playingfor'>[Swissdraw]</span></li>
+<div class="clearer"></div><li class=''>
+
+<span class='round'><a href='score.php%3Fdivision=open&amp;round=2.html'>2</a></span>
+<span class='team'><a href='score.php%3Fteam=Sun&amp;division=open.html'>Sun</a></span>
+<span class='score'>8&nbsp;</span>
+<span class='against'>-</span><span class='score'>15&nbsp;</span>
+<span class='team'><a href='score.php%3Fteam=Frisbee&#32;Family&#32;Pempelfort&amp;division=open.html'>Frisbee Family P</a></span>
+<span class='playingfor'>[Swissdraw]</span></li>
+<div class="clearer"></div><li class=''>
+
+<span class='round'><a href='score.php%3Fdivision=open&amp;round=3.html'>3</a></span>
+<span class='team'><a href='score.php%3Fteam=Solebang&amp;division=open.html'>Solebang</a></span>
+<span class='score'>15&nbsp;</span>
+<span class='against'>-</span><span class='score'>13&nbsp;</span>
+<span class='team'><a href='score.php%3Fteam=Frisbee&#32;Family&#32;Pempelfort&amp;division=open.html'>Frisbee Family P</a></span>
+<span class='playingfor'>[Swissdraw]</span></li>
+<div class="clearer"></div><li class=''>
+
+<span class='round'><a href='score.php%3Fdivision=open&amp;round=4.html'>4</a></span>
+<span class='team'><a href='score.php%3Fteam=Fammi&#32;un&#32;tre&#32;dita&amp;division=open.html'>Fammi un tre dit</a></span>
+<span class='score'>4&nbsp;</span>
+<span class='against'>-</span><span class='score'>15&nbsp;</span>
+<span class='team'><a href='score.php%3Fteam=Frisbee&#32;Family&#32;Pempelfort&amp;division=open.html'>Frisbee Family P</a></span>
+<span class='playingfor'>[Swissdraw]</span></li>
+<div class="clearer"></div><li class=''>
+
+<span class='round'><a href='score.php%3Fdivision=open&amp;round=5.html'>5</a></span>
+<span class='team'><a href='score.php%3Fteam=Mor&#32;Ho!&amp;division=open.html'>Mor Ho!</a></span>
+<span class='score'>14&nbsp;</span>
+<span class='against'>-</span><span class='score'>15&nbsp;</span>
+<span class='team'><a href='score.php%3Fteam=Frisbee&#32;Family&#32;Pempelfort&amp;division=open.html'>Frisbee Family P</a></span>
+<span class='playingfor'>[Swissdraw]</span></li>
+<div class="clearer"></div><li class=''>
+
+<span class='round'><a href='score.php%3Fdivision=open&amp;round=QF.html'>QF</a></span>
+<span class='team'><a href='score.php%3Fteam=CamboCakes&amp;division=open.html'>CamboCakes</a></span>
+<span class='score'>15&nbsp;</span>
+<span class='against'>-</span><span class='score'>5&nbsp;</span>
+<span class='team'><a href='score.php%3Fteam=Frisbee&#32;Family&#32;Pempelfort&amp;division=open.html'>Frisbee Family P</a></span>
+<span class='playingfor'>[For place 9-16]</span></li>
+<div class="clearer"></div><li class=''>
+
+<span class='round'><a href='score.php%3Fdivision=open&amp;round=SF.html'>SF</a></span>
+<span class='team'><a href='score.php%3Fteam=Frisbee&#32;Family&#32;Pempelfort&amp;division=open.html'>Frisbee Family P</a></span>
+<span class='score'>15&nbsp;</span>
+<span class='against'>-</span><span class='score'>9&nbsp;</span>
+<span class='team'><a href='score.php%3Fteam=Mor&#32;Ho!&amp;division=open.html'>Mor Ho!</a></span>
+<span class='playingfor'>[For place 13-16]</span></li>
+<div class="clearer"></div><li class=''>
+
+<span class='round'><a href='score.php%3Fdivision=open&amp;round=F.html'>F</a></span>
+<span class='team'><a href='score.php%3Fteam=Gentle&amp;division=open.html'>Gentle</a></span>
+<span class='score'>12&nbsp;</span>
+<span class='against'>-</span><span class='score'>15&nbsp;</span>
+<span class='team'><a href='score.php%3Fteam=Frisbee&#32;Family&#32;Pempelfort&amp;division=open.html'>Frisbee Family P</a></span>
+<span class='playingfor'>[For place 13-14]</span></li>
+<div class="clearer"></div></ol>
+
+</div><!--end:scoresheet-->
+<div id='standing'><h3>Standings team Frisbee Family Pempelfort - open division</h3><ol class='standing'><li class='header'><span class='round' style='width:60px'>&nbsp;</span><span class='rank'>rank</span><span class='vp' title='total points gained, depending on score difference'>vp</span><span class='margin' title='difference between scoredpoints and against'>margin</span><span class='total' title='total goals scored'>goals</span><span class='total' title='average of the opponent vp '>ovp</span></li><div class="clearer"></div><li class=''>
+
+<span class='round' style='width:60px'><a href='score.php%3Fdivision=open&amp;round=1.html'>round 1</a></span>
+<span class='rank'>27</span>
+<span class='vp' title='total points gained, depending on score difference'>6</span>
+<span class='margin' title='difference between scoredpoints and against'>-9</span>
+<span class='total' title='total goals scored'>5</span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='round' style='width:60px'><a href='score.php%3Fdivision=open&amp;round=2.html'>round 2</a></span>
+<span class='rank'>21</span>
+<span class='vp' title='total points gained, depending on score difference'>28</span>
+<span class='margin' title='difference between scoredpoints and against'>-2</span>
+<span class='total' title='total goals scored'>20</span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='round' style='width:60px'><a href='score.php%3Fdivision=open&amp;round=3.html'>round 3</a></span>
+<span class='rank'>23</span>
+<span class='vp' title='total points gained, depending on score difference'>41</span>
+<span class='margin' title='difference between scoredpoints and against'>-4</span>
+<span class='total' title='total goals scored'>33</span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='round' style='width:60px'><a href='score.php%3Fdivision=open&amp;round=4.html'>round 4</a></span>
+<span class='rank'>14</span>
+<span class='vp' title='total points gained, depending on score difference'>66</span>
+<span class='margin' title='difference between scoredpoints and against'>7</span>
+<span class='total' title='total goals scored'>48</span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='round' style='width:60px'><a href='score.php%3Fdivision=open&amp;round=5.html'>round 5</a></span>
+<span class='rank'>15</span>
+<span class='vp' title='total points gained, depending on score difference'>82</span>
+<span class='margin' title='difference between scoredpoints and against'>8</span>
+<span class='total' title='total goals scored'>63</span>
+<span class='total' title='average opponents vp'>77</span>
+</li>
+<div class="clearer"></div><li class=''>
+
+<span class='round' style='width:60px'><a href='score.php%3Fdivision=open&amp;round=F.html'>round F</a></span>
+<span class='rank'>13</span>
+<span class='vp' title='total points gained, depending on score difference'></span>
+<span class='margin' title='difference between scoredpoints and against'></span>
+<span class='total' title='total goals scored'></span>
+</li>
+<div class="clearer"></div></ol>
+
+</div><!--end:standing--><div class="clearer"></div>        
+        <div class="clearer"></div>
+    </div><!-- end:result -->
+
+</div><!-- end:livescoring -->
+
+
+        	</div><!-- end:content_wrapper -->
+	</div><!-- end: wrapper -->
+
+<!-- GOOGLE ANALYTICS -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7370068-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</html>
