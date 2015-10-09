@@ -1,0 +1,2055 @@
+
+<!DOCTYPE html>
+<html>
+  <head><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationTime":668,"transactionName":"Ml1RYBRVVkZRUkdaXgsXdUEIV0xcX18cUFwWFkZAD1hLG1RUUFxDBExcRhUOUVteVEE=","errorBeacon":"bam.nr-data.net","beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"4760ed8ac7","applicationID":"2962551","agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+    <title>Windmill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="blitz" content="mu-ec4a98b2-f1934bb3-eb6c9300-c874e3fc">
+    <!-- Bootstrap -->
+    <link href="../../../../static/website/bootstrap/css/bootstrap.min.95208a901811.css" rel="stylesheet" media="screen" />
+    <link href="../../../../static/website/font-awesome/css/font-awesome.min.fa6868c22cec.css" rel="stylesheet" />
+    <link href="../../../../static/website/css/base.3ab320e2b36b.css" rel="stylesheet" media="screen" />
+    <link href="../../../../static/website/css/typography.8647f22262a2.css" rel="stylesheet" media="screen" />
+    <link href="../../../../static/website/css/bootstrap-override.cd8d91741a8e.css" rel="stylesheet" media="screen" />
+    <link href="../../../../static/website/css/MyFontsWebfontsKit.d7331c7f753a.css" rel="stylesheet" media="screen" />
+
+    <link href="../../../../static/website/favicon.7b24124b3db0.ico" rel="icon" type="image/x-icon" />
+
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
+    
+
+    
+  </head>
+
+  <body>
+    
+    
+
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../../index.html"><img src="../../../../static/website/img/windmill_logo_small.96d3a2a88aa0.png" /></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          
+
+<li class="">
+        <a href="../../../../index.html">Home</a>
+        
+
+</li>
+
+<li class="active">
+        <a href="../../../index.html">Results</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../news.1.html">News</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../signup/index.html">Registration</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../tournament-info/index.html">Tournament info</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../about/index.html">About</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../event/index.html">Event</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../the-media/index.html">Media</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../intranet/index.html">Intranet</a>
+        
+
+</li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://twitter.com/windmilltourney" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+          <li><a href="https://www.facebook.com/WindmillUltimate" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+          <li><a href="http://www.youtube.com/user/windmillwindup" target="_blank"><i class="fa fa-youtube fa-lg"></i></a></li>
+          <li><a href="https://vimeo.com/channels/648612" target="_blank"><i class="fa fa-vimeo-square fa-lg"></i></a></li>
+        </ul>
+      </div>
+     </div>
+ </nav>
+
+
+  <div id="base-content">
+    
+
+  <div class="container">
+    <div id="section-header">
+      <div class="spotlight">
+  <img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/286/Screen%20Shot%202014-01-02%20at%2022.34.51%20.png" class="bg" />
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="restrainer">
+        
+        <h1>Results 2015</h1>
+        
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+  
+    <div class="container">
+      <div id="navsub">
+        <ul class="nav nav-tabs">
+          
+            
+            
+            <li ><a href="../../../index.html">Results</a></li>
+            
+
+<li class="sibling">
+        <a href="../../../spirit-scores/index.html">Spirit Scores</a>
+        
+
+</li>
+
+<li class="active">
+        <a href="../../index.html">Prediction Contest</a>
+        
+
+</li>
+
+          
+        </ul>
+      </div>
+    </div>
+  
+
+  <div class="container">
+    <div class="content">
+    
+
+  <div class="row">
+    <div class="col-md-8 neat-images cms-content">
+        <div class="plugin">
+  <p>Check the outcomes below. These were the <a href="../../rules/index.html">rules</a> and <a href="../../prediction-prizes/index.html">prizes</a>. Note that the submission nicknamed "Average Prediction" runs outside the competition, it is just for comparison.</p>
+
+</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+        <h1>Louise's Prediction</h1>
+        <ul>
+            <li>score: 546 (open: 350 + mixed: 156 + women: 40)</li>
+            <li>created: Thursday, 28 May 2015, 21:05</li>
+            <li>last changed: Thursday, 28 May 2015, 21:05</li>
+        </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    
+        <div class="col-md-4">
+            <h1>Open Division</h1>
+          <div class="team-list ">
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">1</span><br />
+                </div>
+                <img src="../../../../static/flags/gb.440946f64cf5.png"></img>
+                <a target="_blank" href="../../../../signup/223/gb-open-national-team/index.html">GB Open National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Louise predicted GB Open in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">2</span><br />
+                </div>
+                <img src="../../../../static/flags/fi.7ffe0ba6def3.png"></img>
+                <a target="_blank" href="../../../../signup/245/finnish-open-national-team/index.html">Finnish Open National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Finland Open 10 ranks higher than its actual final rank.">+
+                  
+                  10</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">3</span><br />
+                </div>
+                <img src="../../../../static/flags/ru.695990a8e997.png"></img>
+                <a target="_blank" href="../../../../signup/240/russian-open-national-team/index.html">Russian Open National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Russia Open 18 ranks higher than its actual final rank.">+
+                  
+                  18</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">4</span><br />
+                </div>
+                <img src="../../../../static/flags/ch.c23c77ca1513.png"></img>
+                <a target="_blank" href="../../../../signup/212/freespeed/index.html">Freespeed</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Freespeed 5 ranks higher than its actual final rank.">+
+                  
+                  5</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">5</span><br />
+                </div>
+                <img src="../../../../static/flags/ru.695990a8e997.png"></img>
+                <a target="_blank" href="../../../../signup/255/luckygrass/index.html">LuckyGrass</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted LuckyGrass 34 ranks higher than its actual final rank.">+
+                  
+                  34</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">6</span><br />
+                </div>
+                <img src="../../../../static/flags/it.a7cf4483a592.png"></img>
+                <a target="_blank" href="../../../../signup/225/italian-national-open/index.html">Italian National Open</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Louise predicted Italy Open in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">7</span><br />
+                </div>
+                <img src="../../../../static/flags/pl.5b1373331d14.png"></img>
+                <a target="_blank" href="../../../../signup/224/polish-open-national-team/index.html">Polish Open National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Poland Open 12 ranks higher than its actual final rank.">+
+                  
+                  12</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">8</span><br />
+                </div>
+                <img src="../../../../static/flags/dk.9458ab1e5684.png"></img>
+                <a target="_blank" href="../../../../signup/132/danish-open-national-team/index.html">Danish Open National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Denmark Open 1 rank lower than its actual final rank.">
+                  
+                  -1</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">9</span><br />
+                </div>
+                <img src="../../../../static/flags/be.a1c7d055c291.png"></img>
+                <a target="_blank" href="../../../../signup/254/belgian-open-national-team/index.html">Belgian Open National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Belgium 1 rank higher than its actual final rank.">+
+                  
+                  1</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">10</span><br />
+                </div>
+                <img src="../../../../static/flags/ch.c23c77ca1513.png"></img>
+                <a target="_blank" href="../../../../signup/21/crazy-dogs/index.html">Crazy Dogs</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Crazy Dogs 14 ranks higher than its actual final rank.">+
+                  
+                  14</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">11</span><br />
+                </div>
+                <img src="../../../../static/flags/gb.440946f64cf5.png"></img>
+                <a target="_blank" href="../../../../signup/292/chevron-action-flash/index.html">Chevron Action Flash</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Chevy 7 ranks higher than its actual final rank.">+
+                  
+                  7</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">12</span><br />
+                </div>
+                <img src="../../../../static/flags/cz.be5cd664057a.png"></img>
+                <a target="_blank" href="../../../../signup/277/czech-open-national-team/index.html">Czech Open National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Czech Open 10 ranks lower than its actual final rank.">
+                  
+                  -10</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">13</span><br />
+                </div>
+                <img src="../../../../static/flags/fr.ca7991644678.png"></img>
+                <a target="_blank" href="../../../../signup/114/french-open-national-team/index.html">French Open National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted France Open 8 ranks lower than its actual final rank.">
+                  
+                  -8</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">14</span><br />
+                </div>
+                <img src="../../../../static/flags/gb.440946f64cf5.png"></img>
+                <a target="_blank" href="../../../../signup/238/fire-of-london/index.html">Fire of London</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Louise predicted Fire in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">15</span><br />
+                </div>
+                <img src="../../../../static/flags/nl.3592e391492f.png"></img>
+                <a target="_blank" href="../../../../signup/3/dutch-open-national-team/index.html">Dutch Open National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Netherlands Open 5 ranks higher than its actual final rank.">+
+                  
+                  5</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">16</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/111/muc/index.html">M.U.C.</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted M.U.C. 9 ranks higher than its actual final rank.">+
+                  
+                  9</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">17</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/276/bad-skid/index.html">Bad Skid</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Bad Skid 1 rank lower than its actual final rank.">
+                  
+                  -1</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">18</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/107/heidees/index.html">Heidees</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Heidees 14 ranks lower than its actual final rank.">
+                  
+                  -14</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">19</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/23/frank-n/index.html">Frank N</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Frank N 3 ranks higher than its actual final rank.">+
+                  
+                  3</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">20</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/120/wall-city/index.html">Wall City</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Wall City 14 ranks higher than its actual final rank.">+
+                  
+                  14</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">21</span><br />
+                </div>
+                <img src="../../../../static/flags/at.d135212d8089.png"></img>
+                <a target="_blank" href="../../../../signup/68/catchup-graz/index.html">Catchup Graz</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Catchup 13 ranks lower than its actual final rank.">
+                  
+                  -13</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">22</span><br />
+                </div>
+                <img src="../../../../static/flags/ch.c23c77ca1513.png"></img>
+                <a target="_blank" href="../../../../signup/279/flying-angels-bern/index.html">Flying Angels Bern</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted FAB 9 ranks higher than its actual final rank.">+
+                  
+                  9</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">23</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/267/german-u23-open-national-team/index.html">German U23 Open National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Germany U23 Open  20 ranks lower than its actual final rank.">
+                  
+                  -20</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">24</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/126/7-schwaben/index.html">7 Schwaben</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted 7 Schwaben 2 ranks higher than its actual final rank.">+
+                  
+                  2</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">25</span><br />
+                </div>
+                <img src="../../../../static/flags/be.a1c7d055c291.png"></img>
+                <a target="_blank" href="../../../../signup/85/mooncatchers/index.html">Mooncatchers</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Mooncatchers 13 ranks higher than its actual final rank.">+
+                  
+                  13</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">26</span><br />
+                </div>
+                <img src="../../../../static/flags/es.1817004ca5ac.png"></img>
+                <a target="_blank" href="../../../../signup/100/spain-open-national-team/index.html">Spain Open National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Spain Open 2 ranks higher than its actual final rank.">+
+                  
+                  2</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">27</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/259/frizzly-bears/index.html">Frizzly Bears</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Frizzly Bears 4 ranks lower than its actual final rank.">
+                  
+                  -4</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">28</span><br />
+                </div>
+                <img src="../../../../static/flags/at.d135212d8089.png"></img>
+                <a target="_blank" href="../../../../signup/42/thebigez/index.html">thebigEZ</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted thebigEZ 17 ranks lower than its actual final rank.">
+                  
+                  -17</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">29</span><br />
+                </div>
+                <img src="../../../../static/flags/at.d135212d8089.png"></img>
+                <a target="_blank" href="../../../../signup/173/fwd/index.html">FWD&gt;&gt;</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted FWD&gt;&gt; 14 ranks lower than its actual final rank.">
+                  
+                  -14</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">30</span><br />
+                </div>
+                <img src="../../../../static/flags/at.d135212d8089.png"></img>
+                <a target="_blank" href="../../../../signup/235/innsiders-kundl/index.html">INNsiders Kundl</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Louise predicted INNsiders in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">31</span><br />
+                </div>
+                <img src="../../../../static/flags/ie.3fdafac140f7.png"></img>
+                <a target="_blank" href="../../../../signup/10/nuim-ultimate/index.html">NUIM Ultimate</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Maynooth Ultimate 9 ranks higher than its actual final rank.">+
+                  
+                  9</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">32</span><br />
+                </div>
+                <img src="../../../../static/flags/ie.3fdafac140f7.png"></img>
+                <a target="_blank" href="../../../../signup/298/dublin-gravity/index.html">Dublin Gravity</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Gravity 4 ranks higher than its actual final rank.">+
+                  
+                  4</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">33</span><br />
+                </div>
+                <img src="../../../../static/flags/gb.440946f64cf5.png"></img>
+                <a target="_blank" href="../../../../signup/281/cambridge-ultimate/index.html">Cambridge Ultimate</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted CUlt 4 ranks higher than its actual final rank.">+
+                  
+                  4</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">34</span><br />
+                </div>
+                <img src="../../../../static/flags/it.a7cf4483a592.png"></img>
+                <a target="_blank" href="../../../../signup/226/italian-u23-open-national-team/index.html">Italian U23 Open National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Italy U23 Open 1 rank lower than its actual final rank.">
+                  
+                  -1</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">35</span><br />
+                </div>
+                <img src="../../../../static/flags/gb.440946f64cf5.png"></img>
+                <a target="_blank" href="../../../../signup/246/gb-u23-open/index.html">GB U23 Open</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted GB U23 Open 22 ranks lower than its actual final rank.">
+                  
+                  -22</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">36</span><br />
+                </div>
+                <img src="../../../../static/flags/hu.a436a7a1a57b.png"></img>
+                <a target="_blank" href="../../../../signup/69/lezer-pavak/index.html">Lézer Pávák</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Lézer Pávák 9 ranks lower than its actual final rank.">
+                  
+                  -9</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">37</span><br />
+                </div>
+                <img src="../../../../static/flags/gb.440946f64cf5.png"></img>
+                <a target="_blank" href="../../../../signup/22/gb-masters-open-national-team/index.html">GB Masters Open National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted GB Master Open 20 ranks lower than its actual final rank.">
+                  
+                  -20</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">38</span><br />
+                </div>
+                <img src="../../../../static/flags/fr.ca7991644678.png"></img>
+                <a target="_blank" href="../../../../signup/131/friselis/index.html">Friselis</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Friselis 6 ranks lower than its actual final rank.">
+                  
+                  -6</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">39</span><br />
+                </div>
+                <img src="../../../../static/flags/us.5566dea3b847.png"></img>
+                <a target="_blank" href="../../../../signup/219/tower/index.html">Tower</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Tower 4 ranks lower than its actual final rank.">
+                  
+                  -4</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">40</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/272/gummibarchen/index.html">Gummibärchen</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Gummis 11 ranks lower than its actual final rank.">
+                  
+                  -11</span>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+            <h1>Mixed Division</h1>
+          <div class="team-list ">
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">1</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/217/german-mixed-national-team/index.html">German Mixed National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Germany Mixed 2 ranks higher than its actual final rank.">+
+                  
+                  2</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">2</span><br />
+                </div>
+                <img src="../../../../static/flags/fr.ca7991644678.png"></img>
+                <a target="_blank" href="../../../../signup/47/french-mixed-national-team/index.html">French Mixed National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Louise predicted France Mixed in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">3</span><br />
+                </div>
+                <img src="../../../../static/flags/ru.695990a8e997.png"></img>
+                <a target="_blank" href="../../../../signup/283/russian-mixed-national-team/index.html">Russian Mixed National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Russia Mixed 12 ranks higher than its actual final rank.">+
+                  
+                  12</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">4</span><br />
+                </div>
+                <img src="../../../../static/flags/be.a1c7d055c291.png"></img>
+                <a target="_blank" href="../../../../signup/271/belgian-mixed-national-team/index.html">Belgian Mixed National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Belgium Mixed 13 ranks higher than its actual final rank.">+
+                  
+                  13</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">5</span><br />
+                </div>
+                <img src="../../../../static/flags/it.a7cf4483a592.png"></img>
+                <a target="_blank" href="../../../../signup/229/italian-mixed-national-team/index.html">Italian Mixed National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Italy Mixed 9 ranks higher than its actual final rank.">+
+                  
+                  9</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">6</span><br />
+                </div>
+                <img src="../../../../static/flags/es.1817004ca5ac.png"></img>
+                <a target="_blank" href="../../../../signup/37/quijotesdulcineas-ultimate-madrid/index.html">Quijotes+Dulcineas Ultimate Madrid</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Quijotes+Dulcineas 5 ranks higher than its actual final rank.">+
+                  
+                  5</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">7</span><br />
+                </div>
+                <img src="../../../../static/flags/fi.7ffe0ba6def3.png"></img>
+                <a target="_blank" href="../../../../signup/268/finnish-mixed-national-team/index.html">Finnish Mixed National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted FIN 1 rank lower than its actual final rank.">
+                  
+                  -1</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">8</span><br />
+                </div>
+                <img src="../../../../static/flags/cz.be5cd664057a.png"></img>
+                <a target="_blank" href="../../../../signup/253/czech-mixed-national-team/index.html">Czech Mixed National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Czech Mixed 4 ranks lower than its actual final rank.">
+                  
+                  -4</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">9</span><br />
+                </div>
+                <img src="../../../../static/flags/ie.3fdafac140f7.png"></img>
+                <a target="_blank" href="../../../../signup/206/ireland-mixed-team/index.html">Ireland Mixed Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Ireland Mixed 8 ranks lower than its actual final rank.">
+                  
+                  -8</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">10</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/64/wurzburg-disc-o-fever/index.html">Würzburg Disc-o-Fever</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Disc-o-Fever 2 ranks higher than its actual final rank.">+
+                  
+                  2</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">11</span><br />
+                </div>
+                <img src="../../../../static/flags/um.5566dea3b847.png"></img>
+                <a target="_blank" href="../../../../signup/230/captain-crook-aloha-borealis/index.html">Captain Crook (Aloha Borealis)</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted HiAk 9 ranks higher than its actual final rank.">+
+                  
+                  9</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">12</span><br />
+                </div>
+                <img src="../../../../static/flags/il.45f505117486.png"></img>
+                <a target="_blank" href="../../../../signup/89/oy-vey-element/index.html">Oy Vey! (Element)</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Oy Vey!  9 ranks higher than its actual final rank.">+
+                  
+                  9</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">13</span><br />
+                </div>
+                <img src="../../../../static/flags/ee.274afcfe938e.png"></img>
+                <a target="_blank" href="../../../../signup/102/sexy-legs/index.html">Sexy Legs</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Sexy Legs 3 ranks higher than its actual final rank.">+
+                  
+                  3</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">14</span><br />
+                </div>
+                <img src="../../../../static/flags/us.5566dea3b847.png"></img>
+                <a target="_blank" href="../../../../signup/204/democratic-peoples-republic-of-geo/index.html">Democratic People&#39;s Republic of Geo</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted DPRG 6 ranks lower than its actual final rank.">
+                  
+                  -6</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">15</span><br />
+                </div>
+                <img src="../../../../static/flags/us.5566dea3b847.png"></img>
+                <a target="_blank" href="../../../../signup/236/manifest-destiny/index.html">Manifest Destiny</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Manifest Destiny 10 ranks lower than its actual final rank.">
+                  
+                  -10</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">16</span><br />
+                </div>
+                <img src="../../../../static/flags/tr.55542e179b69.png"></img>
+                <a target="_blank" href="../../../../signup/101/bosforce/index.html">Bosforce</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted BOS 8 ranks higher than its actual final rank.">+
+                  
+                  8</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">17</span><br />
+                </div>
+                <img src="../../../../static/flags/ie.3fdafac140f7.png"></img>
+                <a target="_blank" href="../../../../signup/139/rebel-ultimate/index.html">Rebel Ultimate</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Rebel 2 ranks higher than its actual final rank.">+
+                  
+                  2</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">18</span><br />
+                </div>
+                <img src="../../../../static/flags/sk.cade7dcdd891.png"></img>
+                <a target="_blank" href="../../../../signup/285/slovak-mixed-national-team/index.html">Slovak Mixed National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Slovakia Mixed 11 ranks lower than its actual final rank.">
+                  
+                  -11</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">19</span><br />
+                </div>
+                <img src="../../../../static/flags/us.5566dea3b847.png"></img>
+                <a target="_blank" href="../../../../signup/261/cuddle-puddle/index.html">Cuddle Puddle</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted CudPud 4 ranks higher than its actual final rank.">+
+                  
+                  4</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">20</span><br />
+                </div>
+                <img src="../../../../static/flags/nl.3592e391492f.png"></img>
+                <a target="_blank" href="../../../../signup/1/rusty-bikes/index.html">Rusty Bikes</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Rusty Bikes 7 ranks lower than its actual final rank.">
+                  
+                  -7</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">21</span><br />
+                </div>
+                <img src="../../../../static/flags/nl.3592e391492f.png"></img>
+                <a target="_blank" href="../../../../signup/118/airborn/index.html">Airborn</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Airborn 12 ranks lower than its actual final rank.">
+                  
+                  -12</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">22</span><br />
+                </div>
+                <img src="../../../../static/flags/ca.405706bacf29.png"></img>
+                <a target="_blank" href="../../../../signup/265/international-airspace/index.html">International Airspace</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Louise predicted IA  in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">23</span><br />
+                </div>
+                <img src="../../../../static/flags/dk.9458ab1e5684.png"></img>
+                <a target="_blank" href="../../../../signup/203/danish-mixed-national-team/index.html">Danish Mixed National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Denmark Mixed 13 ranks lower than its actual final rank.">
+                  
+                  -13</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">24</span><br />
+                </div>
+                <img src="../../../../static/flags/lt.4ff3abd8ec54.png"></img>
+                <a target="_blank" href="../../../../signup/293/drop-that-smile-aka-bubblicious/index.html">Drop that smile a.k.a. Bubblicious</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Bubbles 6 ranks lower than its actual final rank.">
+                  
+                  -6</span>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+            <h1>Women Division</h1>
+          <div class="team-list ">
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">1</span><br />
+                </div>
+                <img src="../../../../static/flags/gb.440946f64cf5.png"></img>
+                <a target="_blank" href="../../../../signup/241/gb-women-national-team/index.html">GB Women National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted GB Women 4 ranks higher than its actual final rank.">+
+                  
+                  4</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">2</span><br />
+                </div>
+                <img src="../../../../static/flags/ru.695990a8e997.png"></img>
+                <a target="_blank" href="../../../../signup/233/russian-women-national-team/index.html">Russian Women National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Louise predicted Russia Women in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">3</span><br />
+                </div>
+                <img src="../../../../static/flags/fi.7ffe0ba6def3.png"></img>
+                <a target="_blank" href="../../../../signup/244/finland-women-national-team/index.html">Finland Women National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Finland Women 1 rank higher than its actual final rank.">+
+                  
+                  1</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">4</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/251/german-women-national-team/index.html">German Women National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Germany Women 3 ranks lower than its actual final rank.">
+                  
+                  -3</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">5</span><br />
+                </div>
+                <img src="../../../../static/flags/se.d31040bd3ced.png"></img>
+                <a target="_blank" href="../../../../signup/282/swedish-women-national-team/index.html">Swedish Women National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Sweden Women 4 ranks higher than its actual final rank.">+
+                  
+                  4</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">6</span><br />
+                </div>
+                <img src="../../../../static/flags/dk.9458ab1e5684.png"></img>
+                <a target="_blank" href="../../../../signup/210/danish-women-national-team/index.html">Danish Women National Team </a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Denmark Women 1 rank higher than its actual final rank.">+
+                  
+                  1</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">7</span><br />
+                </div>
+                <img src="../../../../static/flags/ch.c23c77ca1513.png"></img>
+                <a target="_blank" href="../../../../signup/264/swiss-women-national-team/index.html">Swiss Women National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Switzerland Women 4 ranks lower than its actual final rank.">
+                  
+                  -4</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">8</span><br />
+                </div>
+                <img src="../../../../static/flags/cz.be5cd664057a.png"></img>
+                <a target="_blank" href="../../../../signup/252/czech-women-national-team/index.html">Czech Women National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Czech Women 7 ranks higher than its actual final rank.">+
+                  
+                  7</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">9</span><br />
+                </div>
+                <img src="../../../../static/flags/it.a7cf4483a592.png"></img>
+                <a target="_blank" href="../../../../signup/231/italian-women-national-women/index.html">Italian Women National Women</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Italy Women 1 rank lower than its actual final rank.">
+                  
+                  -1</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">10</span><br />
+                </div>
+                <img src="../../../../static/flags/ie.3fdafac140f7.png"></img>
+                <a target="_blank" href="../../../../signup/237/irish-women-national-team/index.html">Irish Women National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Ireland Women 1 rank higher than its actual final rank.">+
+                  
+                  1</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">11</span><br />
+                </div>
+                <img src="../../../../static/flags/fr.ca7991644678.png"></img>
+                <a target="_blank" href="../../../../signup/55/equipe-de-france-feminine/index.html">Équipe de France Féminine</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted France Women 5 ranks lower than its actual final rank.">
+                  
+                  -5</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">12</span><br />
+                </div>
+                <img src="../../../../static/flags/be.a1c7d055c291.png"></img>
+                <a target="_blank" href="../../../../signup/242/belgian-women-national-team/index.html">Belgian Women National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Belgium Women 2 ranks lower than its actual final rank.">
+                  
+                  -2</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">13</span><br />
+                </div>
+                <img src="../../../../static/flags/nl.3592e391492f.png"></img>
+                <a target="_blank" href="../../../../signup/290/dutch-women-national-team/index.html">Dutch Women National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Louise predicted Dutch Women in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">14</span><br />
+                </div>
+                <img src="../../../../static/flags/es.1817004ca5ac.png"></img>
+                <a target="_blank" href="../../../../signup/218/spanish-women-national-team/index.html">Spanish Women National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-success" title="Louise predicted Spain Women 2 ranks higher than its actual final rank.">+
+                  
+                  2</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">15</span><br />
+                </div>
+                <img src="../../../../static/flags/at.d135212d8089.png"></img>
+                <a target="_blank" href="../../../../signup/201/box/index.html">Box</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Box 3 ranks lower than its actual final rank.">
+                  
+                  -3</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">16</span><br />
+                </div>
+                <img src="../../../../static/flags/at.d135212d8089.png"></img>
+                <a target="_blank" href="../../../../signup/113/eyecatchers/index.html">Eyecatchers</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-danger" title="Louise predicted Eyecatchers 2 ranks lower than its actual final rank.">
+                  
+                  -2</span>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+    
+  </div>
+
+
+
+    </div>
+  </div>
+
+</div>
+
+
+
+  </div>
+  
+
+<div id="sponsors">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <span class="plugin_picture">
+<a href="http://www.bavaria.com/">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/sponsor_bavaria_lDrW5BP.png" alt="" />
+</a>
+</span><span class="plugin_picture align-right">
+<a href="http://fiveultimate.com/">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/sponsor_five_q5BnBXF.png" alt="" />
+</a>
+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<div id="footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12">
+        <ul class="sitemap">
+          <h3>Sitemap</h3>
+          
+
+  
+
+  
+    <li class="ancestor">
+        <a href="../../../index.html">Results</a>
+        
+          <ul>
+            
+
+  
+    <li class="sibling">
+        <a href="../../../spirit-scores/index.html">Spirit Scores</a>
+        
+    </li>
+  
+
+  
+    <li class="selected">
+        <a href="../../index.html">Prediction Contest</a>
+        
+          <ul>
+            
+
+  
+    <li class="descendant">
+        <a href="../../rules/index.html">Prediction Rules</a>
+        
+    </li>
+  
+
+  
+    <li class="descendant">
+        <a href="../../prediction-prizes/index.html">Prediction Prizes</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news.1.html">News</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../news/categories/index.html">Categories</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/tags/index.html">Tags</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../news/tags/Windmill2015/index.html">Windmill2015</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/index.html">Authors</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../news/authors/aljo/index.html">Aljaž Jazz Gaberšek</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/tim.dejong/index.html">Tim de Jong</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/ravi/index.html">Ravi Vasudevan</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/nan/index.html">Nan Derosa</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/bmark/index.html">bmark</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/les/index.html">Les Kleuver</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/katie/index.html">Katie Stephenson</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../signup/index.html">Registration</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../signup/pickup/index.html">Pickup</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../signup/groupme/index.html">GroupMe</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../signup/volunteers-2015/index.html">Volunteers 2015</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/index.html">Tournament info</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/directions/index.html">Directions</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/team-selection/index.html">Team Selection</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/accommodation/index.html">Accommodation</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/rules-and-format/index.html">Rules and format</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/spirit-captains/index.html">Spirit Captains</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/food/index.html">Food</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/faq/index.html">FAQ</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/map/index.html">Map</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/index.html">About</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../about/crew/index.html">Crew</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/what-ultimate/index.html">What is Ultimate</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/green-windmill/index.html">Green Windmill</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/history/index.html">History</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../about/history/spirit-history-2014/index.html">spirit-history-2014</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/sponsors/index.html">Sponsors</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/amsterdam/index.html">Amsterdam</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/windmill-gear/index.html">Windmill Gear</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/contact-us/index.html">Contact us</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/i-wanna-be-windmill/index.html">I wanna BE the Windmill</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../event/index.html">Event</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../event/play-schedule/index.html">Playing Schedule</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../event/entertainment-schedule/index.html">Entertainment Schedule</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../event/map/index.html">Map</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../event/performances/index.html">Performances</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/index.html">Media</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/index.html">Photos</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/index.html">Photos 2015</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/2015-atmosphere/index.html">2015 Atmosphere</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/2015-activities/index.html">2015 Activities</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/2015-best/index.html">2015 Best of</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/2015-parties/index.html">2015 Parties</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/2015-finals/index.html">2015 Finals</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/2015-open/index.html">2015 Open</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/2015-mixed/index.html">2015 Mixed</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/2015-women/index.html">2015 Women</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/2015-prize-ceremony/index.html">2015 Prize Ceremony</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/index.html">Photos 2014</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-best/index.html">2014 Best of</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-activities/index.html">2014 Activities</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-atmosphere/index.html">2014 Atmosphere</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-parties/index.html">2014 Parties</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-final/index.html">2014 Finals</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-open/index.html">2014 Open</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-mixed/index.html">2014 Mixed</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-women/index.html">2014 Women</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-prize-ceremony/index.html">2014 Prize Ceremony</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-team-pictures/index.html">2014 Team Pictures</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/video/index.html">Video</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/press/index.html">Press</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/index.html">Intranet</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../intranet/how-tos/index.html">How to&#39;s-CUC</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/how-s-pec/index.html">How to&#39;s-PEC</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/how-s-fab-copy/index.html">How to&#39;s-FAB</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/how-s-fav/index.html">How to&#39;s-FAV</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/tasksheet/index.html">What Can I Do</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/newsletters/index.html">Newsletters</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/one-day-well-laugh/index.html">One Day We&#39;ll Laugh...</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/decisions/index.html">Decisions</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="plugin">
+  <h3>Contact us</h3><p>Have questions, feedback or something cool to share? <a href="../../../../about/contact-us/index.html">visit our contact page</a></p>
+</div>
+      </div>
+
+      <div class="col-md-6">
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+  <script type="text/javascript">
+      STATIC = "/static/website/";
+  </script>
+
+  <script type="text/javascript" src="../../../../static/website/components/jquery/jquery.min.ccd0edd113b7.js"></script>
+  <script type="text/javascript" src="../../../../static/website/bootstrap/js/bootstrap.min.1bee61361b1c.js"></script>
+  <script type="text/javascript" src="../../../../static/website/bootstrap/js/ekko-lightbox.757cd416fcab.js"></script>
+
+  
+
+  
+
+
+<!-- google anafantasticalitics //-->
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-7370068-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  </body>
+</html>

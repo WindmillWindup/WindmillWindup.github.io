@@ -1,0 +1,1882 @@
+
+<!DOCTYPE html>
+<html>
+  <head><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationTime":3799,"transactionName":"Ml1RYBRVVkZRUkdaXgsXdUEIV0xcX18cUFwWFkVdA0NLD1RUR1JYCUs=","errorBeacon":"bam.nr-data.net","beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"4760ed8ac7","applicationID":"2962551","agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+    <title>Windmill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="blitz" content="mu-ec4a98b2-f1934bb3-eb6c9300-c874e3fc">
+    <!-- Bootstrap -->
+    <link href="../../../../static/website/bootstrap/css/bootstrap.min.95208a901811.css" rel="stylesheet" media="screen" />
+    <link href="../../../../static/website/font-awesome/css/font-awesome.min.fa6868c22cec.css" rel="stylesheet" />
+    <link href="../../../../static/website/css/base.3ab320e2b36b.css" rel="stylesheet" media="screen" />
+    <link href="../../../../static/website/css/typography.8647f22262a2.css" rel="stylesheet" media="screen" />
+    <link href="../../../../static/website/css/bootstrap-override.cd8d91741a8e.css" rel="stylesheet" media="screen" />
+    <link href="../../../../static/website/css/MyFontsWebfontsKit.d7331c7f753a.css" rel="stylesheet" media="screen" />
+
+    <link href="../../../../static/website/favicon.7b24124b3db0.ico" rel="icon" type="image/x-icon" />
+
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
+    
+
+    
+  </head>
+
+  <body>
+    
+    
+
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../../index.html"><img src="../../../../static/website/img/windmill_logo_small.96d3a2a88aa0.png" /></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          
+
+<li class="">
+        <a href="../../../../index.html">Home</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../results/index.html">Results</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../news.1.html">News</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../signup/index.html">Registration</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../tournament-info/index.html">Tournament info</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../about/index.html">About</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../event/index.html">Event</a>
+        
+
+</li>
+
+<li class="active">
+        <a href="../../../index.html">Media</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../intranet/index.html">Intranet</a>
+        
+
+</li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://twitter.com/windmilltourney" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+          <li><a href="https://www.facebook.com/WindmillUltimate" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+          <li><a href="http://www.youtube.com/user/windmillwindup" target="_blank"><i class="fa fa-youtube fa-lg"></i></a></li>
+          <li><a href="https://vimeo.com/channels/648612" target="_blank"><i class="fa fa-vimeo-square fa-lg"></i></a></li>
+        </ul>
+      </div>
+     </div>
+ </nav>
+
+
+  <div id="base-content">
+    
+
+  <div class="container">
+    <div id="section-header">
+      <div class="spotlight">
+  <img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/40/media_3%20small.jpg" class="bg" />
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="restrainer">
+        
+        <h1>Photo</h1>
+        
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+  
+    <div class="container">
+      <div id="navsub">
+        <ul class="nav nav-tabs">
+          
+            
+            
+            <li ><a href="../index.html">Photos 2015</a></li>
+            
+
+<li class="active">
+        <a href="../../index.html">Photos</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../video/index.html">Video</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../press/index.html">Press</a>
+        
+
+</li>
+
+          
+        </ul>
+      </div>
+    </div>
+  
+
+  <div class="container">
+    <div class="content">
+    
+  <div class="row">
+    <div class="col-md-8 neat-images cms-content">
+        
+
+
+
+  
+    <div class="row">
+	    <div class="col-md-12">
+	      <h3>Best of 2015</h3>
+      </div>
+    </div>
+	
+
+<div class="gallery">
+  <div class="row">
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18273537443" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/292/18273537443_f97635502e_b.jpg"><img src="http://farm1.static.flickr.com/292/18273537443_f97635502e_b.jpg" alt="DSC_0015"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18708011769" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/364/18708011769_c9b19613fe_b.jpg"><img src="http://farm1.static.flickr.com/364/18708011769_c9b19613fe_b.jpg" alt="DSC_0092"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18888955102" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/394/18888955102_4fd1a5b57d_b.jpg"><img src="http://farm1.static.flickr.com/394/18888955102_4fd1a5b57d_b.jpg" alt="DSC_0242"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18706485058" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/413/18706485058_99f82dcf91_b.jpg"><img src="http://farm1.static.flickr.com/413/18706485058_99f82dcf91_b.jpg" alt="DSC_0301"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18271614674" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/347/18271614674_9c04d818af_b.jpg"><img src="http://farm1.static.flickr.com/347/18271614674_9c04d818af_b.jpg" alt="DSC_4472"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18271610904" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/263/18271610904_8727cb89ec_b.jpg"><img src="http://farm1.static.flickr.com/263/18271610904_8727cb89ec_b.jpg" alt="IMG_0106"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18867894356" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm4.static.flickr.com/3789/18867894356_635d1645f4_b.jpg"><img src="http://farm4.static.flickr.com/3789/18867894356_635d1645f4_b.jpg" alt="IMG_0119"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18888926152" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/415/18888926152_73b8d940cb_b.jpg"><img src="http://farm1.static.flickr.com/415/18888926152_73b8d940cb_b.jpg" alt="IMG_0396"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18867885366" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/463/18867885366_4ca9da3574_b.jpg"><img src="http://farm1.static.flickr.com/463/18867885366_4ca9da3574_b.jpg" alt="IMG_0422"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18888924002" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm4.static.flickr.com/3671/18888924002_3034c3e1a5_b.jpg"><img src="http://farm4.static.flickr.com/3671/18888924002_3034c3e1a5_b.jpg" alt="IMG_0432"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18867883986" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm6.static.flickr.com/5605/18867883986_7b0a16b91e_b.jpg"><img src="http://farm6.static.flickr.com/5605/18867883986_7b0a16b91e_b.jpg" alt="IMG_1395"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18888920892" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm4.static.flickr.com/3872/18888920892_5a158ab5c4_b.jpg"><img src="http://farm4.static.flickr.com/3872/18888920892_5a158ab5c4_b.jpg" alt="IMG_1469"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18888919892" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm4.static.flickr.com/3944/18888919892_2cd71ec1f4_b.jpg"><img src="http://farm4.static.flickr.com/3944/18888919892_2cd71ec1f4_b.jpg" alt="IMG_1471"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18273496703" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/457/18273496703_2f09c45ee9_b.jpg"><img src="http://farm1.static.flickr.com/457/18273496703_2f09c45ee9_b.jpg" alt="IMG_1484"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18706439090" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm6.static.flickr.com/5598/18706439090_6c1f436a84_b.jpg"><img src="http://farm6.static.flickr.com/5598/18706439090_6c1f436a84_b.jpg" alt="IMG_1501"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18894133575" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/399/18894133575_f6050c2b94_b.jpg"><img src="http://farm1.static.flickr.com/399/18894133575_f6050c2b94_b.jpg" alt="IMG_1579"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18894130975" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm6.static.flickr.com/5577/18894130975_d01bcd52bd_b.jpg"><img src="http://farm6.static.flickr.com/5577/18894130975_d01bcd52bd_b.jpg" alt="IMG_1627"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18867873536" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm4.static.flickr.com/3785/18867873536_7a48156c97_b.jpg"><img src="http://farm4.static.flickr.com/3785/18867873536_7a48156c97_b.jpg" alt="IMG_1633"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18894129725" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm4.static.flickr.com/3767/18894129725_60f237ab3b_b.jpg"><img src="http://farm4.static.flickr.com/3767/18894129725_60f237ab3b_b.jpg" alt="IMG_1629"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18271584884" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm6.static.flickr.com/5567/18271584884_ca6c255571_b.jpg"><img src="http://farm6.static.flickr.com/5567/18271584884_ca6c255571_b.jpg" alt="IMG_1652"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18867864236" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm4.static.flickr.com/3917/18867864236_1a93063985_b.jpg"><img src="http://farm4.static.flickr.com/3917/18867864236_1a93063985_b.jpg" alt="IMG_1697"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18273465623" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/329/18273465623_ea874fce37_b.jpg"><img src="http://farm1.static.flickr.com/329/18273465623_ea874fce37_b.jpg" alt="IMG_1684"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18894197585" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm4.static.flickr.com/3852/18894197585_33a63ccd8a_b.jpg"><img src="http://farm4.static.flickr.com/3852/18894197585_33a63ccd8a_b.jpg" alt="021-DSC_0577"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18708034969" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/376/18708034969_fabeddd08f_b.jpg"><img src="http://farm1.static.flickr.com/376/18708034969_fabeddd08f_b.jpg" alt="011-DSC_1213"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18888978482" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm6.static.flickr.com/5592/18888978482_5a2725fa15_b.jpg"><img src="http://farm6.static.flickr.com/5592/18888978482_5a2725fa15_b.jpg" alt="031-DSC_0876"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18273555913" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm6.static.flickr.com/5595/18273555913_18f9ca7dd1_b.jpg"><img src="http://farm6.static.flickr.com/5595/18273555913_18f9ca7dd1_b.jpg" alt="037-DSC_0969"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18273555793" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/562/18273555793_e0d6d1ac2a_b.jpg"><img src="http://farm1.static.flickr.com/562/18273555793_e0d6d1ac2a_b.jpg" alt="084-DSC_0714"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18271652224" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm4.static.flickr.com/3871/18271652224_6672b11689_b.jpg"><img src="http://farm4.static.flickr.com/3871/18271652224_6672b11689_b.jpg" alt="086-DSC_0726"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18271650704" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/539/18271650704_ec29be925d_b.jpg"><img src="http://farm1.static.flickr.com/539/18271650704_ec29be925d_b.jpg" alt="091-DSC_0775"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18888973942" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm6.static.flickr.com/5529/18888973942_6164e26a06_b.jpg"><img src="http://farm6.static.flickr.com/5529/18888973942_6164e26a06_b.jpg" alt="102-DSC_0905"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18867934436" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/295/18867934436_4ebce264c2_b.jpg"><img src="http://farm1.static.flickr.com/295/18867934436_4ebce264c2_b.jpg" alt="097-DSC_0823"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18708027889" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/506/18708027889_98ca5acff0_b.jpg"><img src="http://farm1.static.flickr.com/506/18708027889_98ca5acff0_b.jpg" alt="105-DSC_0951"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18271648204" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/258/18271648204_520206eca5_b.jpg"><img src="http://farm1.static.flickr.com/258/18271648204_520206eca5_b.jpg" alt="110-DSC_1033"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18273549543" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm4.static.flickr.com/3853/18273549543_e44c818cfd_b.jpg"><img src="http://farm4.static.flickr.com/3853/18273549543_e44c818cfd_b.jpg" alt="114-DSC_1061"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18706502778" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/512/18706502778_c23d1af4c5_b.jpg"><img src="http://farm1.static.flickr.com/512/18706502778_c23d1af4c5_b.jpg" alt="129-DSC_1116"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18706501258" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/536/18706501258_e5a636f972_b.jpg"><img src="http://farm1.static.flickr.com/536/18706501258_e5a636f972_b.jpg" alt="168-DSC_0582"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18706501418" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm4.static.flickr.com/3799/18706501418_294055b0cb_b.jpg"><img src="http://farm4.static.flickr.com/3799/18706501418_294055b0cb_b.jpg" alt="173-DSC_0611"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18706500808" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/277/18706500808_968efb3685_b.jpg"><img src="http://farm1.static.flickr.com/277/18706500808_968efb3685_b.jpg" alt="171-DSC_0609"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18706488470" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/531/18706488470_5b7dea7925_b.jpg"><img src="http://farm1.static.flickr.com/531/18706488470_5b7dea7925_b.jpg" alt="212-DSC_0978"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18897022971" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm4.static.flickr.com/3754/18897022971_bb5cb6be52_b.jpg"><img src="http://farm4.static.flickr.com/3754/18897022971_bb5cb6be52_b.jpg" alt="226-DSC_1072"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18897021741" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/381/18897021741_9a12bcb673_b.jpg"><img src="http://farm1.static.flickr.com/381/18897021741_9a12bcb673_b.jpg" alt="266-DSC_1341"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18897020831" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm4.static.flickr.com/3704/18897020831_e2f22614fd_b.jpg"><img src="http://farm4.static.flickr.com/3704/18897020831_e2f22614fd_b.jpg" alt="285-DSC_1405"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18708018699" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/507/18708018699_9cfd08917f_b.jpg"><img src="http://farm1.static.flickr.com/507/18708018699_9cfd08917f_b.jpg" alt="291-DSC_0041"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18706496038" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/300/18706496038_9ee79fcf38_b.jpg"><img src="http://farm1.static.flickr.com/300/18706496038_9ee79fcf38_b.jpg" alt="294-DSC_0091"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18867921766" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm4.static.flickr.com/3670/18867921766_07d04464d4_b.jpg"><img src="http://farm4.static.flickr.com/3670/18867921766_07d04464d4_b.jpg" alt="310-DSC_0191"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18271636004" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/352/18271636004_7704d29663_b.jpg"><img src="http://farm1.static.flickr.com/352/18271636004_7704d29663_b.jpg" alt="339-DSC_0277"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18271633164" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm4.static.flickr.com/3727/18271633164_2ce70105df_b.jpg"><img src="http://farm4.static.flickr.com/3727/18271633164_2ce70105df_b.jpg" alt="DSC_0058"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18888956092" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/484/18888956092_5eb4b0b912_b.jpg"><img src="http://farm1.static.flickr.com/484/18888956092_5eb4b0b912_b.jpg" alt="DSC_0170"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18706483888" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm6.static.flickr.com/5607/18706483888_1dc047f37a_b.jpg"><img src="http://farm6.static.flickr.com/5607/18706483888_1dc047f37a_b.jpg" alt="DSC_0388"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18897008711" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/353/18897008711_57da501f47_b.jpg"><img src="http://farm1.static.flickr.com/353/18897008711_57da501f47_b.jpg" alt="DSC_0453"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18273528743" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm6.static.flickr.com/5486/18273528743_1f4c353ceb_b.jpg"><img src="http://farm6.static.flickr.com/5486/18273528743_1f4c353ceb_b.jpg" alt="DSC_0462"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18894168325" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/393/18894168325_8bf2ed5c2b_b.jpg"><img src="http://farm1.static.flickr.com/393/18894168325_8bf2ed5c2b_b.jpg" alt="DSC_0509"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18273527383" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/449/18273527383_99024656ed_b.jpg"><img src="http://farm1.static.flickr.com/449/18273527383_99024656ed_b.jpg" alt="DSC_0567"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18867908816" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm4.static.flickr.com/3681/18867908816_2c1c117076_b.jpg"><img src="http://farm4.static.flickr.com/3681/18867908816_2c1c117076_b.jpg" alt="DSC_0778"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18271623134" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm6.static.flickr.com/5546/18271623134_9f26a34e07_b.jpg"><img src="http://farm6.static.flickr.com/5546/18271623134_9f26a34e07_b.jpg" alt="DSC_0585"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18706468430" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm4.static.flickr.com/3929/18706468430_b1a92b408c_b.jpg"><img src="http://farm4.static.flickr.com/3929/18706468430_b1a92b408c_b.jpg" alt="DSC_0828"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18867905976" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/514/18867905976_117acd6aa0_b.jpg"><img src="http://farm1.static.flickr.com/514/18867905976_117acd6aa0_b.jpg" alt="DSC_0878"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18706475818" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/507/18706475818_719a57c0f0_b.jpg"><img src="http://farm1.static.flickr.com/507/18706475818_719a57c0f0_b.jpg" alt="DSC_0935"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18706475998" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/402/18706475998_3220e3ddb6_b.jpg"><img src="http://farm1.static.flickr.com/402/18706475998_3220e3ddb6_b.jpg" alt="DSC_1064 copy"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18894161085" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/428/18894161085_6c605f4200_b.jpg"><img src="http://farm1.static.flickr.com/428/18894161085_6c605f4200_b.jpg" alt="DSC_1069 copy"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18707998049" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm4.static.flickr.com/3674/18707998049_c7330cb81c_b.jpg"><img src="http://farm4.static.flickr.com/3674/18707998049_c7330cb81c_b.jpg" alt="DSC_1170"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18707997019" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/260/18707997019_2406f36dd9_b.jpg"><img src="http://farm1.static.flickr.com/260/18707997019_2406f36dd9_b.jpg" alt="DSC_1387"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18271615524" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/519/18271615524_1783c101c8_b.jpg"><img src="http://farm1.static.flickr.com/519/18271615524_1783c101c8_b.jpg" alt="DSC_1696"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18896994151" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/259/18896994151_5b9ab19785_b.jpg"><img src="http://farm1.static.flickr.com/259/18896994151_5b9ab19785_b.jpg" alt="DSC_4565"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18706458470" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm6.static.flickr.com/5568/18706458470_054e246766_b.jpg"><img src="http://farm6.static.flickr.com/5568/18706458470_054e246766_b.jpg" alt="IMG_0037 copy"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18896989501" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/302/18896989501_02734c7318_b.jpg"><img src="http://farm1.static.flickr.com/302/18896989501_02734c7318_b.jpg" alt="IMG_0181 copy"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18273510423" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm6.static.flickr.com/5470/18273510423_9c27ec6589_b.jpg"><img src="http://farm6.static.flickr.com/5470/18273510423_9c27ec6589_b.jpg" alt="IMG_0212"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18273510443" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/549/18273510443_3899563319_b.jpg"><img src="http://farm1.static.flickr.com/549/18273510443_3899563319_b.jpg" alt="IMG_0246"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18896987091" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/393/18896987091_d3cfc7c786_b.jpg"><img src="http://farm1.static.flickr.com/393/18896987091_d3cfc7c786_b.jpg" alt="IMG_0312"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18273508603" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/337/18273508603_646c0f5e5a_b.jpg"><img src="http://farm1.static.flickr.com/337/18273508603_646c0f5e5a_b.jpg" alt="IMG_0327"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18888928682" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/404/18888928682_fa2b7d054f_b.jpg"><img src="http://farm1.static.flickr.com/404/18888928682_fa2b7d054f_b.jpg" alt="IMG_0349"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18894144425" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/459/18894144425_6504332a43_b.jpg"><img src="http://farm1.static.flickr.com/459/18894144425_6504332a43_b.jpg" alt="IMG_0354"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18894138775" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/389/18894138775_9c53d23108_b.jpg"><img src="http://farm1.static.flickr.com/389/18894138775_9c53d23108_b.jpg" alt="IMG_1443"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18888915222" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/421/18888915222_e076a795cb_b.jpg"><img src="http://farm1.static.flickr.com/421/18888915222_e076a795cb_b.jpg" alt="IMG_1598"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18896967951" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm6.static.flickr.com/5603/18896967951_afd91acf35_b.jpg"><img src="http://farm6.static.flickr.com/5603/18896967951_afd91acf35_b.jpg" alt="IMG_1636"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18894128395" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm6.static.flickr.com/5584/18894128395_cb3c85884c_b.jpg"><img src="http://farm6.static.flickr.com/5584/18894128395_cb3c85884c_b.jpg" alt="IMG_1642"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18273483873" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm6.static.flickr.com/5552/18273483873_62c4d8535b_b.jpg"><img src="http://farm6.static.flickr.com/5552/18273483873_62c4d8535b_b.jpg" alt="IMG_1683"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18707958549" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/355/18707958549_1dfb7ecb90_b.jpg"><img src="http://farm1.static.flickr.com/355/18707958549_1dfb7ecb90_b.jpg" alt="IMG_1731"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18867862636" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm6.static.flickr.com/5487/18867862636_b123105fdd_b.jpg"><img src="http://farm6.static.flickr.com/5487/18867862636_b123105fdd_b.jpg" alt="IMG_1720"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18707956479" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm6.static.flickr.com/5586/18707956479_af62df7607_b.jpg"><img src="http://farm6.static.flickr.com/5586/18707956479_af62df7607_b.jpg" alt="IMG_1757"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18896957021" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm6.static.flickr.com/5443/18896957021_b898397918_b.jpg"><img src="http://farm6.static.flickr.com/5443/18896957021_b898397918_b.jpg" alt="IMG_1776"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18273476943" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/501/18273476943_0b992f433a_b.jpg"><img src="http://farm1.static.flickr.com/501/18273476943_0b992f433a_b.jpg" alt="IMG_1779"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18888899102" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/489/18888899102_77bd58cfec_b.jpg"><img src="http://farm1.static.flickr.com/489/18888899102_77bd58cfec_b.jpg" alt="IMG_1794"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18707952679" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm6.static.flickr.com/5474/18707952679_be8b462eb0_b.jpg"><img src="http://farm6.static.flickr.com/5474/18707952679_be8b462eb0_b.jpg" alt="IMG_1833"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18273473713" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/538/18273473713_16f2f4f40d_b.jpg"><img src="http://farm1.static.flickr.com/538/18273473713_16f2f4f40d_b.jpg" alt="IMG_1925"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18867853856" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/412/18867853856_0cb5efc8a5_b.jpg"><img src="http://farm1.static.flickr.com/412/18867853856_0cb5efc8a5_b.jpg" alt="IMG_1986"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18894110845" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/469/18894110845_0da60dc4e5_b.jpg"><img src="http://farm1.static.flickr.com/469/18894110845_0da60dc4e5_b.jpg" alt="IMG_2058"/></a>
+    </div>
+
+    
+     
+       </div><div class="row">
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18706413880" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/258/18706413880_6c896560ce_b.jpg"><img src="http://farm1.static.flickr.com/258/18706413880_6c896560ce_b.jpg" alt="IMG_2094"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18894107335" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/466/18894107335_50ee31129c_b.jpg"><img src="http://farm1.static.flickr.com/466/18894107335_50ee31129c_b.jpg" alt="340-DSC_0278"/></a>
+    </div>
+
+    
+     
+   
+
+
+	
+    <div class="col-md-4">
+      <a href="http://www.flickr.com/photos/111328630@N03/18273464983" title="Show on Flickr" target="_blank" data-toggle="lightbox" data-parent=".gallery" data-gallery="multiimages" data-type="image" data-remote="http://farm1.static.flickr.com/261/18273464983_811c44ec8c_b.jpg"><img src="http://farm1.static.flickr.com/261/18273464983_811c44ec8c_b.jpg" alt="IMG_2225"/></a>
+    </div>
+
+    
+     </div>
+    
+
+
+	
+
+</div>
+
+
+
+        
+            
+            <h9>Last update: 17-06-2015 18:02 by bmark</h9>
+        
+    </div>
+    <div class="col-md-4 neat-images ww-sidebar">
+        
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+  </div>
+  
+
+<div id="sponsors">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <span class="plugin_picture">
+<a href="http://www.bavaria.com/">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/sponsor_bavaria_lDrW5BP.png" alt="" />
+</a>
+</span><span class="plugin_picture align-right">
+<a href="http://fiveultimate.com/">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/sponsor_five_q5BnBXF.png" alt="" />
+</a>
+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<div id="footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12">
+        <ul class="sitemap">
+          <h3>Sitemap</h3>
+          
+
+  
+
+  
+    <li class="">
+        <a href="../../../../results/index.html">Results</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../results/spirit-scores/index.html">Spirit Scores</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../results/prediction-contest/index.html">Prediction Contest</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../results/prediction-contest/rules/index.html">Prediction Rules</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../results/prediction-contest/prediction-prizes/index.html">Prediction Prizes</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news.1.html">News</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../news/categories/index.html">Categories</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/tags/index.html">Tags</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../news/tags/Windmill2015/index.html">Windmill2015</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/index.html">Authors</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../news/authors/aljo/index.html">Aljaž Jazz Gaberšek</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/tim.dejong/index.html">Tim de Jong</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/ravi/index.html">Ravi Vasudevan</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/nan/index.html">Nan Derosa</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/bmark/index.html">bmark</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/les/index.html">Les Kleuver</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/katie/index.html">Katie Stephenson</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../signup/index.html">Registration</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../signup/pickup/index.html">Pickup</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../signup/groupme/index.html">GroupMe</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../signup/volunteers-2015/index.html">Volunteers 2015</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/index.html">Tournament info</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/directions/index.html">Directions</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/team-selection/index.html">Team Selection</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/accommodation/index.html">Accommodation</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/rules-and-format/index.html">Rules and format</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/spirit-captains/index.html">Spirit Captains</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/food/index.html">Food</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/faq/index.html">FAQ</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/map/index.html">Map</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/index.html">About</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../about/crew/index.html">Crew</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/what-ultimate/index.html">What is Ultimate</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/green-windmill/index.html">Green Windmill</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/history/index.html">History</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../about/history/spirit-history-2014/index.html">spirit-history-2014</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/sponsors/index.html">Sponsors</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/amsterdam/index.html">Amsterdam</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/windmill-gear/index.html">Windmill Gear</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/contact-us/index.html">Contact us</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/i-wanna-be-windmill/index.html">I wanna BE the Windmill</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../event/index.html">Event</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../event/play-schedule/index.html">Playing Schedule</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../event/entertainment-schedule/index.html">Entertainment Schedule</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../event/map/index.html">Map</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../event/performances/index.html">Performances</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="ancestor">
+        <a href="../../../index.html">Media</a>
+        
+          <ul>
+            
+
+  
+    <li class="ancestor">
+        <a href="../../index.html">Photos</a>
+        
+          <ul>
+            
+
+  
+    <li class="ancestor">
+        <a href="../index.html">Photos 2015</a>
+        
+          <ul>
+            
+
+  
+    <li class="sibling">
+        <a href="../2015-atmosphere/index.html">2015 Atmosphere</a>
+        
+    </li>
+  
+
+  
+    <li class="sibling">
+        <a href="../2015-activities/index.html">2015 Activities</a>
+        
+    </li>
+  
+
+  
+    <li class="selected">
+        <a href="index.html">2015 Best of</a>
+        
+    </li>
+  
+
+  
+    <li class="sibling">
+        <a href="../2015-parties/index.html">2015 Parties</a>
+        
+    </li>
+  
+
+  
+    <li class="sibling">
+        <a href="../2015-finals/index.html">2015 Finals</a>
+        
+    </li>
+  
+
+  
+    <li class="sibling">
+        <a href="../2015-open/index.html">2015 Open</a>
+        
+    </li>
+  
+
+  
+    <li class="sibling">
+        <a href="../2015-mixed/index.html">2015 Mixed</a>
+        
+    </li>
+  
+
+  
+    <li class="sibling">
+        <a href="../2015-women/index.html">2015 Women</a>
+        
+    </li>
+  
+
+  
+    <li class="sibling">
+        <a href="../2015-prize-ceremony/index.html">2015 Prize Ceremony</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../photos-2014/index.html">Photos 2014</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../photos-2014/2014-best/index.html">2014 Best of</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../photos-2014/2014-activities/index.html">2014 Activities</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../photos-2014/2014-atmosphere/index.html">2014 Atmosphere</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../photos-2014/2014-parties/index.html">2014 Parties</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../photos-2014/2014-final/index.html">2014 Finals</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../photos-2014/2014-open/index.html">2014 Open</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../photos-2014/2014-mixed/index.html">2014 Mixed</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../photos-2014/2014-women/index.html">2014 Women</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../photos-2014/2014-prize-ceremony/index.html">2014 Prize Ceremony</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../photos-2014/2014-team-pictures/index.html">2014 Team Pictures</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../video/index.html">Video</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../press/index.html">Press</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/index.html">Intranet</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../intranet/how-tos/index.html">How to&#39;s-CUC</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/how-s-pec/index.html">How to&#39;s-PEC</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/how-s-fab-copy/index.html">How to&#39;s-FAB</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/how-s-fav/index.html">How to&#39;s-FAV</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/tasksheet/index.html">What Can I Do</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/newsletters/index.html">Newsletters</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/one-day-well-laugh/index.html">One Day We&#39;ll Laugh...</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/decisions/index.html">Decisions</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="plugin">
+  <h3>Contact us</h3><p>Have questions, feedback or something cool to share? <a href="../../../../about/contact-us/index.html">visit our contact page</a></p>
+</div>
+      </div>
+
+      <div class="col-md-6">
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+  <script type="text/javascript">
+      STATIC = "/static/website/";
+  </script>
+
+  <script type="text/javascript" src="../../../../static/website/components/jquery/jquery.min.ccd0edd113b7.js"></script>
+  <script type="text/javascript" src="../../../../static/website/bootstrap/js/bootstrap.min.1bee61361b1c.js"></script>
+  <script type="text/javascript" src="../../../../static/website/bootstrap/js/ekko-lightbox.757cd416fcab.js"></script>
+
+  
+
+  
+
+<!-- google anafantasticalitics //-->
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-7370068-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  </body>
+</html>
