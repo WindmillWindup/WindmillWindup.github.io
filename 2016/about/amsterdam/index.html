@@ -1,0 +1,1246 @@
+
+<!DOCTYPE html>
+<html>
+  <head><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","transactionName":"Ml1RYBRVVkZRUkdaXgsXdUEIV0xcX18cUFwWFkVdA0NLD1RUR1JYCUs=","applicationID":"2962551","applicationTime":1284,"agent":"","licenseKey":"4760ed8ac7","queueTime":2}</script>
+    <title>Windmill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="blitz" content="mu-ec4a98b2-f1934bb3-eb6c9300-c874e3fc">
+    <!-- Bootstrap -->
+    <link href="../../static/website/bootstrap/css/bootstrap.min.95208a901811.css" rel="stylesheet" media="screen" />
+    <link href="../../static/website/font-awesome/css/font-awesome.min.fa6868c22cec.css" rel="stylesheet" />
+    <link href="../../static/website/css/base.3ab320e2b36b.css" rel="stylesheet" media="screen" />
+    <link href="../../static/website/css/typography.8647f22262a2.css" rel="stylesheet" media="screen" />
+    <link href="../../static/website/css/bootstrap-override.cd8d91741a8e.css" rel="stylesheet" media="screen" />
+    <link href="../../static/website/css/MyFontsWebfontsKit.d7331c7f753a.css" rel="stylesheet" media="screen" />
+
+    <link href="../../static/website/favicon.7b24124b3db0.ico" rel="icon" type="image/x-icon" />
+
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
+    
+
+    
+<link href="../../static/website/css/faq.css" rel="stylesheet" media="screen" />
+
+  </head>
+
+  <body>
+    
+    
+
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html"><img src="../../static/website/img/windmill_logo_small.96d3a2a88aa0.png" /></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          
+
+<li class="">
+        <a href="../../index.html">Home</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../results/index.html">Results</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../signup/index.html">Registration</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../news.1.html">News</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../tournament-info/index.html">Tournament info</a>
+        
+
+</li>
+
+<li class="active">
+        <a href="../index.html">About</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../event/index.html">Event</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../the-media/index.html">Media</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../intranet/index.html">Intranet</a>
+        
+
+</li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://twitter.com/windmilltourney" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+          <li><a href="https://www.facebook.com/WindmillUltimate" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+          <li><a href="http://www.youtube.com/user/windmillwindup" target="_blank"><i class="fa fa-youtube fa-lg"></i></a></li>
+          <li><a href="https://vimeo.com/channels/648612" target="_blank"><i class="fa fa-vimeo-square fa-lg"></i></a></li>
+        </ul>
+      </div>
+     </div>
+ </nav>
+
+
+  <div id="base-content">
+    
+
+  <div class="container">
+    <div id="section-header">
+      <div class="spotlight">
+  <img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/85/Amsterdam.jpeg" class="bg" />
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="restrainer">
+        
+        <h1>Amsterdam</h1>
+        
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+  
+    <div class="container">
+      <div id="navsub">
+        <ul class="nav nav-tabs">
+          
+            
+            
+            <li ><a href="../index.html">About</a></li>
+            
+
+<li class="sibling">
+        <a href="../crew/index.html">Crew</a>
+        
+
+</li>
+
+<li class="sibling">
+        <a href="../what-ultimate/index.html">What is Ultimate</a>
+        
+
+</li>
+
+<li class="sibling">
+        <a href="../green-windmill/index.html">Green Windmill</a>
+        
+
+</li>
+
+<li class="sibling">
+        <a href="../history/index.html">History</a>
+        
+
+</li>
+
+<li class="sibling">
+        <a href="../sponsors/index.html">Sponsors</a>
+        
+
+</li>
+
+<li class="active">
+        <a href="index.html">Amsterdam</a>
+        
+
+</li>
+
+<li class="sibling">
+        <a href="../windmill-gear/index.html">Windmill Gear</a>
+        
+
+</li>
+
+<li class="sibling">
+        <a href="../contact-us/index.html">Contact us</a>
+        
+
+</li>
+
+<li class="sibling">
+        <a href="../i-wanna-be-windmill/index.html">I wanna BE the Windmill</a>
+        
+
+</li>
+
+          
+        </ul>
+      </div>
+    </div>
+  
+
+  <div class="container">
+    <div class="content">
+    
+
+<div class="row">
+  <div class="col-md-8 neat-images">
+      <h1>Amsterdam</h1>
+      <ul id="faq-items" class="list-group"></ul>
+      <div id="faq-content">
+        <div class="plugin">
+  <h2>About Amsterdam</h2>
+
+<p>World famous and centuries old, but still small enough to easily navigate by foot or bicycle, Amsterdam is one of Europe’s most beautiful and action-packed capitals, offering everything from high brow culture to low brow entertainment. Whether you’re in the mood for a gourmet meal and a museum visit or a night eating vegan food, smoking, and dancing at one of the city’s many squats-turned-cultural venues, Amsterdam is sure to have something for you.<br>
+<br>
+On this page you'll find information to help you get the most out of your visit to Amsterdam. Looking for a place to rent a bike, chow down, or get your party on? Below you’ll find a selection of our local favorites. If you’re looking for something specific and you can’t find it here, you can always ask the Windmill crew for their insider tips.<br>
+<br>
+Check a map of everything mentioned below &amp; more <a href="https://www.google.com/maps/d/edit?mid=zVtTOsENU3D4.ku98OxgYsiGk"> here.</a></p>
+
+<p style="line-height: 1.15; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr"> </p>
+
+</div><div class="plugin">
+  <h2>Tourist Info</h2><p>Want
+ to check out the city while you’re in town? In our opinion, no trip to 
+Amsterdam would be complete without seeing one of the city’s world 
+famous museums (especially the Stedelijk Museum, Van Gogh Museum and 
+Rijksmuseum), checking out the old crooked houses and tree-lined canals 
+and monumental churches in the city center (especially the Jordaan 
+neighborhood), chilling in one of the city’s many beautiful parks (the 
+Vondelpark is a classic), and maybe even paying a visit to one of the 
+city’s many coffeeshops.</p><p dir="ltr" style="line-height: 1.15; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 13px; font-family: Arial; color: #000000; background-color: transparent; font-weight: normal; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;"></span></p>
+</div><div class="plugin">
+  <h2>Bikes</h2><p>If you plan on leaving the fields to explore Amsterdam, we recommend 
+renting a bike to get around. Cycling in Amsterdam is very safe, more 
+convenient than using public transportation, and also not much more 
+expensive, if at all. The metro, trams, and regular buses cost 2,80 for a
+ single ticket and stop running around 12:30AM, after which you can only
+ take a night bus to get back to the fields at a cost of 4,50 per 
+person. On the other hand, renting a bike for 3 days generally costs 
+about 18 euros per person.</p><h3><em id="docs-internal-guid-5449e889-1f7a-d523-7cf2-be1f7499fbca">Where to rent a bike:</em></h3><p><a href="http://macbike.nl/">Macbike (Multiple locations)</a></p><p>Address: Stationsplein 5 (Central Station) / Weteringschans 2 (Leidseplein) / Waterlooplein 199<br>Phone: +31 (0)206200985</p><p><a href="http://www.mikesbikes.com/">Mike&#39;s Bikes</a> (near Leidseplein)</p><p>Address: Kerkstraat 134<br>Phone: +31 (0)206227970</p><p><a href="http://www.rentabike.nl/">Rent a Bike</a></p><p>Address: Damstraat 20<br>Phone: +31 (0)206255029</p><p><a href="http://www.bikecity.nl/">Bike City</a></p><p>Address: 68-70 Bloemgracht<br>Phone: +31 (0)206263721 </p>
+</div><div class="plugin">
+  <h2>Restaurants</h2>
+
+<p>As a major European capital, Amsterdam is naturally home to restaurants from all of the world’s major cuisines. However, if you want to eat like the Dutch do, we recommend trying out one of the city’s many delicious and affordable Surinamese or Indonesian restaurants, or traditional Dutch cuisine such as pancakes. If you’re in the mood for a late night snack, nothing hits the spot like Belgian fries (‘Vlaamse Frites’ - try the ‘Oorlog’ sauce!), a falafel from MAOZ or a greasy treat pulled out of the wall at one of the city’s many FEBO snack bars. As the Dutch would say: Eet smakelijk! (Bon apetit!)</p>
+
+<h3>Where to eat:</h3>
+
+<p><u>Buurman &amp; Buurman</u><br>
+Delicious pizza + adorable locally owned business<br>
+Address: Mercatorstraat 171<br>
+Phone: +31 (0)202628262<br>
+Distance to the fields: 4,5 km<br>
+<br>
+<u>Faam</u><br>
+Terrific Italian food - some claim their pizzas are the best in Amsterdam.<br>
+Address: Reinier Claeszenstraat 10<br>
+Phone: +31 (0)20 370 2354<br>
+Distance to the fields: 5,8 km<br>
+<br>
+<u>Mozaiek</u><br>
+Restaurant &amp; cultural venue - great sandwiches!<br>
+Address: Bos en Lommerweg 191<br>
+Phone: +31 (0)20 580 0380<br>
+Distance to the fields: 4,8 km</p>
+
+<p><u>Paloma Blanca</u><br>
+Rumored to have the best Moroccan food in Amsterdam.<br>
+Address: Jan Pieter Heijestraat 145<br>
+Phone: +31 (0)20 612 6485<br>
+Distance to the fields: 6,6 km<br>
+<br>
+<u>Abyssinia</u><br>
+Ethiopian food - variety of savory, spicy dishes (e.g. lentils, potatoes, beans) and veggies served with spongey injera bread you eat with your hands. Fun place to go if you're really high or drunk.<br>
+Address: Jan Pieter Heijestraat 190<br>
+Phone: +31 (<span>0)20 683 0792</span><br>
+Distance to the fields: 6,7 km<br>
+<br>
+<u>De Pizzabakkers</u><br>
+Gourmet-ish pizza<br>
+Address: Haarlemmerdijk 128 HS<br>
+Phone: +31 (<span>0)20 427 4144</span><br>
+Distance to the fields: 7,1 km</p>
+
+<p><u>Burgermeester</u><br>
+Gourmet burgers (vegetarian available) made with seasonal ingredients in a hip but casual setting.<br>
+Address: Elandsgracht 130 (Jordaan) / Albert Cuypstraat 48 (De Pijp) / Plantage Kerklaan 37 (East)<br>
+Phone: +31 (0)206709339<br>
+Distance from fields: (Jordaan location) 7,1 km</p>
+
+<p><u>Bussia</u><br>
+Not cheap, but VERY good Italian food and great service.<br>
+Address: Reestraat 28 - 32<br>
+Phone: +31 (<span>0)20 627 8794</span><br>
+Distance to the fields: 7,2 km<br>
+<br>
+<u>Ibericus</u><br>
+Deli-type Spanish restaurant with very good tapas &amp; sandwiches - not many places to sit, so a good place to go for lunch as you explore the wonderful Haarlemmerstraat (voted the best shopping street in Amsterdam!)<br>
+Address: Haarlemmerstraat 93<br>
+Phone: +31 (<span>0)20 223 6573</span><br>
+Distance to the fields: 7,6 km<br>
+<br>
+<u>Greenwoods</u><br>
+Great brunch and very friendly service.<br>
+Address: Singel 103<br>
+Phone: +31 (0)<span>20 623 7071</span><br>
+Distance to the fields: 7,6 km<br>
+<br>
+<u>Broodje Bert</u><br>
+Damned good sandwiches.<br>
+Address: Singel 321<br>
+Phone: +31 (<span>0)206230382</span><br>
+Distance to the fields: 7,8 km</p>
+
+<p><u>Motimahal</u><br>
+Great Indian food, very friendly service, plus the owner has perhaps the greatest moustache I've ever seen.<br>
+Address: Nieuwezijds Voorburgwal 34<br>
+Phone: +31 (0)206250330<br>
+Distance to the fields: 8,0 km</p>
+
+<p><u>Japan Inn Yakitori</u><br>
+Some people think this place has the best sushi in Amsterdam. Very friendly service as well.<br>
+Address: Leidsekruisstraat 4<br>
+Distance to the fields: 8,1 km<br>
+<br>
+<u>Snackbar Bird</u><br>
+Yummy Thai food. If you have a big group, you can find more room at their restaurant across the street (thought the restaurant is somewhat pricier).<br>
+Address: Zeedijk 77<br>
+Phone: +31 (<span>0)204206289</span><br>
+Distance to the fields: 8,6 km<br>
+<br>
+<u>Nieuw Albina</u><br>
+Delicious and affordable Surinamese food served with a smile in a no-frills place near the Albert Cuypmarkt. The beer is super cheap to boot.<br>
+Address: Albert Cuypstraat 47-49<br>
+Phone: +31 (0)203790223<br>
+Distance from fields: 8,7 km<br>
+<br>
+<u>Salsa Shop</u><br>
+Best burritos in Amsterdam, and affordable! Recommended if you like Chipotle!<br>
+Address: Amstelstraat 32a<br>
+Phone: +31 (0)202051040<br>
+Distance to the fields: 8,8 km<br>
+<br>
+<u>Bazar</u><br>
+Tasty Middle Eastern food in a beautiful, towering space with a really cool decor. Great place to eat after checking out the bustling Albert Cuypmarkt.<br>
+Address: Albert Cuypstraat 182<br>
+Phone: +31 (<span>0)20 675 0544</span><br>
+Distance to the fields: 9,2 km</p>
+
+<h3><em>More restaurant recommendations &amp; reviews:</em></h3>
+
+<p dir="ltr" style="line-height: 1; margin-top: 5pt; margin-bottom: 5pt;"><a href="http://www.iens.nl/">Iens</a></p>
+
+<p dir="ltr" style="line-height: 1; margin-top: 5pt; margin-bottom: 5pt;"><a href="http://www.tripadvisor.com/Restaurants-g188590-Amsterdam_North_Holland_Province.html">Trip Advisor</a></p>
+
+<p dir="ltr" style="line-height: 1; margin-top: 5pt; margin-bottom: 5pt;"><a href="http://www.spottedbylocals.com/amsterdam/category/activity/restaurants/">Spotted By Locals</a></p>
+
+<p dir="ltr" style="line-height: 1; margin-top: 5pt; margin-bottom: 5pt;"> </p>
+
+</div><div class="plugin">
+  <h2>Bars, Clubs, and of course - Coffeeshops!</h2>
+
+<p>Amsterdam is home to over 1200 bars and clubs, so there’s a place for everyone to enjoy themselves into the wee hours of the morning.</p>
+
+<p><u>Bar: De Nieuwe Anita</u><br>
+A very charming little bar in a former squat, decorated like your grandma’s living room and patronized by a hip and international crowd, that hosts interesting entertainment throughout the week.<br>
+Address: Frederik Hendrikstraat 115<br>
+Distance from the fields: 6,2 km<br>
+<br>
+<u>Coffeeshop: Cafe De Kashmir Lounge</u><br>
+Perhaps the coziest coffeeshop in Amsterdam. The DJs actually play good music, lots of comfy places to lounge, and best of all, they have two shops on opposite sides of street, one of which has a bar, so you can buy weed, smoke it, and enjoy a beer - a rarity in Amsterdam!<br>
+Address: Jan Pieter Heijestraat 85-87<br>
+Distance from the fields: 6,3 km<br>
+<br>
+<u>Club / Bar / Restaurant: Pacific Parc</u><br>
+This former factory space now houses a restaurant/cafe by day and bar/club by night known for its eclectic music selection, diverse crowd, and - perhaps most importantly - free entry.<br>
+Address: Polonceaukade 23<br>
+Distance from the fields: 6,4 km</p>
+
+<p><u>Bar / club: OT301</u><br>
+Formerly a film academy which was squatted in the '90s, OT301 hosts live music, DJ nights, film nights, and contains a very affordable vegan restaurant called De Peper where you can also catch the occasional intimate music performance.<br>
+Address: Overtoom 301<br>
+Distance from the fields: 6,8 km<br>
+<br>
+<u>Bar / club: OCCII</u><br>
+Squat which hosts (usually punk / rock'n'roll) live music and DJ nights. Around the corner you can find De Binnenpret, where they host very cheap vegan dinner nights.<br>
+Address: Amstelveenseweg 134<br>
+Distance from the fields: 6,8 km<br>
+<br>
+<u>Coffeeshop: La Tertulia</u><br>
+Relaxed mother-and-daughter-run coffeeshop decorated with plenty of plants, a waterfall and lots of sunlight, which balances harmoniously with their all-bio buds and scrumptious weed brownies.<br>
+Address: Prinsengracht 312<br>
+Distance from the fields: 7,5 km</p>
+
+<p><u>Coffeeshop: Barney's Coffeeshop</u><br>
+Good quality coffeeshop that also serves huge English &amp; Irish breakfasts, winner of multiple “High Times Cup” awards.<br>
+Address: Haarlemmerstraat 102<br>
+Distance from the fields: 7,6 km</p>
+
+<p><u>Club: Melkweg</u><br>
+Legendary squatted milk factory (hence the name, which means "Milky Way" in Dutch) turned club, which hosts concerts and dance nights. They also have decent restaurant and a movie theater upstairs.<br>
+Address: Lijnbaansgracht 234a<br>
+Distance from the fields: 7,7 km<br>
+<br>
+<u>Club: Chicago Social Club</u><br>
+Fun, multilevel club hosting hip hop and techno nights, very good-looking young crowd.<br>
+Address: Leidseplein 12<br>
+Distance from the fields: 7,8 km</p>
+
+<p><u>Bar: Cafe Gollem</u><br>
+Small, cozy bar with terrific craft beers.<br>
+Address: Raamsteeg 4<br>
+Distance to the fields: 7,8 km</p>
+
+<p><u>Club: De Club Up</u><br>
+Great club hidden amongst a lot of touristy shitholes, featuring often excellent dance nights. Young, good-looking crowd, kind of hipster-y.<br>
+Address: Korte Leidsedwarsstraat 26-1<br>
+Distance from the fields: 7,9 km<br>
+<br>
+<u>Bar: Jazz Cafe Alto</u><br>
+Great, famous place to watch live jazz music every night of the week, very cool atmosphere.<br>
+Address: Korte Leidsedwarsstraat 115<br>
+Distance from the fields: 7,9 km<br>
+<br>
+<u>Club: Paradiso</u><br>
+This legendary venue in a squatted former church hosts (indie) rock concerts and dance nights seven days a week.<br>
+Address: Weteringschans 6-8<br>
+Distance from the fields: 7,9 km<br>
+<br>
+<u>Coffeeshop: Tweede Kamer Coffeeshop</u><br>
+Small and intimate, this shop embodies the refined look and feel of old jazz sophistication. Aided by a bakery around the corner, their spacecakes are sweet and lovely. The hash is highly regarded, but seating is extremely limited.<br>
+Address: Heisteeg 6<br>
+Distance to the fields: 7,9 km<br>
+<br>
+<u>Bar: Whiskycafe L&amp;B</u><br>
+The name speaks for itself. Classy!<br>
+Address: Korte Leidsedwarsstraat 82<br>
+Distance from the fields: 8,1 km<br>
+<br>
+<u>Club: Club NYX</u><br>
+Best gay club in Amsterdam! Very good-looking crowd, really fun even for mixed / straight groups.<br>
+Address: Reguliersdwarsstraat 42<br>
+Distance to the field: 8,3 km</p>
+
+<p><u>Bar: Casablanca</u><br>
+This karaoke bar near Central Station is one of the most infamous spots in Amsterdam, plus it stays open late.<br>
+Address: Zeedijk 26<br>
+Distance from the fields: 8,6 km</p>
+
+<h3><em id="docs-internal-guid-5449e889-1f80-ca47-177b-42f01ec18370">Info on upcoming parties &amp; DJs:</em></h3>
+
+<p><a href="http://partyflock.nl/">Party Flock</a></p>
+
+<p>Lastfm: http://www.last.fm/events/+place/Netherlands/Amsterdam</p>
+
+</div>
+      </div>
+      
+        
+        <h9>Last update: 10-03-2015 17:12 by katie</h9>
+      
+  </div>
+  <div class="col-md-4 neat-images">
+      <span class="plugin_picture">
+
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/85/AMSTERDAM%2070.png" alt="Amsterdam" />
+
+</span>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+
+</div>
+
+
+
+  </div>
+  
+
+<div id="sponsors">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <span class="plugin_picture">
+<a href="https://www.watchguard.com/">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/watchguard.png" alt="" />
+</a>
+</span><span class="plugin_picture">
+<a href="https://secyber.net/">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/SCC.png" alt="" />
+</a>
+</span><span class="plugin_picture">
+<a href="http://jupiler.nl/">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/jupiler_scaled.png" alt="" />
+</a>
+</span><span class="plugin_picture align-right">
+<a href="http://fiveultimate.com/">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/sponsor_five_q5BnBXF.png" alt="" />
+</a>
+</span><span class="plugin_picture align-right">
+<a href="http://skydmagazine.com">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/Skyd_scaled.png" alt="Skyd Magazine" />
+</a>
+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<div id="footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12">
+        <ul class="sitemap">
+          <h3>Sitemap</h3>
+          
+
+  
+
+  
+    <li class="">
+        <a href="../../results/index.html">Results</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../results/spirit-scores/index.html">Spirit Scores</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../results/prediction-contest/index.html">Prediction Contest</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../results/prediction-contest/rules/index.html">Prediction Rules</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../results/prediction-contest/prediction-prizes/index.html">Prediction Prizes</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../signup/index.html">Registration</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../signup/pickup/index.html">Pickup</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../signup/volunteers-2016/index.html">Volunteers</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../signup/guests/index.html">Guests</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../signup/groupme/index.html">GroupMe</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../news.1.html">News</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../news/categories/index.html">Categories</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../news/tags/index.html">Tags</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../news/tags/Windmill2015/index.html">Windmill2015</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../news/authors/index.html">Authors</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../news/authors/aljo/index.html">Aljaž Jazz Gaberšek</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../news/authors/ravi/index.html">Ravi Vasudevan</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../news/authors/bmark/index.html">bmark</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../news/authors/nan/index.html">Nan Derosa</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../news/authors/tim.dejong/index.html">Tim de Jong</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../news/authors/les/index.html">Les Kleuver</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../news/authors/katie/index.html">Katie Stephenson</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../tournament-info/index.html">Tournament info</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../tournament-info/fee/index.html">Fees and Deadlines</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../tournament-info/directions/index.html">Directions</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../tournament-info/team-selection/index.html">Team Selection</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../tournament-info/accommodation/index.html">Accommodation</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../tournament-info/rules-and-format/index.html">Rules and format</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../tournament-info/spirit-captains/index.html">Spirit Captains</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../tournament-info/food/index.html">Food</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../tournament-info/faq/index.html">FAQ</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="ancestor">
+        <a href="../index.html">About</a>
+        
+          <ul>
+            
+
+  
+    <li class="sibling">
+        <a href="../crew/index.html">Crew</a>
+        
+    </li>
+  
+
+  
+    <li class="sibling">
+        <a href="../what-ultimate/index.html">What is Ultimate</a>
+        
+    </li>
+  
+
+  
+    <li class="sibling">
+        <a href="../green-windmill/index.html">Green Windmill</a>
+        
+    </li>
+  
+
+  
+    <li class="sibling">
+        <a href="../history/index.html">History</a>
+        
+    </li>
+  
+
+  
+    <li class="sibling">
+        <a href="../sponsors/index.html">Sponsors</a>
+        
+    </li>
+  
+
+  
+    <li class="selected">
+        <a href="index.html">Amsterdam</a>
+        
+    </li>
+  
+
+  
+    <li class="sibling">
+        <a href="../windmill-gear/index.html">Windmill Gear</a>
+        
+    </li>
+  
+
+  
+    <li class="sibling">
+        <a href="../contact-us/index.html">Contact us</a>
+        
+    </li>
+  
+
+  
+    <li class="sibling">
+        <a href="../i-wanna-be-windmill/index.html">I wanna BE the Windmill</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../event/index.html">Event</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../event/play-schedule/index.html">Playing Schedule</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../event/entertainment-schedule/index.html">Entertainment Schedule</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../event/map/index.html">Map</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/index.html">Media</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../the-media/photos/index.html">Photos</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2016/index.html">Photos 2016</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2016/2016-thursday/index.html">2016 Thursday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2016/2016-friday/index.html">2016 Friday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2016/2016-saturday/index.html">2016 Saturday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2016/2016-sunday/index.html">2016 Sunday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2016/2016-teampictures/index.html">2016 Teampictures</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/index.html">Photos 2015</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/2015-atmosphere/index.html">2015 Atmosphere</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/2015-activities/index.html">2015 Activities</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/2015-best/index.html">2015 Best of</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/2015-parties/index.html">2015 Parties</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/2015-finals/index.html">2015 Finals</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/2015-open/index.html">2015 Open</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/2015-mixed/index.html">2015 Mixed</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/2015-women/index.html">2015 Women</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/2015-prize-ceremony/index.html">2015 Prize Ceremony</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/index.html">Photos 2014</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-best/index.html">2014 Best of</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-activities/index.html">2014 Activities</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-atmosphere/index.html">2014 Atmosphere</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-parties/index.html">2014 Parties</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-final/index.html">2014 Finals</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-open/index.html">2014 Open</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-mixed/index.html">2014 Mixed</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-women/index.html">2014 Women</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-prize-ceremony/index.html">2014 Prize Ceremony</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-team-pictures/index.html">2014 Team Pictures</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/video/index.html">Video</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/press/index.html">Press</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../intranet/index.html">Intranet</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../intranet/how-tos/index.html">How to&#39;s-CUC</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../intranet/how-s-pec/index.html">How to&#39;s-PEC</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../intranet/how-s-fab-copy/index.html">How to&#39;s-FAB</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../intranet/how-s-fav/index.html">How to&#39;s-FAV</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../intranet/tasksheet/index.html">What Can I Do</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../intranet/newsletters/index.html">Newsletters</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../intranet/one-day-well-laugh/index.html">One Day We&#39;ll Laugh...</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../intranet/decisions/index.html">Decisions</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="plugin">
+  <h3>Contact us</h3><p>Have questions, feedback or something cool to share? <a href="../contact-us/index.html">visit our contact page</a></p>
+</div>
+      </div>
+
+      <div class="col-md-6">
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+  <script type="text/javascript">
+      STATIC = "/static/website/";
+  </script>
+
+  <script type="text/javascript" src="../../static/website/components/jquery/jquery.min.ccd0edd113b7.js"></script>
+  <script type="text/javascript" src="../../static/website/bootstrap/js/bootstrap.min.1bee61361b1c.js"></script>
+  <script type="text/javascript" src="../../static/website/bootstrap/js/ekko-lightbox.757cd416fcab.js"></script>
+
+  
+
+  
+  <script type="text/javascript" src="../../static/website/js/faq.js"></script>
+
+
+<!-- google anafantasticalitics //-->
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-7370068-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  </body>
+</html>

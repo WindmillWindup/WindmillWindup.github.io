@@ -1,0 +1,2243 @@
+
+<!DOCTYPE html>
+<html>
+  <head><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","transactionName":"Ml1RYBRVVkZRUkdaXgsXdUEIV0xcX18cQ0MAXFpXEl1XWx5HWlZGFgJjRgNQUVZEWFxdfhBMUFsLUW5cVUYdVFQR","applicationID":"2962551","applicationTime":1753,"agent":"","licenseKey":"4760ed8ac7","queueTime":8}</script>
+    <title>Windmill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="blitz" content="mu-ec4a98b2-f1934bb3-eb6c9300-c874e3fc">
+    <!-- Bootstrap -->
+    <link href="../../static/website/bootstrap/css/bootstrap.min.95208a901811.css" rel="stylesheet" media="screen" />
+    <link href="../../static/website/font-awesome/css/font-awesome.min.fa6868c22cec.css" rel="stylesheet" />
+    <link href="../../static/website/css/base.3ab320e2b36b.css" rel="stylesheet" media="screen" />
+    <link href="../../static/website/css/typography.8647f22262a2.css" rel="stylesheet" media="screen" />
+    <link href="../../static/website/css/bootstrap-override.cd8d91741a8e.css" rel="stylesheet" media="screen" />
+    <link href="../../static/website/css/MyFontsWebfontsKit.d7331c7f753a.css" rel="stylesheet" media="screen" />
+
+    <link href="../../static/website/favicon.7b24124b3db0.ico" rel="icon" type="image/x-icon" />
+
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
+    
+
+    
+    <link rel="stylesheet" href="../../static/prediction/css/green/style.css" type="text/css" media="print, projection, screen" />
+
+  </head>
+
+  <body>
+    
+    
+
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html"><img src="../../static/website/img/windmill_logo_small.96d3a2a88aa0.png" /></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          
+
+<li class="">
+        <a href="../../index.html">Home</a>
+        
+
+</li>
+
+<li class="active">
+        <a href="../index.html">Results</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../signup/index.html">Registration</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../news.1.html">News</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../tournament-info/index.html">Tournament info</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../about/index.html">About</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../event/index.html">Event</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../the-media/index.html">Media</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../intranet/index.html">Intranet</a>
+        
+
+</li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://twitter.com/windmilltourney" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+          <li><a href="https://www.facebook.com/WindmillUltimate" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+          <li><a href="http://www.youtube.com/user/windmillwindup" target="_blank"><i class="fa fa-youtube fa-lg"></i></a></li>
+          <li><a href="https://vimeo.com/channels/648612" target="_blank"><i class="fa fa-vimeo-square fa-lg"></i></a></li>
+        </ul>
+      </div>
+     </div>
+ </nav>
+
+
+  <div id="base-content">
+    
+
+  <div class="container">
+    <div id="section-header">
+      <div class="spotlight">
+  <img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/286/Screen%20Shot%202014-01-02%20at%2022.34.51%20.png" class="bg" />
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="restrainer">
+        
+        <h1>Results 2016</h1>
+        
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+  
+    <div class="container">
+      <div id="navsub">
+        <ul class="nav nav-tabs">
+          
+            
+            
+            <li ><a href="../index.html">Results</a></li>
+            
+
+<li class="sibling">
+        <a href="../spirit-scores/index.html">Spirit Scores</a>
+        
+
+</li>
+
+<li class="active">
+        <a href="index.html">Prediction Contest</a>
+        
+
+</li>
+
+          
+        </ul>
+      </div>
+    </div>
+  
+
+  <div class="container">
+    <div class="content">
+    
+
+  <div class="row">
+    <div class="col-md-8 neat-images cms-content">
+        <div class="plugin">
+  <p><a href="http://www.windmilltournament.com/results/prediction-contest/outcome">Check the outcome!</a> These were the <a href="rules/index.html">rules</a>. Congratulations to the winners!</p>
+
+</div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <h1>Predictions</h1>
+        One point for every place a team's final rank is off the predicted rank. Lowest score wins. If tied, the earlier the last modification, the better.
+        <table id="myTable" class="tablesorter">
+            <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Open</th>
+                <th>Mixed</th>
+                <th>Women</th>
+                <th>Total</th>
+                <th>last modified</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            
+                <tr>
+                    <td>1</td>
+                    <td><a href="outcome/558/index.html">KingCasper</a></td>
+                    <td>64</td>
+                    <td>236</td>
+                    <td>36</td>
+                    <td>336</td>
+                    <td>Tuesday, 31 May 2016, 0:27</td>
+                </tr>
+            
+                <tr>
+                    <td>2</td>
+                    <td><a href="outcome/580/index.html">The Tourist</a></td>
+                    <td>46</td>
+                    <td>258</td>
+                    <td>32</td>
+                    <td>336</td>
+                    <td>Wednesday, 1 June 2016, 10:22</td>
+                </tr>
+            
+                <tr>
+                    <td>3</td>
+                    <td><a href="outcome/512/index.html">1dominikr</a></td>
+                    <td>96</td>
+                    <td>258</td>
+                    <td>32</td>
+                    <td>386</td>
+                    <td>Sunday, 22 May 2016, 21:32</td>
+                </tr>
+            
+                <tr>
+                    <td>4</td>
+                    <td><a href="outcome/473/index.html">grantypuss</a></td>
+                    <td>84</td>
+                    <td>276</td>
+                    <td>30</td>
+                    <td>390</td>
+                    <td>Wednesday, 1 June 2016, 1:54</td>
+                </tr>
+            
+                <tr>
+                    <td>5</td>
+                    <td><a href="outcome/537/index.html">graz</a></td>
+                    <td>76</td>
+                    <td>276</td>
+                    <td>40</td>
+                    <td>392</td>
+                    <td>Tuesday, 31 May 2016, 11:16</td>
+                </tr>
+            
+                <tr>
+                    <td>6</td>
+                    <td><a href="outcome/472/index.html">Rakkerrr</a></td>
+                    <td>66</td>
+                    <td>298</td>
+                    <td>34</td>
+                    <td>398</td>
+                    <td>Friday, 20 May 2016, 1:54</td>
+                </tr>
+            
+                <tr>
+                    <td>7</td>
+                    <td><a href="outcome/559/index.html">lovemill</a></td>
+                    <td>78</td>
+                    <td>292</td>
+                    <td>30</td>
+                    <td>400</td>
+                    <td>Tuesday, 31 May 2016, 9:08</td>
+                </tr>
+            
+                <tr>
+                    <td>8</td>
+                    <td><a href="outcome/485/index.html">10111ennn</a></td>
+                    <td>92</td>
+                    <td>276</td>
+                    <td>44</td>
+                    <td>412</td>
+                    <td>Monday, 23 May 2016, 10:45</td>
+                </tr>
+            
+                <tr>
+                    <td>9</td>
+                    <td><a href="outcome/467/index.html">Tor</a></td>
+                    <td>76</td>
+                    <td>314</td>
+                    <td>30</td>
+                    <td>420</td>
+                    <td>Wednesday, 1 June 2016, 12:40</td>
+                </tr>
+            
+                <tr>
+                    <td>10</td>
+                    <td><a href="outcome/469/index.html">G.E.T REKT</a></td>
+                    <td>82</td>
+                    <td>300</td>
+                    <td>42</td>
+                    <td>424</td>
+                    <td>Wednesday, 1 June 2016, 11:19</td>
+                </tr>
+            
+                <tr>
+                    <td>11</td>
+                    <td><a href="outcome/468/index.html">cat</a></td>
+                    <td>88</td>
+                    <td>326</td>
+                    <td>36</td>
+                    <td>450</td>
+                    <td>Saturday, 30 April 2016, 13:51</td>
+                </tr>
+            
+                <tr>
+                    <td>12</td>
+                    <td><a href="outcome/520/index.html">Hammerson</a></td>
+                    <td>106</td>
+                    <td>302</td>
+                    <td>42</td>
+                    <td>450</td>
+                    <td>Monday, 30 May 2016, 13:32</td>
+                </tr>
+            
+                <tr>
+                    <td>13</td>
+                    <td><a href="outcome/501/index.html">Michi</a></td>
+                    <td>90</td>
+                    <td>328</td>
+                    <td>34</td>
+                    <td>452</td>
+                    <td>Friday, 20 May 2016, 19:05</td>
+                </tr>
+            
+                <tr>
+                    <td>14</td>
+                    <td><a href="outcome/571/index.html">girl305</a></td>
+                    <td>90</td>
+                    <td>326</td>
+                    <td>36</td>
+                    <td>452</td>
+                    <td>Tuesday, 31 May 2016, 20:45</td>
+                </tr>
+            
+                <tr>
+                    <td>15</td>
+                    <td><a href="outcome/484/index.html">Höffes</a></td>
+                    <td>88</td>
+                    <td>330</td>
+                    <td>38</td>
+                    <td>456</td>
+                    <td>Tuesday, 31 May 2016, 12:54</td>
+                </tr>
+            
+                <tr>
+                    <td>16</td>
+                    <td><a href="outcome/552/index.html">pierre</a></td>
+                    <td>88</td>
+                    <td>346</td>
+                    <td>26</td>
+                    <td>460</td>
+                    <td>Monday, 30 May 2016, 17:36</td>
+                </tr>
+            
+                <tr>
+                    <td>17</td>
+                    <td><a href="outcome/494/index.html">koekie</a></td>
+                    <td>90</td>
+                    <td>340</td>
+                    <td>32</td>
+                    <td>462</td>
+                    <td>Tuesday, 17 May 2016, 19:01</td>
+                </tr>
+            
+                <tr>
+                    <td>18</td>
+                    <td><a href="outcome/513/index.html">David</a></td>
+                    <td>104</td>
+                    <td>326</td>
+                    <td>34</td>
+                    <td>464</td>
+                    <td>Sunday, 22 May 2016, 22:32</td>
+                </tr>
+            
+                <tr>
+                    <td>19</td>
+                    <td><a href="outcome/506/index.html">Sam</a></td>
+                    <td>98</td>
+                    <td>324</td>
+                    <td>44</td>
+                    <td>466</td>
+                    <td>Thursday, 19 May 2016, 11:33</td>
+                </tr>
+            
+                <tr>
+                    <td>20</td>
+                    <td><a href="outcome/499/index.html">gossu</a></td>
+                    <td>100</td>
+                    <td>320</td>
+                    <td>48</td>
+                    <td>468</td>
+                    <td>Tuesday, 31 May 2016, 11:46</td>
+                </tr>
+            
+                <tr>
+                    <td>21</td>
+                    <td><a href="outcome/500/index.html">Fox</a></td>
+                    <td>102</td>
+                    <td>320</td>
+                    <td>48</td>
+                    <td>470</td>
+                    <td>Wednesday, 18 May 2016, 17:14</td>
+                </tr>
+            
+                <tr>
+                    <td>22</td>
+                    <td><a href="outcome/515/index.html">player1</a></td>
+                    <td>116</td>
+                    <td>312</td>
+                    <td>42</td>
+                    <td>470</td>
+                    <td>Monday, 23 May 2016, 2:34</td>
+                </tr>
+            
+                <tr>
+                    <td>23</td>
+                    <td><a href="outcome/551/index.html">Seppi</a></td>
+                    <td>110</td>
+                    <td>312</td>
+                    <td>50</td>
+                    <td>472</td>
+                    <td>Monday, 30 May 2016, 15:20</td>
+                </tr>
+            
+                <tr>
+                    <td>24</td>
+                    <td><a href="outcome/572/index.html">Lauri</a></td>
+                    <td>134</td>
+                    <td>298</td>
+                    <td>44</td>
+                    <td>476</td>
+                    <td>Tuesday, 31 May 2016, 21:31</td>
+                </tr>
+            
+                <tr>
+                    <td>25</td>
+                    <td><a href="outcome/493/index.html">szyk</a></td>
+                    <td>92</td>
+                    <td>346</td>
+                    <td>42</td>
+                    <td>480</td>
+                    <td>Tuesday, 17 May 2016, 18:39</td>
+                </tr>
+            
+                <tr>
+                    <td>26</td>
+                    <td><a href="outcome/533/index.html">G.E.T REKT 2.0</a></td>
+                    <td>96</td>
+                    <td>350</td>
+                    <td>34</td>
+                    <td>480</td>
+                    <td>Friday, 27 May 2016, 19:15</td>
+                </tr>
+            
+                <tr>
+                    <td>27</td>
+                    <td><a href="outcome/545/index.html">Dick</a></td>
+                    <td>92</td>
+                    <td>348</td>
+                    <td>40</td>
+                    <td>480</td>
+                    <td>Sunday, 29 May 2016, 23:15</td>
+                </tr>
+            
+                <tr>
+                    <td>28</td>
+                    <td><a href="outcome/555/index.html">Robin</a></td>
+                    <td>102</td>
+                    <td>342</td>
+                    <td>36</td>
+                    <td>480</td>
+                    <td>Monday, 30 May 2016, 22:43</td>
+                </tr>
+            
+                <tr>
+                    <td>29</td>
+                    <td><a href="outcome/529/index.html">Spoon</a></td>
+                    <td>84</td>
+                    <td>358</td>
+                    <td>40</td>
+                    <td>482</td>
+                    <td>Friday, 27 May 2016, 19:29</td>
+                </tr>
+            
+                <tr>
+                    <td>30</td>
+                    <td><a href="outcome/578/index.html">Ates95</a></td>
+                    <td>94</td>
+                    <td>348</td>
+                    <td>40</td>
+                    <td>482</td>
+                    <td>Wednesday, 1 June 2016, 0:02</td>
+                </tr>
+            
+                <tr>
+                    <td>31</td>
+                    <td><a href="outcome/462/index.html">huebli</a></td>
+                    <td>98</td>
+                    <td>348</td>
+                    <td>42</td>
+                    <td>488</td>
+                    <td>Sunday, 24 April 2016, 21:34</td>
+                </tr>
+            
+                <tr>
+                    <td>32</td>
+                    <td><a href="outcome/523/index.html">Dingenen</a></td>
+                    <td>92</td>
+                    <td>360</td>
+                    <td>36</td>
+                    <td>488</td>
+                    <td>Wednesday, 25 May 2016, 14:39</td>
+                </tr>
+            
+                <tr>
+                    <td>33</td>
+                    <td><a href="outcome/534/index.html">Miki</a></td>
+                    <td>96</td>
+                    <td>334</td>
+                    <td>58</td>
+                    <td>488</td>
+                    <td>Friday, 27 May 2016, 20:38</td>
+                </tr>
+            
+                <tr>
+                    <td>34</td>
+                    <td><a href="outcome/480/index.html">Berenito</a></td>
+                    <td>112</td>
+                    <td>336</td>
+                    <td>42</td>
+                    <td>490</td>
+                    <td>Tuesday, 10 May 2016, 13:36</td>
+                </tr>
+            
+                <tr>
+                    <td>35</td>
+                    <td><a href="outcome/507/index.html">Hilco</a></td>
+                    <td>122</td>
+                    <td>324</td>
+                    <td>46</td>
+                    <td>492</td>
+                    <td>Thursday, 19 May 2016, 12:37</td>
+                </tr>
+            
+                <tr>
+                    <td>36</td>
+                    <td><a href="outcome/547/index.html">Pablo</a></td>
+                    <td>100</td>
+                    <td>360</td>
+                    <td>34</td>
+                    <td>494</td>
+                    <td>Monday, 30 May 2016, 8:44</td>
+                </tr>
+            
+                <tr>
+                    <td>37</td>
+                    <td><a href="outcome/538/index.html">jurre</a></td>
+                    <td>92</td>
+                    <td>374</td>
+                    <td>30</td>
+                    <td>496</td>
+                    <td>Saturday, 28 May 2016, 11:36</td>
+                </tr>
+            
+                <tr>
+                    <td>38</td>
+                    <td><a href="outcome/528/index.html">ravi</a></td>
+                    <td>106</td>
+                    <td>366</td>
+                    <td>28</td>
+                    <td>500</td>
+                    <td>Friday, 27 May 2016, 14:51</td>
+                </tr>
+            
+                <tr>
+                    <td>39</td>
+                    <td><a href="outcome/495/index.html">lindsay</a></td>
+                    <td>114</td>
+                    <td>360</td>
+                    <td>30</td>
+                    <td>504</td>
+                    <td>Tuesday, 17 May 2016, 20:27</td>
+                </tr>
+            
+                <tr>
+                    <td>40</td>
+                    <td><a href="outcome/511/index.html">laura34</a></td>
+                    <td>118</td>
+                    <td>366</td>
+                    <td>28</td>
+                    <td>512</td>
+                    <td>Sunday, 22 May 2016, 20:02</td>
+                </tr>
+            
+                <tr>
+                    <td>41</td>
+                    <td><a href="outcome/508/index.html">MikeyP</a></td>
+                    <td>94</td>
+                    <td>374</td>
+                    <td>46</td>
+                    <td>514</td>
+                    <td>Thursday, 19 May 2016, 16:00</td>
+                </tr>
+            
+                <tr>
+                    <td>42</td>
+                    <td><a href="outcome/466/index.html">icks</a></td>
+                    <td>94</td>
+                    <td>372</td>
+                    <td>48</td>
+                    <td>514</td>
+                    <td>Tuesday, 31 May 2016, 10:31</td>
+                </tr>
+            
+                <tr>
+                    <td>43</td>
+                    <td><a href="outcome/486/index.html">croni71</a></td>
+                    <td>120</td>
+                    <td>356</td>
+                    <td>40</td>
+                    <td>516</td>
+                    <td>Friday, 13 May 2016, 15:43</td>
+                </tr>
+            
+                <tr>
+                    <td>44</td>
+                    <td><a href="outcome/581/index.html">Joram</a></td>
+                    <td>102</td>
+                    <td>362</td>
+                    <td>54</td>
+                    <td>518</td>
+                    <td>Wednesday, 1 June 2016, 9:59</td>
+                </tr>
+            
+                <tr>
+                    <td>45</td>
+                    <td><a href="outcome/586/index.html">1426</a></td>
+                    <td>116</td>
+                    <td>362</td>
+                    <td>42</td>
+                    <td>520</td>
+                    <td>Wednesday, 1 June 2016, 14:57</td>
+                </tr>
+            
+                <tr>
+                    <td>46</td>
+                    <td><a href="outcome/535/index.html">VW</a></td>
+                    <td>90</td>
+                    <td>404</td>
+                    <td>32</td>
+                    <td>526</td>
+                    <td>Friday, 27 May 2016, 21:11</td>
+                </tr>
+            
+                <tr>
+                    <td>47</td>
+                    <td><a href="outcome/474/index.html">frankenstino</a></td>
+                    <td>108</td>
+                    <td>390</td>
+                    <td>32</td>
+                    <td>530</td>
+                    <td>Friday, 6 May 2016, 14:34</td>
+                </tr>
+            
+                <tr>
+                    <td>48</td>
+                    <td><a href="outcome/576/index.html">Grune</a></td>
+                    <td>88</td>
+                    <td>378</td>
+                    <td>64</td>
+                    <td>530</td>
+                    <td>Tuesday, 31 May 2016, 23:48</td>
+                </tr>
+            
+                <tr>
+                    <td>49</td>
+                    <td><a href="outcome/465/index.html">Dylan</a></td>
+                    <td>96</td>
+                    <td>388</td>
+                    <td>48</td>
+                    <td>532</td>
+                    <td>Thursday, 26 May 2016, 21:59</td>
+                </tr>
+            
+                <tr>
+                    <td>50</td>
+                    <td><a href="outcome/532/index.html">bubu</a></td>
+                    <td>102</td>
+                    <td>350</td>
+                    <td>80</td>
+                    <td>532</td>
+                    <td>Friday, 27 May 2016, 18:42</td>
+                </tr>
+            
+                <tr>
+                    <td>51</td>
+                    <td><a href="outcome/477/index.html">dainuciss</a></td>
+                    <td>90</td>
+                    <td>394</td>
+                    <td>50</td>
+                    <td>534</td>
+                    <td>Saturday, 7 May 2016, 22:39</td>
+                </tr>
+            
+                <tr>
+                    <td>52</td>
+                    <td><a href="outcome/483/index.html">Benji</a></td>
+                    <td>108</td>
+                    <td>386</td>
+                    <td>40</td>
+                    <td>534</td>
+                    <td>Wednesday, 11 May 2016, 13:45</td>
+                </tr>
+            
+                <tr>
+                    <td>53</td>
+                    <td><a href="outcome/530/index.html">bani</a></td>
+                    <td>98</td>
+                    <td>404</td>
+                    <td>36</td>
+                    <td>538</td>
+                    <td>Friday, 27 May 2016, 16:05</td>
+                </tr>
+            
+                <tr>
+                    <td>54</td>
+                    <td><a href="outcome/496/index.html">markb</a></td>
+                    <td>136</td>
+                    <td>362</td>
+                    <td>42</td>
+                    <td>540</td>
+                    <td>Tuesday, 17 May 2016, 23:05</td>
+                </tr>
+            
+                <tr>
+                    <td>55</td>
+                    <td><a href="outcome/568/index.html">ManaL</a></td>
+                    <td>122</td>
+                    <td>376</td>
+                    <td>42</td>
+                    <td>540</td>
+                    <td>Tuesday, 31 May 2016, 15:21</td>
+                </tr>
+            
+                <tr>
+                    <td>56</td>
+                    <td><a href="outcome/510/index.html">Neenee Gnome</a></td>
+                    <td>128</td>
+                    <td>382</td>
+                    <td>32</td>
+                    <td>542</td>
+                    <td>Sunday, 22 May 2016, 19:14</td>
+                </tr>
+            
+                <tr>
+                    <td>57</td>
+                    <td><a href="outcome/519/index.html">Hildo</a></td>
+                    <td>134</td>
+                    <td>354</td>
+                    <td>54</td>
+                    <td>542</td>
+                    <td>Monday, 23 May 2016, 22:13</td>
+                </tr>
+            
+                <tr>
+                    <td>58</td>
+                    <td><a href="outcome/543/index.html">Foerster</a></td>
+                    <td>128</td>
+                    <td>362</td>
+                    <td>52</td>
+                    <td>542</td>
+                    <td>Sunday, 29 May 2016, 21:06</td>
+                </tr>
+            
+                <tr>
+                    <td>59</td>
+                    <td><a href="outcome/546/index.html">Vishkull</a></td>
+                    <td>120</td>
+                    <td>388</td>
+                    <td>38</td>
+                    <td>546</td>
+                    <td>Monday, 30 May 2016, 0:46</td>
+                </tr>
+            
+                <tr>
+                    <td>60</td>
+                    <td><a href="outcome/549/index.html">Foxi</a></td>
+                    <td>112</td>
+                    <td>402</td>
+                    <td>32</td>
+                    <td>546</td>
+                    <td>Monday, 30 May 2016, 10:44</td>
+                </tr>
+            
+                <tr>
+                    <td>61</td>
+                    <td><a href="outcome/492/index.html">PA</a></td>
+                    <td>108</td>
+                    <td>376</td>
+                    <td>66</td>
+                    <td>550</td>
+                    <td>Tuesday, 17 May 2016, 18:27</td>
+                </tr>
+            
+                <tr>
+                    <td>62</td>
+                    <td><a href="outcome/574/index.html">Zelk</a></td>
+                    <td>84</td>
+                    <td>436</td>
+                    <td>32</td>
+                    <td>552</td>
+                    <td>Tuesday, 31 May 2016, 22:05</td>
+                </tr>
+            
+                <tr>
+                    <td>63</td>
+                    <td><a href="outcome/579/index.html">Doc13</a></td>
+                    <td>114</td>
+                    <td>394</td>
+                    <td>46</td>
+                    <td>554</td>
+                    <td>Wednesday, 1 June 2016, 3:08</td>
+                </tr>
+            
+                <tr>
+                    <td>64</td>
+                    <td><a href="outcome/542/index.html">Socks</a></td>
+                    <td>120</td>
+                    <td>400</td>
+                    <td>36</td>
+                    <td>556</td>
+                    <td>Sunday, 29 May 2016, 15:59</td>
+                </tr>
+            
+                <tr>
+                    <td>65</td>
+                    <td><a href="outcome/471/index.html">Chwezimadeit</a></td>
+                    <td>110</td>
+                    <td>402</td>
+                    <td>48</td>
+                    <td>560</td>
+                    <td>Sunday, 1 May 2016, 20:51</td>
+                </tr>
+            
+                <tr>
+                    <td>66</td>
+                    <td><a href="outcome/482/index.html">S.i.</a></td>
+                    <td>102</td>
+                    <td>424</td>
+                    <td>34</td>
+                    <td>560</td>
+                    <td>Wednesday, 11 May 2016, 12:54</td>
+                </tr>
+            
+                <tr>
+                    <td>67</td>
+                    <td><a href="outcome/521/index.html">Martin</a></td>
+                    <td>122</td>
+                    <td>394</td>
+                    <td>44</td>
+                    <td>560</td>
+                    <td>Tuesday, 24 May 2016, 16:38</td>
+                </tr>
+            
+                <tr>
+                    <td>68</td>
+                    <td><a href="outcome/526/index.html">Lee</a></td>
+                    <td>104</td>
+                    <td>424</td>
+                    <td>32</td>
+                    <td>560</td>
+                    <td>Friday, 27 May 2016, 14:05</td>
+                </tr>
+            
+                <tr>
+                    <td>69</td>
+                    <td><a href="outcome/522/index.html">jean-michel</a></td>
+                    <td>138</td>
+                    <td>380</td>
+                    <td>44</td>
+                    <td>562</td>
+                    <td>Tuesday, 24 May 2016, 21:49</td>
+                </tr>
+            
+                <tr>
+                    <td>70</td>
+                    <td><a href="outcome/550/index.html">Arni</a></td>
+                    <td>118</td>
+                    <td>410</td>
+                    <td>34</td>
+                    <td>562</td>
+                    <td>Monday, 30 May 2016, 13:59</td>
+                </tr>
+            
+                <tr>
+                    <td>71</td>
+                    <td><a href="outcome/564/index.html">Katze</a></td>
+                    <td>116</td>
+                    <td>402</td>
+                    <td>46</td>
+                    <td>564</td>
+                    <td>Tuesday, 31 May 2016, 12:43</td>
+                </tr>
+            
+                <tr>
+                    <td>72</td>
+                    <td><a href="outcome/527/index.html">RONI</a></td>
+                    <td>86</td>
+                    <td>440</td>
+                    <td>40</td>
+                    <td>566</td>
+                    <td>Friday, 27 May 2016, 14:16</td>
+                </tr>
+            
+                <tr>
+                    <td>73</td>
+                    <td><a href="outcome/556/index.html">Bahamamama</a></td>
+                    <td>116</td>
+                    <td>422</td>
+                    <td>32</td>
+                    <td>570</td>
+                    <td>Monday, 30 May 2016, 22:49</td>
+                </tr>
+            
+                <tr>
+                    <td>74</td>
+                    <td><a href="outcome/562/index.html">felietsche</a></td>
+                    <td>136</td>
+                    <td>386</td>
+                    <td>50</td>
+                    <td>572</td>
+                    <td>Tuesday, 31 May 2016, 12:33</td>
+                </tr>
+            
+                <tr>
+                    <td>75</td>
+                    <td><a href="outcome/487/index.html">ina</a></td>
+                    <td>166</td>
+                    <td>362</td>
+                    <td>46</td>
+                    <td>574</td>
+                    <td>Friday, 13 May 2016, 15:49</td>
+                </tr>
+            
+                <tr>
+                    <td>76</td>
+                    <td><a href="outcome/509/index.html">Timo</a></td>
+                    <td>94</td>
+                    <td>440</td>
+                    <td>42</td>
+                    <td>576</td>
+                    <td>Friday, 20 May 2016, 23:12</td>
+                </tr>
+            
+                <tr>
+                    <td>77</td>
+                    <td><a href="outcome/561/index.html">Lucie Ruffié</a></td>
+                    <td>112</td>
+                    <td>424</td>
+                    <td>40</td>
+                    <td>576</td>
+                    <td>Tuesday, 31 May 2016, 12:07</td>
+                </tr>
+            
+                <tr>
+                    <td>78</td>
+                    <td><a href="outcome/540/index.html">Agent</a></td>
+                    <td>80</td>
+                    <td>468</td>
+                    <td>32</td>
+                    <td>580</td>
+                    <td>Saturday, 28 May 2016, 17:06</td>
+                </tr>
+            
+                <tr>
+                    <td>79</td>
+                    <td><a href="outcome/567/index.html">Zippo</a></td>
+                    <td>130</td>
+                    <td>404</td>
+                    <td>46</td>
+                    <td>580</td>
+                    <td>Tuesday, 31 May 2016, 14:25</td>
+                </tr>
+            
+                <tr>
+                    <td>80</td>
+                    <td><a href="outcome/489/index.html">moiki</a></td>
+                    <td>124</td>
+                    <td>420</td>
+                    <td>38</td>
+                    <td>582</td>
+                    <td>Saturday, 14 May 2016, 13:30</td>
+                </tr>
+            
+                <tr>
+                    <td>81</td>
+                    <td><a href="outcome/463/index.html">coenagrion</a></td>
+                    <td>136</td>
+                    <td>404</td>
+                    <td>48</td>
+                    <td>588</td>
+                    <td>Sunday, 17 April 2016, 13:04</td>
+                </tr>
+            
+                <tr>
+                    <td>82</td>
+                    <td><a href="outcome/481/index.html">Sweaty</a></td>
+                    <td>174</td>
+                    <td>372</td>
+                    <td>42</td>
+                    <td>588</td>
+                    <td>Wednesday, 11 May 2016, 12:38</td>
+                </tr>
+            
+                <tr>
+                    <td>83</td>
+                    <td><a href="outcome/553/index.html">ntn-mrz</a></td>
+                    <td>168</td>
+                    <td>382</td>
+                    <td>40</td>
+                    <td>590</td>
+                    <td>Monday, 30 May 2016, 20:08</td>
+                </tr>
+            
+                <tr>
+                    <td>84</td>
+                    <td><a href="outcome/548/index.html">Vera</a></td>
+                    <td>126</td>
+                    <td>434</td>
+                    <td>32</td>
+                    <td>592</td>
+                    <td>Monday, 30 May 2016, 10:41</td>
+                </tr>
+            
+                <tr>
+                    <td>85</td>
+                    <td><a href="outcome/478/index.html">Josy</a></td>
+                    <td>72</td>
+                    <td>480</td>
+                    <td>44</td>
+                    <td>596</td>
+                    <td>Sunday, 8 May 2016, 19:20</td>
+                </tr>
+            
+                <tr>
+                    <td>86</td>
+                    <td><a href="outcome/502/index.html">Sild</a></td>
+                    <td>140</td>
+                    <td>382</td>
+                    <td>76</td>
+                    <td>598</td>
+                    <td>Wednesday, 18 May 2016, 20:27</td>
+                </tr>
+            
+                <tr>
+                    <td>87</td>
+                    <td><a href="outcome/544/index.html">CaroS</a></td>
+                    <td>124</td>
+                    <td>440</td>
+                    <td>44</td>
+                    <td>608</td>
+                    <td>Sunday, 29 May 2016, 22:51</td>
+                </tr>
+            
+                <tr>
+                    <td>88</td>
+                    <td><a href="outcome/557/index.html">The Tom Styles</a></td>
+                    <td>142</td>
+                    <td>420</td>
+                    <td>48</td>
+                    <td>610</td>
+                    <td>Monday, 30 May 2016, 23:07</td>
+                </tr>
+            
+                <tr>
+                    <td>89</td>
+                    <td><a href="outcome/577/index.html">Mia</a></td>
+                    <td>150</td>
+                    <td>420</td>
+                    <td>40</td>
+                    <td>610</td>
+                    <td>Tuesday, 31 May 2016, 23:43</td>
+                </tr>
+            
+                <tr>
+                    <td>90</td>
+                    <td><a href="outcome/503/index.html">Meh10</a></td>
+                    <td>148</td>
+                    <td>408</td>
+                    <td>56</td>
+                    <td>612</td>
+                    <td>Wednesday, 18 May 2016, 23:26</td>
+                </tr>
+            
+                <tr>
+                    <td>91</td>
+                    <td><a href="outcome/491/index.html">Pit</a></td>
+                    <td>128</td>
+                    <td>442</td>
+                    <td>44</td>
+                    <td>614</td>
+                    <td>Tuesday, 17 May 2016, 18:33</td>
+                </tr>
+            
+                <tr>
+                    <td>92</td>
+                    <td><a href="outcome/470/index.html">catsup-ey</a></td>
+                    <td>128</td>
+                    <td>424</td>
+                    <td>68</td>
+                    <td>620</td>
+                    <td>Sunday, 1 May 2016, 8:49</td>
+                </tr>
+            
+                <tr>
+                    <td>93</td>
+                    <td><a href="outcome/570/index.html">Egon</a></td>
+                    <td>176</td>
+                    <td>372</td>
+                    <td>78</td>
+                    <td>626</td>
+                    <td>Tuesday, 31 May 2016, 16:50</td>
+                </tr>
+            
+                <tr>
+                    <td>94</td>
+                    <td><a href="outcome/565/index.html">Chregi</a></td>
+                    <td>128</td>
+                    <td>450</td>
+                    <td>56</td>
+                    <td>634</td>
+                    <td>Tuesday, 31 May 2016, 12:49</td>
+                </tr>
+            
+                <tr>
+                    <td>95</td>
+                    <td><a href="outcome/584/index.html">Jammit</a></td>
+                    <td>132</td>
+                    <td>452</td>
+                    <td>50</td>
+                    <td>634</td>
+                    <td>Wednesday, 1 June 2016, 14:28</td>
+                </tr>
+            
+                <tr>
+                    <td>96</td>
+                    <td><a href="outcome/536/index.html">tommy77</a></td>
+                    <td>148</td>
+                    <td>444</td>
+                    <td>46</td>
+                    <td>638</td>
+                    <td>Friday, 27 May 2016, 23:49</td>
+                </tr>
+            
+                <tr>
+                    <td>97</td>
+                    <td><a href="outcome/583/index.html">Monish</a></td>
+                    <td>136</td>
+                    <td>434</td>
+                    <td>70</td>
+                    <td>640</td>
+                    <td>Wednesday, 1 June 2016, 12:08</td>
+                </tr>
+            
+                <tr>
+                    <td>98</td>
+                    <td><a href="outcome/582/index.html">Podge3</a></td>
+                    <td>106</td>
+                    <td>472</td>
+                    <td>64</td>
+                    <td>642</td>
+                    <td>Wednesday, 1 June 2016, 10:53</td>
+                </tr>
+            
+                <tr>
+                    <td>99</td>
+                    <td><a href="outcome/488/index.html">TheHatter</a></td>
+                    <td>148</td>
+                    <td>452</td>
+                    <td>50</td>
+                    <td>650</td>
+                    <td>Friday, 13 May 2016, 18:47</td>
+                </tr>
+            
+                <tr>
+                    <td>100</td>
+                    <td><a href="outcome/563/index.html">Toniolo24</a></td>
+                    <td>108</td>
+                    <td>490</td>
+                    <td>52</td>
+                    <td>650</td>
+                    <td>Tuesday, 31 May 2016, 12:26</td>
+                </tr>
+            
+                <tr>
+                    <td>101</td>
+                    <td><a href="outcome/560/index.html">Tynek</a></td>
+                    <td>150</td>
+                    <td>452</td>
+                    <td>52</td>
+                    <td>654</td>
+                    <td>Tuesday, 31 May 2016, 11:44</td>
+                </tr>
+            
+                <tr>
+                    <td>102</td>
+                    <td><a href="outcome/514/index.html">nik123</a></td>
+                    <td>64</td>
+                    <td>532</td>
+                    <td>66</td>
+                    <td>662</td>
+                    <td>Sunday, 22 May 2016, 23:58</td>
+                </tr>
+            
+                <tr>
+                    <td>103</td>
+                    <td><a href="outcome/490/index.html">nemarci</a></td>
+                    <td>90</td>
+                    <td>472</td>
+                    <td>102</td>
+                    <td>664</td>
+                    <td>Monday, 16 May 2016, 14:15</td>
+                </tr>
+            
+                <tr>
+                    <td>104</td>
+                    <td><a href="outcome/585/index.html">cschopke</a></td>
+                    <td>142</td>
+                    <td>456</td>
+                    <td>66</td>
+                    <td>664</td>
+                    <td>Wednesday, 1 June 2016, 14:38</td>
+                </tr>
+            
+                <tr>
+                    <td>105</td>
+                    <td><a href="outcome/539/index.html">Marian</a></td>
+                    <td>114</td>
+                    <td>488</td>
+                    <td>64</td>
+                    <td>666</td>
+                    <td>Saturday, 28 May 2016, 14:30</td>
+                </tr>
+            
+                <tr>
+                    <td>106</td>
+                    <td><a href="outcome/569/index.html">Tim</a></td>
+                    <td>118</td>
+                    <td>496</td>
+                    <td>58</td>
+                    <td>672</td>
+                    <td>Tuesday, 31 May 2016, 15:55</td>
+                </tr>
+            
+                <tr>
+                    <td>107</td>
+                    <td><a href="outcome/498/index.html">Carlson</a></td>
+                    <td>102</td>
+                    <td>522</td>
+                    <td>50</td>
+                    <td>674</td>
+                    <td>Wednesday, 18 May 2016, 13:48</td>
+                </tr>
+            
+                <tr>
+                    <td>108</td>
+                    <td><a href="outcome/504/index.html">tov</a></td>
+                    <td>100</td>
+                    <td>524</td>
+                    <td>52</td>
+                    <td>676</td>
+                    <td>Wednesday, 18 May 2016, 23:28</td>
+                </tr>
+            
+                <tr>
+                    <td>109</td>
+                    <td><a href="outcome/554/index.html">Lisaa</a></td>
+                    <td>148</td>
+                    <td>476</td>
+                    <td>64</td>
+                    <td>688</td>
+                    <td>Monday, 30 May 2016, 20:18</td>
+                </tr>
+            
+                <tr>
+                    <td>110</td>
+                    <td><a href="outcome/566/index.html">dingleberry</a></td>
+                    <td>150</td>
+                    <td>510</td>
+                    <td>42</td>
+                    <td>702</td>
+                    <td>Tuesday, 31 May 2016, 13:24</td>
+                </tr>
+            
+                <tr>
+                    <td>111</td>
+                    <td><a href="outcome/524/index.html">Mushky</a></td>
+                    <td>188</td>
+                    <td>466</td>
+                    <td>66</td>
+                    <td>720</td>
+                    <td>Thursday, 26 May 2016, 20:03</td>
+                </tr>
+            
+                <tr>
+                    <td>112</td>
+                    <td><a href="outcome/464/index.html">CianHammo</a></td>
+                    <td>200</td>
+                    <td>444</td>
+                    <td>78</td>
+                    <td>722</td>
+                    <td>Tuesday, 19 April 2016, 22:12</td>
+                </tr>
+            
+                <tr>
+                    <td>113</td>
+                    <td><a href="outcome/516/index.html">Kristaln7</a></td>
+                    <td>148</td>
+                    <td>494</td>
+                    <td>104</td>
+                    <td>746</td>
+                    <td>Monday, 23 May 2016, 13:27</td>
+                </tr>
+            
+                <tr>
+                    <td>114</td>
+                    <td><a href="outcome/479/index.html">Pichu</a></td>
+                    <td>174</td>
+                    <td>520</td>
+                    <td>62</td>
+                    <td>756</td>
+                    <td>Monday, 30 May 2016, 17:37</td>
+                </tr>
+            
+                <tr>
+                    <td>115</td>
+                    <td><a href="outcome/518/index.html">Kingkong</a></td>
+                    <td>136</td>
+                    <td>522</td>
+                    <td>114</td>
+                    <td>772</td>
+                    <td>Monday, 23 May 2016, 13:37</td>
+                </tr>
+            
+                <tr>
+                    <td>116</td>
+                    <td><a href="outcome/475/index.html">Adi</a></td>
+                    <td>130</td>
+                    <td>582</td>
+                    <td>64</td>
+                    <td>776</td>
+                    <td>Friday, 6 May 2016, 18:13</td>
+                </tr>
+            
+                <tr>
+                    <td>117</td>
+                    <td><a href="outcome/476/index.html">ktyzk</a></td>
+                    <td>200</td>
+                    <td>494</td>
+                    <td>82</td>
+                    <td>776</td>
+                    <td>Friday, 6 May 2016, 22:27</td>
+                </tr>
+            
+                <tr>
+                    <td>118</td>
+                    <td><a href="outcome/575/index.html">tromd</a></td>
+                    <td>192</td>
+                    <td>536</td>
+                    <td>50</td>
+                    <td>778</td>
+                    <td>Tuesday, 31 May 2016, 23:36</td>
+                </tr>
+            
+                <tr>
+                    <td>119</td>
+                    <td><a href="outcome/517/index.html">Schills</a></td>
+                    <td>102</td>
+                    <td>650</td>
+                    <td>28</td>
+                    <td>780</td>
+                    <td>Monday, 23 May 2016, 13:31</td>
+                </tr>
+            
+                <tr>
+                    <td>120</td>
+                    <td><a href="outcome/541/index.html">lossesuuse</a></td>
+                    <td>152</td>
+                    <td>548</td>
+                    <td>82</td>
+                    <td>782</td>
+                    <td>Saturday, 28 May 2016, 18:01</td>
+                </tr>
+            
+                <tr>
+                    <td>121</td>
+                    <td><a href="outcome/497/index.html">361</a></td>
+                    <td>172</td>
+                    <td>556</td>
+                    <td>56</td>
+                    <td>784</td>
+                    <td>Wednesday, 18 May 2016, 13:31</td>
+                </tr>
+            
+                <tr>
+                    <td>122</td>
+                    <td><a href="outcome/505/index.html">replicantD</a></td>
+                    <td>178</td>
+                    <td>542</td>
+                    <td>72</td>
+                    <td>792</td>
+                    <td>Thursday, 19 May 2016, 0:04</td>
+                </tr>
+            
+                <tr>
+                    <td>123</td>
+                    <td><a href="outcome/525/index.html">L-Sto</a></td>
+                    <td>170</td>
+                    <td>586</td>
+                    <td>56</td>
+                    <td>812</td>
+                    <td>Friday, 27 May 2016, 5:17</td>
+                </tr>
+            
+                <tr>
+                    <td>124</td>
+                    <td><a href="outcome/531/index.html">vinciepincie</a></td>
+                    <td>196</td>
+                    <td>570</td>
+                    <td>74</td>
+                    <td>840</td>
+                    <td>Friday, 27 May 2016, 16:32</td>
+                </tr>
+            
+                <tr>
+                    <td>125</td>
+                    <td><a href="outcome/573/index.html">Troy</a></td>
+                    <td>192</td>
+                    <td>550</td>
+                    <td>104</td>
+                    <td>846</td>
+                    <td>Tuesday, 31 May 2016, 22:05</td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+    <div class="col-md-4 neat-images ww-sidebar">
+        
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+
+
+  </div>
+  
+
+<div id="sponsors">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <span class="plugin_picture">
+<a href="https://www.watchguard.com/">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/watchguard.png" alt="" />
+</a>
+</span><span class="plugin_picture">
+<a href="https://secyber.net/">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/SCC.png" alt="" />
+</a>
+</span><span class="plugin_picture">
+<a href="http://jupiler.nl/">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/jupiler_scaled.png" alt="" />
+</a>
+</span><span class="plugin_picture align-right">
+<a href="http://fiveultimate.com/">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/sponsor_five_q5BnBXF.png" alt="" />
+</a>
+</span><span class="plugin_picture align-right">
+<a href="http://skydmagazine.com">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/Skyd_scaled.png" alt="Skyd Magazine" />
+</a>
+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<div id="footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12">
+        <ul class="sitemap">
+          <h3>Sitemap</h3>
+          
+
+  
+
+  
+    <li class="ancestor">
+        <a href="../index.html">Results</a>
+        
+          <ul>
+            
+
+  
+    <li class="sibling">
+        <a href="../spirit-scores/index.html">Spirit Scores</a>
+        
+    </li>
+  
+
+  
+    <li class="selected">
+        <a href="index.html">Prediction Contest</a>
+        
+          <ul>
+            
+
+  
+    <li class="descendant">
+        <a href="rules/index.html">Prediction Rules</a>
+        
+    </li>
+  
+
+  
+    <li class="descendant">
+        <a href="prediction-prizes/index.html">Prediction Prizes</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../signup/index.html">Registration</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../signup/pickup/index.html">Pickup</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../signup/volunteers-2016/index.html">Volunteers</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../signup/guests/index.html">Guests</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../signup/groupme/index.html">GroupMe</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../news.1.html">News</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../news/categories/index.html">Categories</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../news/tags/index.html">Tags</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../news/tags/Windmill2015/index.html">Windmill2015</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../news/authors/index.html">Authors</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../news/authors/aljo/index.html">Aljaž Jazz Gaberšek</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../news/authors/ravi/index.html">Ravi Vasudevan</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../news/authors/bmark/index.html">bmark</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../news/authors/nan/index.html">Nan Derosa</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../news/authors/tim.dejong/index.html">Tim de Jong</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../news/authors/les/index.html">Les Kleuver</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../news/authors/katie/index.html">Katie Stephenson</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../tournament-info/index.html">Tournament info</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../tournament-info/fee/index.html">Fees and Deadlines</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../tournament-info/directions/index.html">Directions</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../tournament-info/team-selection/index.html">Team Selection</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../tournament-info/accommodation/index.html">Accommodation</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../tournament-info/rules-and-format/index.html">Rules and format</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../tournament-info/spirit-captains/index.html">Spirit Captains</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../tournament-info/food/index.html">Food</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../tournament-info/faq/index.html">FAQ</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../about/index.html">About</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../about/crew/index.html">Crew</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../about/what-ultimate/index.html">What is Ultimate</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../about/green-windmill/index.html">Green Windmill</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../about/history/index.html">History</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../about/sponsors/index.html">Sponsors</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../about/amsterdam/index.html">Amsterdam</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../about/windmill-gear/index.html">Windmill Gear</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../about/contact-us/index.html">Contact us</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../about/i-wanna-be-windmill/index.html">I wanna BE the Windmill</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../event/index.html">Event</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../event/play-schedule/index.html">Playing Schedule</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../event/entertainment-schedule/index.html">Entertainment Schedule</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../event/map/index.html">Map</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/index.html">Media</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../the-media/photos/index.html">Photos</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2016/index.html">Photos 2016</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2016/2016-thursday/index.html">2016 Thursday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2016/2016-friday/index.html">2016 Friday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2016/2016-saturday/index.html">2016 Saturday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2016/2016-sunday/index.html">2016 Sunday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2016/2016-teampictures/index.html">2016 Teampictures</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/index.html">Photos 2015</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/2015-atmosphere/index.html">2015 Atmosphere</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/2015-activities/index.html">2015 Activities</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/2015-best/index.html">2015 Best of</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/2015-parties/index.html">2015 Parties</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/2015-finals/index.html">2015 Finals</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/2015-open/index.html">2015 Open</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/2015-mixed/index.html">2015 Mixed</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/2015-women/index.html">2015 Women</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2015/2015-prize-ceremony/index.html">2015 Prize Ceremony</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/index.html">Photos 2014</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-best/index.html">2014 Best of</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-activities/index.html">2014 Activities</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-atmosphere/index.html">2014 Atmosphere</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-parties/index.html">2014 Parties</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-final/index.html">2014 Finals</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-open/index.html">2014 Open</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-mixed/index.html">2014 Mixed</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-women/index.html">2014 Women</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-prize-ceremony/index.html">2014 Prize Ceremony</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/photos/photos-2014/2014-team-pictures/index.html">2014 Team Pictures</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/video/index.html">Video</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../the-media/press/index.html">Press</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../intranet/index.html">Intranet</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../intranet/how-tos/index.html">How to&#39;s-CUC</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../intranet/how-s-pec/index.html">How to&#39;s-PEC</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../intranet/how-s-fab-copy/index.html">How to&#39;s-FAB</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../intranet/how-s-fav/index.html">How to&#39;s-FAV</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../intranet/tasksheet/index.html">What Can I Do</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../intranet/newsletters/index.html">Newsletters</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../intranet/one-day-well-laugh/index.html">One Day We&#39;ll Laugh...</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../intranet/decisions/index.html">Decisions</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="plugin">
+  <h3>Contact us</h3><p>Have questions, feedback or something cool to share? <a href="../../about/contact-us/index.html">visit our contact page</a></p>
+</div>
+      </div>
+
+      <div class="col-md-6">
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+  <script type="text/javascript">
+      STATIC = "/static/website/";
+  </script>
+
+  <script type="text/javascript" src="../../static/website/components/jquery/jquery.min.ccd0edd113b7.js"></script>
+  <script type="text/javascript" src="../../static/website/bootstrap/js/bootstrap.min.1bee61361b1c.js"></script>
+  <script type="text/javascript" src="../../static/website/bootstrap/js/ekko-lightbox.757cd416fcab.js"></script>
+
+  
+
+  
+    <script type="text/javascript" src="../../static/prediction/js/jquery-latest.js"></script>
+    <script type="text/javascript" src="../../static/prediction/js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="../../static/prediction/js/jquery.metadata.js"></script>
+
+
+	<script type="text/javascript">
+    $(document).ready(function()
+        {
+            $("#myTable").tablesorter( {sortList: [[0,0], [1,0]]} );
+        }
+    );
+    </script>
+
+
+<!-- google anafantasticalitics //-->
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-7370068-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  </body>
+</html>
