@@ -1,0 +1,2138 @@
+
+<!DOCTYPE html>
+<html>
+  <head><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"transactionName":"Ml1RYBRVVkZRUkdaXgsXdUEIV0xcX18cR1QEVR1CD1FPRgpBWlBaEEhsRw9TVkBA","applicationID":"2962551","applicationTime":1658,"agent":"","licenseKey":"4760ed8ac7","errorBeacon":"bam.nr-data.net","beacon":"bam.nr-data.net","queueTime":3}</script>
+    <title>Windmill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="blitz" content="mu-ec4a98b2-f1934bb3-eb6c9300-c874e3fc">
+    <!-- Bootstrap -->
+    <link href="/static/website/bootstrap/css/bootstrap.min.95208a901811.css" rel="stylesheet" media="screen" />
+    <link href="/static/website/font-awesome/css/font-awesome.min.fa6868c22cec.css" rel="stylesheet" />
+    <link href="/static/website/css/base.3ab320e2b36b.css" rel="stylesheet" media="screen" />
+    <link href="/static/website/css/typography.8647f22262a2.css" rel="stylesheet" media="screen" />
+    <link href="/static/website/css/bootstrap-override.cd8d91741a8e.css" rel="stylesheet" media="screen" />
+    <link href="/static/website/css/MyFontsWebfontsKit.d7331c7f753a.css" rel="stylesheet" media="screen" />
+
+    <link href="/static/website/favicon.7b24124b3db0.ico" rel="icon" type="image/x-icon" />
+
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
+    
+
+    
+  </head>
+
+  <body>
+    
+    
+
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="/static/website/img/windmill_logo_small.96d3a2a88aa0.png" /></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          
+
+<li class="">
+        <a href="/">Home</a>
+        
+
+</li>
+
+<li class="">
+        <a href="/results/">Results</a>
+        
+
+</li>
+
+<li class="active">
+        <a href="/signup/">Registration</a>
+        
+
+</li>
+
+<li class="">
+        <a href="/news/">News</a>
+        
+
+</li>
+
+<li class="">
+        <a href="/tournament-info/">Tournament info</a>
+        
+
+</li>
+
+<li class="">
+        <a href="/about/">About</a>
+        
+
+</li>
+
+<li class="">
+        <a href="/event/">Event</a>
+        
+
+</li>
+
+<li class="">
+        <a href="/the-media/">Media</a>
+        
+
+</li>
+
+<li class="">
+        <a href="/intranet/">Intranet</a>
+        
+
+</li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://twitter.com/windmilltourney" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+          <li><a href="https://www.facebook.com/WindmillUltimate" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+          <li><a href="http://www.youtube.com/user/windmillwindup" target="_blank"><i class="fa fa-youtube fa-lg"></i></a></li>
+          <li><a href="https://vimeo.com/channels/648612" target="_blank"><i class="fa fa-vimeo-square fa-lg"></i></a></li>
+        </ul>
+      </div>
+     </div>
+ </nav>
+
+
+  <div id="base-content">
+    
+
+  <div class="container">
+    <div id="section-header">
+      <div class="spotlight">
+  <img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/90/Screen%20Shot%202014-01-02%20at%2022.30.26%20.png" class="bg" />
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="restrainer">
+        
+        <h1>Pickup</h1>
+        
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+  
+    <div class="container">
+      <div id="navsub">
+        <ul class="nav nav-tabs">
+          
+            
+            
+            <li ><a href="/signup/">Registration</a></li>
+            
+
+<li class="active">
+        <a href="/signup/pickup/">Pickup</a>
+        
+
+</li>
+
+<li class="sibling">
+        <a href="/signup/volunteers/">Volunteers</a>
+        
+
+</li>
+
+<li class="sibling">
+        <a href="/signup/guests/">Guests</a>
+        
+
+</li>
+
+<li class="sibling">
+        <a href="/signup/groupme/">GroupMe</a>
+        
+
+</li>
+
+          
+        </ul>
+      </div>
+    </div>
+  
+
+  <div class="container">
+    <div class="content">
+    
+
+  <div class="row">
+
+    <div class="col-md-8 neat-images cms-content">
+        
+        <div class="plugin">
+  <p>Below you can find the pickup ads for 2017</p>
+
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <h2><a name="open">Division: open (16 ads)</a></h2>
+  </div>
+</div>
+
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Analyssa Cardenas <span class="date">Thursday, 8 June 2017, 12:45</span></h4>
+        <h5>female</h5>
+        <p>
+          <strong>Level:</strong> Intermediate - I know the game, I know some tricks<br />
+          I&#39;m 22 years old, from Canada and working in Amsterdam for the summer. I play with my university team in Canada. Cutter. Love to run. Wasn&#39;t anticipating to be able to play ultimate while in Amsterdam. Would love the opportunity to meet new fellow plastic throwing enthusiasts!
+        </p>
+        <a href="/signup/pickup/contact/484/" class="btn btn-primary">Get in touch with Analyssa</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Michael Zharkovsky <span class="date">Thursday, 11 May 2017, 21:48</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          I&#39;m from Moscow. I play for 8 years. I usually play main offensive handler, have long hands, snappy wrist and smart vision ;))  
+186 
+Have already attended 6 &quot;windmills&quot; and played 5 times for national team. My team LuckyGrass failed to join the party this year, but i still hope to take part. 
+        </p>
+        <a href="/signup/pickup/contact/478/" class="btn btn-primary">Get in touch with Michael</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Hoan  Le <span class="date">Tuesday, 9 May 2017, 23:33</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          I&#39;m from Germany. I&#39;ve been playing for 3 years. Although not so tall but very fast these caused lots of troubles for opponents. Safe Handler, annoying Defender, dirt Diver! I already attended some big tournaments in Germany and Belgium (against naional teams and highlevel clubs)
+        </p>
+        <a href="/signup/pickup/contact/473/" class="btn btn-primary">Get in touch with Hoan </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Chris Testing <span class="date">Saturday, 6 May 2017, 21:25</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Beginner - I like to play Ultimate. I love to cook also<br />
+          this is just for testing...
+        </p>
+        <a href="/signup/pickup/contact/471/" class="btn btn-primary">Get in touch with Chris</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Suresh Murty <span class="date">Saturday, 6 May 2017, 4:03</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          Love to run, catch, and make that perfect throw. I am American, 183 cm tall, and weigh 68kg. I&#39;d like to think that I&#39;m easy to get along with..
+        </p>
+        <a href="/signup/pickup/contact/470/" class="btn btn-primary">Get in touch with Suresh</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Corey Alexander <span class="date">Monday, 1 May 2017, 20:55</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Intermediate - I know the game, I know some tricks<br />
+          I&#39;m an Aussie who was bitten by the Ultimate Bug 4 years ago. I play DI mixed and DII Open&#39;s in Australia and have played a bunch in the Php, Malay. and NZ. I usually handle but am also happy cutting. Looking to play as little or much as needed and enjoy the party! Open&#39;s or Mixed! 
+        </p>
+        <a href="/signup/pickup/contact/460/" class="btn btn-primary">Get in touch with Corey</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Andrey Silin <span class="date">Monday, 17 April 2017, 20:41</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          playing for 10y. Now the top russian open club (2nd at Nationals 2 years in a row). Played for Open National team at WCBU2015.
+Mainly play defensive handler (I love defence! strong marking and positioning skills) or offence cutter. 187.
+Will not play for a team that doesn&#39;t go to parties! ;)
+        </p>
+        <a href="/signup/pickup/contact/453/" class="btn btn-primary">Get in touch with Andrey</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Jakub Kur <span class="date">Saturday, 15 April 2017, 12:27</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          Hi, my name is Jakub, 28 yo, Poland. Been playing ultimate for 7 years (open and mixed). Experienced with throwing and playing hard. Played last WUCC and number of EUCRs. I play as defence handler but I can fit in different setup. Want to play and have fun. You can count on me at the party as well
+        </p>
+        <a href="/signup/pickup/contact/447/" class="btn btn-primary">Get in touch with Jakub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Ben Noonan <span class="date">Tuesday, 11 April 2017, 16:50</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          Handler. I have represented Ireland 4 times, captaining the national team twice (Junior/U23 level). Fast with advanced throws. Have no problem adopting different styles of play and have played in Japan and Colombia. Good fun so can provide some classic Irish banter. Potato jokes are fine with me
+        </p>
+        <a href="/signup/pickup/contact/444/" class="btn btn-primary">Get in touch with Ben</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Holden Cookson <span class="date">Friday, 31 March 2017, 17:41</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Pro - My name is Ultimate<br />
+          Name:Holden. Age:24 years height/weight: 6&#39;4, 190lbs. I have been playing ultimate in the northeastern United States for 8 years now. Everything I do in life at the moment is dedicated to ultimate. Money, food, water intake, (practically my entire paycheck to tourney fees etc). 
+        </p>
+        <a href="/signup/pickup/contact/442/" class="btn btn-primary">Get in touch with Holden</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Karthik Viswanathan <span class="date">Monday, 27 March 2017, 13:40</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          Hey Guys, My name is Karthik and I&#39;m from India. I have been playing ultimate for around 6 years now. I am heading to Royan for the WCBU as a Volunteer. I have represented India in the Mixed category at WUGC. I consider myself a team player and my key skill would be to adapt to any style of play.
+        </p>
+        <a href="/signup/pickup/contact/438/" class="btn btn-primary">Get in touch with Karthik</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Jorge  Ramirez Ruiz <span class="date">Wednesday, 22 March 2017, 20:53</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          I&#39;m 24 years old, playing competitive Ultimate for ~5 years. I&#39;ve played WUCC 2014, 2015 Panams and USAU Regionals with Fénix (8 time Mexican champs). Usually an O cutter but I like funky (and layout--) D&#39;s. Happy to play Mixed too. Fluent in Spanish, English and recently (living in Québec-) French!
+        </p>
+        <a href="/signup/pickup/contact/436/" class="btn btn-primary">Get in touch with Jorge </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Fred Shi <span class="date">Monday, 13 March 2017, 14:57</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          23 years old university student in UK. Have been playing ultimate for 5 years. I train a lot with my university team and local club team, including strength and agility. I played WUGC2016 for Chinese Open team. Good at breaking zone defense and speed. I look forward to playing in Windmill [O/Mix]. 
+        </p>
+        <a href="/signup/pickup/contact/427/" class="btn btn-primary">Get in touch with Fred</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Craig  Farrell <span class="date">Wednesday, 8 March 2017, 10:48</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          Hey I&#39;m a young 29 with a great eye for the game. I&#39;ve played 2 club seasons in South Korea - plus plenty of hat and team tournaments there, in India and in the UK. I run fast, play hard and can catch almost anything. If i&#39;m not sweating then i&#39;m asleep - if i&#39;m not laying out, it&#39;s not me.
+        </p>
+        <a href="/signup/pickup/contact/425/" class="btn btn-primary">Get in touch with Craig </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Bram Markering <span class="date">Thursday, 23 February 2017, 23:37</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          I&#39;m 19, Dutch and  I&#39;ve only got 3 years of experience, but I&#39;ve played a lot of ultimate, playing in the Dutch 1st division and the U20 National team. I train 4-5 times a week, including the weight room. My strongest points are shutdown defense, breaking the mark and partying. (Open/Mixed)
+        </p>
+        <a href="/signup/pickup/contact/421/" class="btn btn-primary">Get in touch with Bram</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Joshua Phipps <span class="date">Thursday, 2 February 2017, 8:15</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          I&#39;ve played ultimate for around 5 years in Australia.  Attended a number of nationals tournaments (div2 opens, mixed). Looking to play some competitive and fun ultimate in europe while I&#39;m here for work. Masterplan-chase plastic; wear:anything, but double denim ain&#39;t bad
+(Open or Mixed)
+        </p>
+        <a href="/signup/pickup/contact/418/" class="btn btn-primary">Get in touch with Joshua</a>
+      </div>
+    </div>
+  </div>
+
+
+<br /><br />
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-md-12">
+    <h2><a name="mixed">Division: mixed (35 ads)</a></h2>
+  </div>
+</div>
+
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Christina Obermayer <span class="date">Saturday, 2 December 2017, 13:22</span></h4>
+        <h5>female</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          I’m an Austrian economics student and play for the u20 Austrian national team as well as ,box Vienna ultimate I’m a handler, love to break and hit long targets. I’d love to get some more international experience. 
+        </p>
+        <a href="/signup/pickup/contact/486/" class="btn btn-primary">Get in touch with Christina</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Jen Joyner <span class="date">Thursday, 8 June 2017, 22:29</span></h4>
+        <h5>female</h5>
+        <p>
+          <strong>Level:</strong> Intermediate - I know the game, I know some tricks<br />
+          Former competitive player from the US (NC Phoenix women &amp; ATL Rival mixed), just moved to Amsterdam, have been out of the game a couple of years, but still in shape and would love to get back out on the field.  I was primarily defense / cutter way back when, but I&#39;ll happily play wherever you need.
+        </p>
+        <a href="/signup/pickup/contact/485/" class="btn btn-primary">Get in touch with Jen</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Elliot McBride <span class="date">Friday, 26 May 2017, 11:11</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Intermediate - I know the game, I know some tricks<br />
+          Currently living in CPH, I&#39;m currently playing with KFK and have been playing in tourneys through Asia for 4 years.  I&#39;m good in the air as a deep threat and love to play D. Will layout for friends or beers or both. Let&#39;s have some fun.
+
+Elliot
+        </p>
+        <a href="/signup/pickup/contact/479/" class="btn btn-primary">Get in touch with Elliot</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Noah &quot;Muffin Man&quot; Bernhardt <span class="date">Friday, 26 May 2017, 8:03</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          I&#39;ve been playing competitively for 5 years. I am a 23 year-old guy, who just graduated college and am traveling around Europe for 2 months. I tend to play D-line handler, but I&#39;m flexible. Looking to help you win the tournament and the party! I&#39;m happy to play in open or mixed. 
+        </p>
+        <a href="/signup/pickup/contact/483/" class="btn btn-primary">Get in touch with Noah &quot;Muffin Man&quot;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Krystle Jiang <span class="date">Wednesday, 10 May 2017, 17:26</span></h4>
+        <h5>female</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          cutter handler tall-ish lady, been playing for 8 years since college; 6 years of club regionals level play in Boston; here in Europe for a project and looking for fun tourneys to pick up with on the weekends. even if you just want extra lady legs for a game or two I&#39;m down!! 
+        </p>
+        <a href="/signup/pickup/contact/476/" class="btn btn-primary">Get in touch with Krystle</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Oliver Becher <span class="date">Wednesday, 10 May 2017, 12:03</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Intermediate - I know the game, I know some tricks<br />
+          Everything that I lack in technique I make up with commitment and speed. I love the game, the spirit and the challenge and Ill always go 120%. I am a student, from Germany and just wanna have fun! I wear a torero cloth.
+        </p>
+        <a href="/signup/pickup/contact/475/" class="btn btn-primary">Get in touch with Oliver</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Hoan Le <span class="date">Wednesday, 10 May 2017, 10:53</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          I&#39;m from Germany. I&#39;ve been playing for 3 years. Although not so tall but very fast these caused lots of troubles for opponents. Safe Handler, annoying Defender, dirt Diver! I already attended some big tournaments in Germany and Belgium (against naional teams and highlevel clubs) 
+        </p>
+        <a href="/signup/pickup/contact/474/" class="btn btn-primary">Get in touch with Hoan</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Angie (G) Yu <span class="date">Tuesday, 9 May 2017, 14:24</span></h4>
+        <h5>female</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          In Germany for study abroad &amp; want to play at a cool tourney like Windmill!
+I have 4 years of experience, 2 in high school, and 2 in college. I mainly cut but handling is not a foriegn concept to me! Laying out is my fav thing, but great ultimate with great people always is a good time!
+
+
+
+        </p>
+        <a href="/signup/pickup/contact/472/" class="btn btn-primary">Get in touch with Angie (G)</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Vito Šijaković <span class="date">Friday, 5 May 2017, 19:43</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          hi 
+coming from Croatia,playing ultimate for 4 years.
+since im 2m high my handling tricks are easy to execute 
+also loves to run deep if needed.
+prefer mixed division but can handle open.
+
+        </p>
+        <a href="/signup/pickup/contact/469/" class="btn btn-primary">Get in touch with Vito</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Kashi Lee <span class="date">Thursday, 4 May 2017, 22:24</span></h4>
+        <h5>female</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          I am a 1st yr med student looking to cram in as much Ulti and fun as possible this summer break! I am a handler (can cut too) and I&#39;ve played for 10+ yrs, including UBC (USAU nationals) and Korea (WUGC &#39;16). I&#39;m going to WCBU, and would LOVE to play at Windmill. Please pick me up (Women&#39;s or Mixed)!
+        </p>
+        <a href="/signup/pickup/contact/465/" class="btn btn-primary">Get in touch with Kashi</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Corey Alexander <span class="date">Monday, 1 May 2017, 20:56</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Intermediate - I know the game, I know some tricks<br />
+          I&#39;m an Aussie who was bitten by the Ultimate Bug 4 years ago. I play DI mixed and DII Open&#39;s in Australia and have played a bunch in the Php, Malay. and NZ. I usually handle but am also happy cutting. Looking to play as little or much as needed and enjoy the party! Open&#39;s or Mixed! 
+        </p>
+        <a href="/signup/pickup/contact/461/" class="btn btn-primary">Get in touch with Corey</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>John (Junkyard) Moore <span class="date">Thursday, 27 April 2017, 1:08</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Intermediate - I know the game, I know some tricks<br />
+          I got to play with Brown Chicken Brown Cow at this tournament last year! I hope to join them again, if they&#39;ll have me. As I can&#39;t seem to find contact info on any of them, I&#39;m really just hoping they read through this and reach out to me, so I maybe can play with them again this year!
+        </p>
+        <a href="/signup/pickup/contact/459/" class="btn btn-primary">Get in touch with John (Junkyard)</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>David Kim <span class="date">Friday, 21 April 2017, 5:52</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          My name is DK. I like to travel and to play ultimate. Looking for a competitive or fun team to play with at Windmill! It&#39;ll be my first time at Windmill! I play a lot of goaltimate, so I got all the unorthodox throws!
+        </p>
+        <a href="/signup/pickup/contact/458/" class="btn btn-primary">Get in touch with David</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Andrzej  Daleszczyk <span class="date">Monday, 17 April 2017, 23:40</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          Hello,
+My name is Andrzej. I&#39;m 33 years old. I&#39;m playing for about 6 years in mixed or open (Uprising, 2 and 3 at Nationals 2014 and 15).  last 4 years mostly as a offensive handler. calm and smiling guy :-) I never wasn&#39;t in Amsterdam and at Windmill Windup. Pick me :-)
+        </p>
+        <a href="/signup/pickup/contact/455/" class="btn btn-primary">Get in touch with Andrzej </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Andrey Silin <span class="date">Monday, 17 April 2017, 20:42</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          playing for 10y. Now the top russian open club (2nd at Nationals 2 years in a row). Played for Open National team at WCBU2015.
+Mainly play defensive handler (I love defence! strong marking and positioning skills) or offence cutter. 187.
+Will not play for a team that doesn&#39;t go to parties! ;)
+        </p>
+        <a href="/signup/pickup/contact/454/" class="btn btn-primary">Get in touch with Andrey</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Elizabeth Cullins <span class="date">Monday, 17 April 2017, 0:07</span></h4>
+        <h5>female</h5>
+        <p>
+          <strong>Level:</strong> Beginner - I like to play Ultimate. I love to cook also<br />
+          I am an American. Been playing ultimate for 4 years. I would love to end my Netherlands trip meeting new awesome people and chasing some plastic But I will still attend whether I play or not. Let me know if you need a lady to play, meet, hang out, or need a cheerleader on the sidelines.
+        </p>
+        <a href="/signup/pickup/contact/452/" class="btn btn-primary">Get in touch with Elizabeth</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Tommy Nomad <span class="date">Saturday, 15 April 2017, 23:40</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Intermediate - I know the game, I know some tricks<br />
+          What I wear?  A skirt.  For every one of my 25+ years in this amazing game.  I&#39;ve been a captain, handler, cutter, coach, orange slicer, and spirit animal at every level from barefoot pickup to WUCC (a long time ago).  Now I&#39;m fine wine: smooth, insouciant, but don&#39;t rush me.
+
+        </p>
+        <a href="/signup/pickup/contact/451/" class="btn btn-primary">Get in touch with Tommy</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Julia Kostyuchenko <span class="date">Saturday, 15 April 2017, 20:51</span></h4>
+        <h5>female</h5>
+        <p>
+          <strong>Level:</strong> Intermediate - I know the game, I know some tricks<br />
+          Russian student. I&#39;m looking for a team for a good game and fun. Been playing about 4 years, training with a club team Cosmic Girls and my student mixed team. After Boracay I have a desire to play at such a cool tournament like Windmill. 
+        </p>
+        <a href="/signup/pickup/contact/450/" class="btn btn-primary">Get in touch with Julia</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Jakub Kur <span class="date">Saturday, 15 April 2017, 12:30</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          Hi, my name is Jakub, 28 yo, Poland. Been playing ultimate for 7 years (open and mixed). Experienced with throwing and playing hard. Played last WUCC and number of EUCRs. I play as defence handler but I can fit in different setup. Want to play and have fun. You can count on me at the party as well
+        </p>
+        <a href="/signup/pickup/contact/448/" class="btn btn-primary">Get in touch with Jakub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Ben Noonan <span class="date">Tuesday, 11 April 2017, 16:51</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          Handler. I have represented Ireland 4 times, captaining the national team twice (Junior/U23 level). Fast with advanced throws. Have no problem adopting different styles of play and have played in Japan and Colombia. Good fun so can provide some classic Irish banter. Potato jokes are fine with me
+        </p>
+        <a href="/signup/pickup/contact/445/" class="btn btn-primary">Get in touch with Ben</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Patrick Moran <span class="date">Sunday, 9 April 2017, 22:44</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          Hi, I&#39;m Patrick and I&#39;m from Ireland. Playing 7+ years, a cutter either side of the disc but have a particular love for defence. I have good throws and good tactical knowledge. I&#39;ll be at Vienna Spring Break and Disc Days Cologne before Windmill, so come say hello!
+        </p>
+        <a href="/signup/pickup/contact/443/" class="btn btn-primary">Get in touch with Patrick</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Raphaël Pieroni <span class="date">Tuesday, 28 March 2017, 21:58</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          Hi there!
+
+I&#39;m Raf, playing ultimate since 12 years, I&#39;m 36 years, still in a great shape, training hard in Geneva Switzerland with an open &amp; mixed Team. I&#39;m usually a Handler but can cut also if needed. I would love to play utlimate in Windmill again in a mixed team. 
+
+
+        </p>
+        <a href="/signup/pickup/contact/441/" class="btn btn-primary">Get in touch with Raphaël</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Milan van den Bovenkamp <span class="date">Monday, 27 March 2017, 15:43</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          For the last 4 years, this year is my fifth; I&#39;ve been playing Ultimate—ánd been part of the crew of Windmill. For once, I would like to play this amazing tournament. The crew became my family, the weeks and months prior to Windmill are &#39;my ramp of excitement&#39;. I&#39;m tall, fast and a teamplayer.  
+        </p>
+        <a href="/signup/pickup/contact/437/" class="btn btn-primary">Get in touch with Milan</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Karthik Viswanathan <span class="date">Monday, 27 March 2017, 13:41</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          Hey Guys, My name is Karthik and I&#39;m from India. I have been playing ultimate for around 6 years now. I am heading to Royan for the WCBU as a Volunteer. I have represented India in the Mixed category at WUGC. I consider myself a team player and my key skill would be to adapt to any style of play.
+        </p>
+        <a href="/signup/pickup/contact/439/" class="btn btn-primary">Get in touch with Karthik</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Sam Murphy <span class="date">Monday, 20 March 2017, 14:11</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          Howiya, Sam from Ireland. I&#39;ve been playing for nearly 5 years. I&#39;ve good throws, I&#39;m fast and I&#39;m 6ft3 so I&#39;ve played in just about every role on the pitch. I&#39;ve played high level club and am on the Irish u24s open team. Looking to have some serious craic and chase some plastic.
+        </p>
+        <a href="/signup/pickup/contact/435/" class="btn btn-primary">Get in touch with Sam</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Salomon Schulz <span class="date">Sunday, 19 March 2017, 18:11</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          Hey Ultimate Lovers! 
+I´m Slalom from Germany (Stuttgart)! I love defense, cutting hard, clearing harder and playing some competitive ultimate while still keeping up the fun! On offense I usually play in the stack. I have got a great eye - and one that is slightly smaller :-). 
+keep it flying!
+        </p>
+        <a href="/signup/pickup/contact/434/" class="btn btn-primary">Get in touch with Salomon</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Kate Yakusheva <span class="date">Sunday, 19 March 2017, 13:21</span></h4>
+        <h5>female</h5>
+        <p>
+          <strong>Level:</strong> Intermediate - I know the game, I know some tricks<br />
+          I am just a Russian girl who is looking for a team to run, catch and even throw a disc and of course to have fun. I&#39;m not such experienced player, I&#39;ve  been paying for only 1,5 year, but I practice with on of the best Russian women teams and also play in mixed division. I prefer to be cutter
+        </p>
+        <a href="/signup/pickup/contact/433/" class="btn btn-primary">Get in touch with Kate</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Sandy Pham <span class="date">Saturday, 18 March 2017, 13:11</span></h4>
+        <h5>female</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          I&#39;m a 31 yo American living in Belgium. Been playing ultimate for 10 years (womens and mixed...club and leagues) mostly in North Carolina but some in Colorado. I love defense, am quick, and am a team player. I also love beer, and coming from Belgium, plan on bringing some special brews to share. 
+        </p>
+        <a href="/signup/pickup/contact/432/" class="btn btn-primary">Get in touch with Sandy</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Yannick Folwill <span class="date">Friday, 17 March 2017, 15:07</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          I&#39;ve been chasing discs half around the world for more than 7 years now. I&#39;m mad for running and a solid player in any position on the field, especially on defence. 
+My home team is DISConnection Freiburg. As there is never enough game time, I also motivated a savage lineup rocking fun tournaments.
+        </p>
+        <a href="/signup/pickup/contact/430/" class="btn btn-primary">Get in touch with Yannick</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Connor Smith <span class="date">Tuesday, 14 March 2017, 3:52</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          I&#39;m 23 and from Florida (US). I played 4 years at the University of Miami. I captained for 2 years. During that time I also played open and mixed club. I&#39;m a utility player. Whatever you need, I can do it. Looking forward to playing some great games and having an even better time. 
+        </p>
+        <a href="/signup/pickup/contact/428/" class="btn btn-primary">Get in touch with Connor</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Craig Farrell <span class="date">Wednesday, 8 March 2017, 10:48</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          Hey I&#39;m a young 29 with a great eye. I&#39;ve played 2 club seasons in South Korea, plus plenty of hat and team tournaments there, in India and in the UK. 
+I run fast, play hard and can catch almost anything. If i&#39;m not sweating then i&#39;m asleep - if i&#39;m not laying out, it&#39;s not me.
+        </p>
+        <a href="/signup/pickup/contact/424/" class="btn btn-primary">Get in touch with Craig</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Vlad Lehelt <span class="date">Monday, 27 February 2017, 9:49</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Intermediate - I know the game, I know some tricks<br />
+          Hi, Guys.
+I&#39;ve been playing ultimate for 1,5 y for St Petersturg teams Flying Steps and Flying Setps mixed.
+I&#39;m explosive at cuts and realy love to defense. 
+I&#39;m headed to the beach worlds in Royan for Russian national team
+And it&#39;ll be grate to play Windmill famed tournament week before WCBU
+
+        </p>
+        <a href="/signup/pickup/contact/422/" class="btn btn-primary">Get in touch with Vlad</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>ABILASH HARIDASS <span class="date">Monday, 20 February 2017, 7:48</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          Hey Guys,My name is Abilash and I am from India.I have been playing for more than 8 years and I am headed to the beach worlds in Royan.I would love to play this famed tournament as I will be in Europe for a couple weeks before the tournament.I normally play cutter on the teams I play.
+        </p>
+        <a href="/signup/pickup/contact/420/" class="btn btn-primary">Get in touch with ABILASH</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Andrés Merchán <span class="date">Thursday, 16 February 2017, 14:59</span></h4>
+        <h5>male</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          Hi, Guys, My name is Andy I&#39;m from Colombia and I have been living in Argentina for 6 years, I play ultimate a couple years ago.  I love handling, although I don&#39;t care if I have to be on the stack.  This year i&#39;m gonna play the PAUCC.  I want to have fun playing.  
+        </p>
+        <a href="/signup/pickup/contact/419/" class="btn btn-primary">Get in touch with Andrés</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Callista  Coldwell <span class="date">Saturday, 12 November 2016, 18:06</span></h4>
+        <h5>female</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          I am a Cdn living in IRE presently 
+Lover of  flying plastic for 6 years, played Nationally for 4 years (mixed) and 2 years (womens). Avid user of  Ultimate Athlete Project training program and lately am seen as the handler distributor for my smooth transitions and field awareness.(MIXED OR WOMENS)
+        </p>
+        <a href="/signup/pickup/contact/416/" class="btn btn-primary">Get in touch with Callista </a>
+      </div>
+    </div>
+  </div>
+
+
+<br /><br />
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-md-12">
+    <h2><a name="women">Division: women (4 ads)</a></h2>
+  </div>
+</div>
+
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Kashi Lee <span class="date">Thursday, 4 May 2017, 22:24</span></h4>
+        <h5>female</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          I am a 1st yr med student looking to cram in as much Ulti and fun as possible this summer break! I am a handler (can cut too) and I&#39;ve played for 10+ yrs, including UBC (USAU nationals) and Korea (WUGC &#39;16). I&#39;m going to WCBU, and would LOVE to play at Windmill. Please pick me up (Women&#39;s or Mixed)!
+        </p>
+        <a href="/signup/pickup/contact/466/" class="btn btn-primary">Get in touch with Kashi</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Madeleine Goh <span class="date">Friday, 21 April 2017, 2:21</span></h4>
+        <h5>female</h5>
+        <p>
+          <strong>Level:</strong> Intermediate - I know the game, I know some tricks<br />
+          I am a Singaporean student studying in Stockholm. I have been playing for 2.5 years, and have represented my college in several competitions. I usually cut and LOVE to play defense.  Hope to be able to join and have some fun in Amsterdam! (Women and Mixed)
+        </p>
+        <a href="/signup/pickup/contact/457/" class="btn btn-primary">Get in touch with Madeleine</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Julia Kostyuchenko <span class="date">Saturday, 15 April 2017, 20:42</span></h4>
+        <h5>female</h5>
+        <p>
+          <strong>Level:</strong> Intermediate - I know the game, I know some tricks<br />
+          Russian student. I&#39;m looking for a team for a good game and fun. Been playing about 4 years, training with a club team Cosmic Girls and my student team. After Boracay I have a desire to play at such a cool tournament like Windmill. 
+        </p>
+        <a href="/signup/pickup/contact/449/" class="btn btn-primary">Get in touch with Julia</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pickup-entry">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Sandy Pham <span class="date">Tuesday, 28 March 2017, 12:05</span></h4>
+        <h5>female</h5>
+        <p>
+          <strong>Level:</strong> Advanced - I read the game, I love the plastic<br />
+          I&#39;m an American living in Belgium with 10 years of ultimate experience looking to pick up with any team. I&#39;m speedy, love to cut, and play defense. I played in college for UNC Pleiades and for North Carolina Mixed teams at the regional level. 
+        </p>
+        <a href="/signup/pickup/contact/440/" class="btn btn-primary">Get in touch with Sandy</a>
+      </div>
+    </div>
+  </div>
+
+
+<br /><br />
+
+
+
+
+
+    </div>
+    <div class="col-md-4 neat-images ww-sidebar">
+        <div class="plugin">
+  <p>Use the following links to scroll to:</p><p><a href="#open">Open Pickups</a></p>
+<p><a href="#mixed">Mixed Pickups</a></p>
+<p><a href="#women">Women Pickups</a></p>
+<p><a href="#signup">Signup Form</a></p>
+
+</div>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-8">
+        <a name="signup"></a>
+        <h2>Pickup Signup Form</h2>
+        
+
+        <p>
+        Are you looking to come to the Windmill, and are looking for a team to play on?
+        Fill in the form below! After activation, your ad will be displayed in this section of the website
+        so that the teams can pick you up.
+        </p>
+        <form action="/signup/pickup/" method="post" class="form-vertical"><input type='hidden' name='csrfmiddlewaretoken' value='MXElpC1PsrHuooQlnJIznztw4DWoD7Ok' />
+            
+
+
+    <input id="id_active" name="active" type="hidden" />
+
+    <input id="id_team" name="team" type="hidden" />
+
+
+
+    
+
+<div class="form-group">
+    
+        
+            <label class="control-label  " for="id_first_name">First Name</label>
+        
+
+        <div class=" ">
+            <input class=" form-control" id="id_first_name" maxlength="100" name="first_name" type="text" />
+
+            
+
+            
+        </div>
+    
+</div>
+
+
+    
+
+<div class="form-group">
+    
+        
+            <label class="control-label  " for="id_last_name">Last Name</label>
+        
+
+        <div class=" ">
+            <input class=" form-control" id="id_last_name" maxlength="100" name="last_name" type="text" />
+
+            
+
+            
+        </div>
+    
+</div>
+
+
+    
+
+<div class="form-group">
+    
+        
+            <label class="control-label  " for="id_email">Email</label>
+        
+
+        <div class=" ">
+            <input class=" form-control" id="id_email" maxlength="75" name="email" type="email" />
+
+            
+
+            
+        </div>
+    
+</div>
+
+
+    
+
+<div class="form-group">
+    
+        
+            <label class="control-label  " for="id_gender">Gender</label>
+        
+
+        <div class=" ">
+            <select class=" form-control" id="id_gender" name="gender">
+<option value="0" selected="selected">male</option>
+<option value="1">female</option>
+</select>
+
+            
+
+            
+        </div>
+    
+</div>
+
+
+    
+
+<div class="form-group">
+    
+        
+            <label class="control-label  ">Level</label>
+        
+        <div class="">
+            
+                <div class="radio">
+                    <label>
+                        <input checked="checked" name="level" type="radio" value="1" />
+                        Beginner - I like to play Ultimate. I love to cook also
+                    </label>
+                </div>
+            
+                <div class="radio">
+                    <label>
+                        <input name="level" type="radio" value="2" />
+                        Intermediate - I know the game, I know some tricks
+                    </label>
+                </div>
+            
+                <div class="radio">
+                    <label>
+                        <input name="level" type="radio" value="3" />
+                        Advanced - I read the game, I love the plastic
+                    </label>
+                </div>
+            
+                <div class="radio">
+                    <label>
+                        <input name="level" type="radio" value="4" />
+                        Pro - My name is Ultimate
+                    </label>
+                </div>
+            
+
+            
+
+            
+        </div>
+    
+</div>
+
+
+    
+
+<div class="form-group">
+    
+        
+            <label class="control-label  " for="id_division">Division</label>
+        
+
+        <div class=" ">
+            <select class=" form-control" id="id_division" name="division">
+<option value="open" selected="selected">open</option>
+<option value="mixed">mixed</option>
+<option value="women">women</option>
+</select>
+
+            
+
+            
+        </div>
+    
+</div>
+
+
+    
+
+<div class="form-group">
+    
+        
+            <label class="control-label  " for="id_message">Describe yourself, who you are and what you wear. What&#39;s your masterplan?</label>
+        
+
+        <div class=" ">
+            <textarea class=" form-control" cols="40" id="id_message" name="message" rows="10">
+</textarea>
+
+            
+
+            
+        </div>
+    
+</div>
+
+
+    
+
+<div class="form-group">
+    
+        
+            <label class="control-label  " for="id_captcha">Captcha</label>
+        
+
+        <div class=" ">
+            <div class="g-recaptcha" data-sitekey="6Lf8zv4SAAAAAMZ5te8FfRjcPgS7cOdpl4iZH5dA"></div>
+<noscript>
+    <div style="width: 302px; height: 352px;">
+        <div style="width: 302px; height: 352px; position: relative;">
+            <div style="width: 302px; height: 352px; position: absolute;">
+                <iframe src="https://www.google.com/recaptcha/api/fallback?k=6Lf8zv4SAAAAAMZ5te8FfRjcPgS7cOdpl4iZH5dA"
+                        frameborder="0" scrolling="no"
+                        style="width: 302px; height:352px; border-style: none;">
+                </iframe>
+            </div>
+            <div style="width: 250px; height: 80px; position: absolute; border-style: none;
+                  bottom: 21px; left: 25px; margin: 0px; padding: 0px; right: 25px;">
+                <textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                          class="g-recaptcha-response"
+                          style="width: 250px; height: 80px; border: 1px solid #c1c1c1;
+                         margin: 0px; padding: 0px; resize: none;" value="">
+                </textarea>
+            </div>
+        </div>
+    </div>
+</noscript>
+
+            
+
+            
+        </div>
+    
+</div>
+
+
+
+            <button type="submit" class="btn btn-primary">Signup</button>
+        </form>
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+
+
+  </div>
+  
+
+<div id="sponsors">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <span class="plugin_picture">
+<a href="http://bavaria.com/">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/bavaria%20logo_IEqdEyU.jpg" alt="" />
+</a>
+</span><span class="plugin_picture align-right">
+<a href="http://fiveultimate.com/">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/Screenshot%202017-04-10%2016.46.11.png" alt="" />
+</a>
+</span><span class="plugin_picture align-right">
+<a href="http://www.fanseat.com/">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/fanseat_Qx7Zj9U.png" alt="" />
+</a>
+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<div id="footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12">
+        <ul class="sitemap">
+          <h3>Sitemap</h3>
+          
+
+  
+
+  
+    <li class="">
+        <a href="/results/">Results</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/results/spirit-scores/">Spirit Scores</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/results/prediction-contest/">Prediction Contest</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/results/prediction-contest/rules/">Prediction Rules</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/results/prediction-contest/prediction-prizes/">Prediction Prizes</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="ancestor">
+        <a href="/signup/">Registration</a>
+        
+          <ul>
+            
+
+  
+    <li class="selected">
+        <a href="/signup/pickup/">Pickup</a>
+        
+    </li>
+  
+
+  
+    <li class="sibling">
+        <a href="/signup/volunteers/">Volunteers</a>
+        
+    </li>
+  
+
+  
+    <li class="sibling">
+        <a href="/signup/guests/">Guests</a>
+        
+    </li>
+  
+
+  
+    <li class="sibling">
+        <a href="/signup/groupme/">GroupMe</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/">News</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/news/categories/">Categories</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/tags/">Tags</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/news/tags/predictioncontest/">predictioncontest</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/tags/Windmill2015/">Windmill2015</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/authors/">Authors</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/news/authors/les/">Les Kleuver</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/authors/nan/">Nan Derosa</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/authors/katie/">Katie Stephenson</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/authors/tim.dejong/">Tim de Jong</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/authors/aljo/">Aljaž Jazz Gaberšek</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/authors/ravi/">Ravi Vasudevan</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/authors/bmark/">bmark</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/authors/lisa/">Lisa Kouwenberg</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/tournament-info/">Tournament info</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/tournament-info/fee/">Fees and Deadlines</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/tournament-info/directions/">Directions</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/tournament-info/team-selection/">Team Selection</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/tournament-info/accommodation/">Accommodation</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/tournament-info/rules-and-format/">Rules and format</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/tournament-info/spirit-captains/">Spirit Captains</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/tournament-info/food/">Food</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/tournament-info/faq/">FAQ</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/about/">About</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/about/crew/">Crew</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/about/what-ultimate/">What is Ultimate</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/about/green-windmill/">Green Windmill</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/about/history/">History</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/about/sponsors/">Sponsors</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/about/amsterdam/">Amsterdam</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/about/windmill-gear/">Windmill Gear</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/about/contact-us/">Contact us</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/about/i-wanna-be-windmill/">I wanna BE the Windmill</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/event/">Event</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/event/play-schedule/">Playing Schedule</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/event/entertainment-schedule/">Entertainment Schedule</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/event/map/">Map</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/">Media</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/the-media/photos/">Photos</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2016/">Photos 2016</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2016/2016-thursday/">2016 Thursday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2016/2016-friday/">2016 Friday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2016/2016-saturday/">2016 Saturday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2016/2016-sunday/">2016 Sunday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2016/2016-teampictures/">2016 Teampictures</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/">Photos 2015</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/2015-atmosphere/">2015 Atmosphere</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/2015-activities/">2015 Activities</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/2015-best/">2015 Best of</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/2015-parties/">2015 Parties</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/2015-finals/">2015 Finals</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/2015-open/">2015 Open</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/2015-mixed/">2015 Mixed</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/2015-women/">2015 Women</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/2015-prize-ceremony/">2015 Prize Ceremony</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/">Photos 2014</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-best/">2014 Best of</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-activities/">2014 Activities</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-atmosphere/">2014 Atmosphere</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-parties/">2014 Parties</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-final/">2014 Finals</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-open/">2014 Open</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-mixed/">2014 Mixed</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-women/">2014 Women</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-prize-ceremony/">2014 Prize Ceremony</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-team-pictures/">2014 Team Pictures</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/video/">Video</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/the-media/video/video-2015/">Video 2015</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/video/video-2014/">Video 2014</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/video/video-2013/">Video 2013</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/video/video-2012/">Video 2012</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/video/video-2011/">Video 2011</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/video/video-2010/">Video 2010</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/video/video-2009/">Video 2009</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/video/video-2008/">Video 2008</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/video/video-2007/">Video 2007</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/documentary/">Documentary</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/press/">Press</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/intranet/">Intranet</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/intranet/how-tos/">How to&#39;s-CUC</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/intranet/how-s-pec/">How to&#39;s-PEC</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/intranet/how-s-fab-copy/">How to&#39;s-FAB</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/intranet/how-s-fav/">How to&#39;s-FAV</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/intranet/tasksheet/">What Can I Do</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/intranet/newsletters/">Newsletters</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/intranet/one-day-well-laugh/">One Day We&#39;ll Laugh...</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/intranet/decisions/">Decisions</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="plugin">
+  <h3>Contact us</h3><p>Have questions, feedback or something cool to share? <a href="/about/contact-us/">visit our contact page</a></p>
+</div>
+      </div>
+
+      <div class="col-md-6">
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+  <script type="text/javascript">
+      STATIC = "/static/website/";
+  </script>
+
+  <script type="text/javascript" src="/static/website/components/jquery/jquery.min.ccd0edd113b7.js"></script>
+  <script type="text/javascript" src="/static/website/bootstrap/js/bootstrap.min.1bee61361b1c.js"></script>
+  <script type="text/javascript" src="/static/website/bootstrap/js/ekko-lightbox.757cd416fcab.js"></script>
+
+  
+
+  
+    
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+<!-- google anafantasticalitics //-->
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-7370068-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  </body>
+</html>

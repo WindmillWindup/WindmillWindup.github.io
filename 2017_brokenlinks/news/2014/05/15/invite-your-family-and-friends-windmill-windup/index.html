@@ -1,0 +1,1194 @@
+
+<!DOCTYPE html>
+<html>
+  <head><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"queueTime":0,"licenseKey":"4760ed8ac7","agent":"","applicationTime":753,"applicationID":"2962551","transactionName":"Ml1RYBRVVkZRUkdaXgsXdUEIV0xcX18cSVgLVlpVSEJRUEdCHVZfEUpaURUOfVtEQ0p3VBFZWlhIU11B","errorBeacon":"bam.nr-data.net","beacon":"bam.nr-data.net"}</script>
+    <title>Invite your family and friends to Windmill Windup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="blitz" content="mu-ec4a98b2-f1934bb3-eb6c9300-c874e3fc">
+    <!-- Bootstrap -->
+    <link href="/static/website/bootstrap/css/bootstrap.min.95208a901811.css" rel="stylesheet" media="screen" />
+    <link href="/static/website/font-awesome/css/font-awesome.min.fa6868c22cec.css" rel="stylesheet" />
+    <link href="/static/website/css/base.3ab320e2b36b.css" rel="stylesheet" media="screen" />
+    <link href="/static/website/css/typography.8647f22262a2.css" rel="stylesheet" media="screen" />
+    <link href="/static/website/css/bootstrap-override.cd8d91741a8e.css" rel="stylesheet" media="screen" />
+    <link href="/static/website/css/MyFontsWebfontsKit.d7331c7f753a.css" rel="stylesheet" media="screen" />
+
+    <link href="/static/website/favicon.7b24124b3db0.ico" rel="icon" type="image/x-icon" />
+
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
+    
+
+    
+  <link href="/static/website/css/blog.css" rel="stylesheet"/>
+
+  </head>
+
+  <body>
+    
+    
+
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="/static/website/img/windmill_logo_small.96d3a2a88aa0.png" /></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          
+
+<li class="">
+        <a href="/">Home</a>
+        
+
+</li>
+
+<li class="">
+        <a href="/results/">Results</a>
+        
+
+</li>
+
+<li class="">
+        <a href="/signup/">Registration</a>
+        
+
+</li>
+
+<li class="active">
+        <a href="/news/">News</a>
+        
+
+</li>
+
+<li class="">
+        <a href="/tournament-info/">Tournament info</a>
+        
+
+</li>
+
+<li class="">
+        <a href="/about/">About</a>
+        
+
+</li>
+
+<li class="">
+        <a href="/event/">Event</a>
+        
+
+</li>
+
+<li class="">
+        <a href="/the-media/">Media</a>
+        
+
+</li>
+
+<li class="">
+        <a href="/intranet/">Intranet</a>
+        
+
+</li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://twitter.com/windmilltourney" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+          <li><a href="https://www.facebook.com/WindmillUltimate" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+          <li><a href="http://www.youtube.com/user/windmillwindup" target="_blank"><i class="fa fa-youtube fa-lg"></i></a></li>
+          <li><a href="https://vimeo.com/channels/648612" target="_blank"><i class="fa fa-vimeo-square fa-lg"></i></a></li>
+        </ul>
+      </div>
+     </div>
+ </nav>
+
+
+  <div id="base-content">
+    
+
+    <div class="container">
+      <div class="blog-content">
+        <div class="row">
+          <div id="content" class="neat-images hfeed col-md-8">
+            
+
+  
+
+<article id="entry-15" class="hentry featured">
+  
+  <header class="entry-header">
+    
+    <h2 class="entry-title">
+      <a href="/news/2014/05/15/invite-your-family-and-friends-windmill-windup/" title="Invite your family and friends to Windmill Windup" rel="bookmark">
+        Invite your family and friends to Windmill Windup
+      </a>
+    </h2>
+    
+    
+    <p class="entry-info">
+      
+      
+      Written by
+      
+      <span class="vcard author">
+        Aljaž Jazz Gaberšek</span>
+      
+      on
+      
+      
+      <time datetime="2014-05-15T16:45:18+02:00" pubdate="pubdate">Thursday, 15 May 2014</time>
+      
+      .
+    </p>
+    
+  </header>
+  
+
+  
+  <div class="entry-body">
+    
+    
+    <div class="entry-image">
+      <p>
+        
+          <img src="http://wwsite.s3.amazonaws.com/media/uploads/zinnia/ladies.jpg" alt="Invite your family and friends to Windmill Windup" class="thumbnail pull-left" style="margin-right: 15px;" />
+          
+      </p>
+    </div>
+    
+    
+    
+    <div class="entry-content">
+      <h4>Getting friends and family to enjoy a nice Sunday, sipping cocktails, beer, smoothies or what have you.&#160;Sharing the elephant love for flying plastic at Windmill Windup 2014. Buy 4, get 2 for free!</h4><p>Windmill is a great way to show the world what high level Ultimate is all about. Invite your family and friends for a day at the Windmill where they can watch high level games and well… experience the Windmill! </p><p>The ticket sale starts today, click <a title="Kaartverkoop Windmill Windup 2014" href="http://www.windmillwindup.com/event/kaartverkoop-windmill-windup-2014/">here</a>. Buy 4, get 2 extra free! All proceeds go to the development of Ultimate.</p><p><em><sub>Written by Lisa Kouwenberg.</sub></em></p>
+    </div>
+    
+    
+    
+    
+  </div>
+  
+
+  
+
+  
+</article>
+
+
+
+
+<aside class="entry-widgets" role="complementary">
+  
+  
+  
+  <div class="entry-similar well">
+    <h3>Similar entries</h3>
+    
+<ul class="entries-similar">
+  
+  <li>
+    <a href="/news/2015/11/30/registration-2016-more-mixed/" title="Registration 2016--more mixed!" rel="bookmark">Registration 2016--more mixed!</a>
+  </li>
+  
+  <li>
+    <a href="/news/2015/07/26/lost-found-windmill-2015/" title="Lost &amp; Found Windmill 2015" rel="bookmark">Lost &amp; Found Windmill 2015</a>
+  </li>
+  
+  <li>
+    <a href="/news/2015/03/21/wimdu-windmill-partner-accomodation/" title="Wimdu: Windmill Partner for Accomodation" rel="bookmark">Wimdu: Windmill Partner for Accomodation</a>
+  </li>
+  
+  <li>
+    <a href="/news/2014/04/01/check-out-pickup-page/" title="Check out the Pickup Page" rel="bookmark">Check out the Pickup Page</a>
+  </li>
+  
+  <li>
+    <a href="/news/2014/07/01/wind-down-x/" title="Wind Down X" rel="bookmark">Wind Down X</a>
+  </li>
+  
+</ul>
+
+  </div>
+  <div class="entry-prev-next">
+    <ul class="pager">
+      
+      
+      <li class="next">
+        <a href="/news/2014/05/26/thank-you-and-you-and-you-and-you/" title="Thank you. And You. And You, and you … " rel="next">
+          Thank you. And You. And You, and you …  &rarr;
+        </a>
+      </li>
+      
+      
+      
+      
+      <li class="previous">
+        <a href="/news/2014/05/14/play-play-play-predictions-game/" title="Play! Play. Play. The Predictions game" rel="prev">
+          &larr; Play! Play. Play. The Predictions game
+        </a>
+      </li>
+      
+      
+    </ul>
+  </div>
+</aside>
+
+
+
+<section id="comments"  style="display: none;">
+  <h3>Comments</h3>
+  
+    
+  <p>Comments are closed.</p>
+    
+  
+</section>
+
+
+
+<section id="pingbacks" style="display: none;">
+  <h3>Pingbacks</h3>
+  
+  
+  <p>Pingbacks are open.</p>
+  
+</section>
+
+
+
+
+
+
+
+          </div>
+
+          <div id="sidebar" class="col-md-4">
+            
+<div class="sidebar-entry">
+  <h3>Popular entries</h3>
+  
+<ul class="no-entries-popular">
+  
+  <li>
+    No entries yet.
+  </li>
+  
+</ul>
+
+</div>
+
+<div class="sidebar-entry">
+  <h3>Recent entries</h3>
+  
+<ul class="entries-recent">
+  
+  <li>
+    <a href="/news/2017/11/26/windmill-2018/" title="Windmill 2018 is on!" rel="bookmark">Windmill 2018 is on!</a>
+  </li>
+  
+  <li>
+    <a href="/news/2017/06/10/fanseat-livestream/" title="Fanseat Livestream" rel="bookmark">Fanseat Livestream</a>
+  </li>
+  
+  <li>
+    <a href="/news/2017/06/08/follow-games/" title="Follow the Games" rel="bookmark">Follow the Games</a>
+  </li>
+  
+  <li>
+    <a href="/news/2017/05/26/prediction-contest-win-stuff/" title="Enter the Prediction Contest - Win Stuff! " rel="bookmark">Enter the Prediction Contest - Win Stuff! </a>
+  </li>
+  
+  <li>
+    <a href="/news/2016/10/23/windmill-2017-onnnnn/" title="Windmill 2017 is ONNNNN! " rel="bookmark">Windmill 2017 is ONNNNN! </a>
+  </li>
+  
+</ul>
+
+</div>
+
+<div class="sidebar-entry">
+  <h3>Random entries</h3>
+  
+<ul class="entries-random">
+  
+  <li>
+    <a href="/news/2016/05/18/join-windmills-goaltimate-clinic/" title="Join Windmill&#39;s Goaltimate Clinic!" rel="bookmark">Join Windmill&#39;s Goaltimate Clinic!</a>
+  </li>
+  
+  <li>
+    <a href="/news/2015/02/21/check-your-mailbox/" title="Check your mailbox" rel="bookmark">Check your mailbox</a>
+  </li>
+  
+  <li>
+    <a href="/news/2015/07/26/lost-found-windmill-2015/" title="Lost &amp; Found Windmill 2015" rel="bookmark">Lost &amp; Found Windmill 2015</a>
+  </li>
+  
+  <li>
+    <a href="/news/2014/06/06/windmill-2014-even-greener-phosphorus-recovery-wastewater/" title="Windmill 2014 even &quot;greener&quot;: Phosphorus recovery from wastewater" rel="bookmark">Windmill 2014 even &quot;greener&quot;: Phosphorus recovery from wastewater</a>
+  </li>
+  
+  <li>
+    <a href="/news/2015/11/30/registration-2016-more-mixed/" title="Registration 2016--more mixed!" rel="bookmark">Registration 2016--more mixed!</a>
+  </li>
+  
+</ul>
+
+</div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  
+
+<div id="sponsors">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <span class="plugin_picture">
+<a href="http://bavaria.com/">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/bavaria%20logo_IEqdEyU.jpg" alt="" />
+</a>
+</span><span class="plugin_picture align-right">
+<a href="http://fiveultimate.com/">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/Screenshot%202017-04-10%2016.46.11.png" alt="" />
+</a>
+</span><span class="plugin_picture align-right">
+<a href="http://www.fanseat.com/">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/fanseat_Qx7Zj9U.png" alt="" />
+</a>
+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<div id="footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12">
+        <ul class="sitemap">
+          <h3>Sitemap</h3>
+          
+
+  
+
+  
+    <li class="">
+        <a href="/results/">Results</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/results/spirit-scores/">Spirit Scores</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/results/prediction-contest/">Prediction Contest</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/results/prediction-contest/rules/">Prediction Rules</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/results/prediction-contest/prediction-prizes/">Prediction Prizes</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/signup/">Registration</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/signup/pickup/">Pickup</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/signup/volunteers/">Volunteers</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/signup/guests/">Guests</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/signup/groupme/">GroupMe</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="ancestor">
+        <a href="/news/">News</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/news/categories/">Categories</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/tags/">Tags</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/news/tags/predictioncontest/">predictioncontest</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/tags/Windmill2015/">Windmill2015</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/authors/">Authors</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/news/authors/les/">Les Kleuver</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/authors/nan/">Nan Derosa</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/authors/katie/">Katie Stephenson</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/authors/tim.dejong/">Tim de Jong</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/authors/aljo/">Aljaž Jazz Gaberšek</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/authors/ravi/">Ravi Vasudevan</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/authors/bmark/">bmark</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/news/authors/lisa/">Lisa Kouwenberg</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/tournament-info/">Tournament info</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/tournament-info/fee/">Fees and Deadlines</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/tournament-info/directions/">Directions</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/tournament-info/team-selection/">Team Selection</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/tournament-info/accommodation/">Accommodation</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/tournament-info/rules-and-format/">Rules and format</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/tournament-info/spirit-captains/">Spirit Captains</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/tournament-info/food/">Food</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/tournament-info/faq/">FAQ</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/about/">About</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/about/crew/">Crew</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/about/what-ultimate/">What is Ultimate</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/about/green-windmill/">Green Windmill</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/about/history/">History</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/about/sponsors/">Sponsors</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/about/amsterdam/">Amsterdam</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/about/windmill-gear/">Windmill Gear</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/about/contact-us/">Contact us</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/about/i-wanna-be-windmill/">I wanna BE the Windmill</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/event/">Event</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/event/play-schedule/">Playing Schedule</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/event/entertainment-schedule/">Entertainment Schedule</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/event/map/">Map</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/">Media</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/the-media/photos/">Photos</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2016/">Photos 2016</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2016/2016-thursday/">2016 Thursday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2016/2016-friday/">2016 Friday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2016/2016-saturday/">2016 Saturday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2016/2016-sunday/">2016 Sunday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2016/2016-teampictures/">2016 Teampictures</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/">Photos 2015</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/2015-atmosphere/">2015 Atmosphere</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/2015-activities/">2015 Activities</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/2015-best/">2015 Best of</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/2015-parties/">2015 Parties</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/2015-finals/">2015 Finals</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/2015-open/">2015 Open</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/2015-mixed/">2015 Mixed</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/2015-women/">2015 Women</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2015/2015-prize-ceremony/">2015 Prize Ceremony</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/">Photos 2014</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-best/">2014 Best of</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-activities/">2014 Activities</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-atmosphere/">2014 Atmosphere</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-parties/">2014 Parties</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-final/">2014 Finals</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-open/">2014 Open</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-mixed/">2014 Mixed</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-women/">2014 Women</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-prize-ceremony/">2014 Prize Ceremony</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/photos/photos-2014/2014-team-pictures/">2014 Team Pictures</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/video/">Video</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/the-media/video/video-2015/">Video 2015</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/video/video-2014/">Video 2014</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/video/video-2013/">Video 2013</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/video/video-2012/">Video 2012</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/video/video-2011/">Video 2011</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/video/video-2010/">Video 2010</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/video/video-2009/">Video 2009</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/video/video-2008/">Video 2008</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/video/video-2007/">Video 2007</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/documentary/">Documentary</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/the-media/press/">Press</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/intranet/">Intranet</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="/intranet/how-tos/">How to&#39;s-CUC</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/intranet/how-s-pec/">How to&#39;s-PEC</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/intranet/how-s-fab-copy/">How to&#39;s-FAB</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/intranet/how-s-fav/">How to&#39;s-FAV</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/intranet/tasksheet/">What Can I Do</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/intranet/newsletters/">Newsletters</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/intranet/one-day-well-laugh/">One Day We&#39;ll Laugh...</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="/intranet/decisions/">Decisions</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="plugin">
+  <h3>Contact us</h3><p>Have questions, feedback or something cool to share? <a href="/about/contact-us/">visit our contact page</a></p>
+</div>
+      </div>
+
+      <div class="col-md-6">
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+  <script type="text/javascript">
+      STATIC = "/static/website/";
+  </script>
+
+  <script type="text/javascript" src="/static/website/components/jquery/jquery.min.ccd0edd113b7.js"></script>
+  <script type="text/javascript" src="/static/website/bootstrap/js/bootstrap.min.1bee61361b1c.js"></script>
+  <script type="text/javascript" src="/static/website/bootstrap/js/ekko-lightbox.757cd416fcab.js"></script>
+
+  
+
+  
+
+<!-- google anafantasticalitics //-->
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-7370068-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+
+.hidden {
+    display: none;
+  }
+
+
+#openscreen, #roundlist {
+  margin-bottom: 16px;
+}
+#openscreen h1, #roundlist h1 {
+  display: none;
+}
+
+
+/* LOADING :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+  #loading {
+    display: none;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    margin: -30px 0 0 -30px;
+    background: #000 url("img/loader.gif") no-repeat center center;
+    border-radius: 8px;
+  }
+
+
+#bracket {
+  display: none;
+}
+
+.info {
+  display: block;
+  font-weight: lighter;
+  margin: 32px 0 8px 0;
+}
+
+.spot {
+  display: inline-block;
+  width: 49%;
+}
+
+.spot em {
+  font-weight: bold;
+  color: #4FB633;
+  padding-left: 8px;
+}
+

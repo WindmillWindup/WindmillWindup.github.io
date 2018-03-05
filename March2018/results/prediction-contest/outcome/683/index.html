@@ -1,0 +1,2157 @@
+
+<!DOCTYPE html>
+<html>
+  <head><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"licenseKey":"4760ed8ac7","agent":"","applicationID":"2962551","queueTime":1,"applicationTime":496,"transactionName":"Ml1RYBRVVkZRUkdaXgsXdUEIV0xcX18cQ0MAXFpXEl1XWx5HWlZGFgJjRgNQUVZEWFxddQBMUl0Ke01BU15eVmcMXUQaAVFM","errorBeacon":"bam.nr-data.net","beacon":"bam.nr-data.net"}</script>
+    <title>Windmill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="blitz" content="mu-ec4a98b2-f1934bb3-eb6c9300-c874e3fc">
+    <!-- Bootstrap -->
+    <link href="../../../../static/website/bootstrap/css/bootstrap.min.95208a901811.css" rel="stylesheet" media="screen" />
+    <link href="../../../../static/website/font-awesome/css/font-awesome.min.fa6868c22cec.css" rel="stylesheet" />
+    <link href="../../../../static/website/css/base.3ab320e2b36b.css" rel="stylesheet" media="screen" />
+    <link href="../../../../static/website/css/typography.8647f22262a2.css" rel="stylesheet" media="screen" />
+    <link href="../../../../static/website/css/bootstrap-override.cd8d91741a8e.css" rel="stylesheet" media="screen" />
+    <link href="../../../../static/website/css/MyFontsWebfontsKit.d7331c7f753a.css" rel="stylesheet" media="screen" />
+
+    <link href="../../../../static/website/favicon.7b24124b3db0.ico" rel="icon" type="image/x-icon" />
+
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
+    
+
+    
+  </head>
+
+  <body>
+    
+    
+
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../../index.html"><img src="../../../../static/website/img/windmill_logo_small.96d3a2a88aa0.png" /></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          
+
+<li class="">
+        <a href="../../../../index.html">Home</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../signup/index.html">Registration</a>
+        
+
+</li>
+
+<li class="active">
+        <a href="../../../index.html">Results</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../news.html">News</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../tournament-info/index.html">Tournament info</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../about/index.html">About</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../event/index.html">Event</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../the-media/index.html">Media</a>
+        
+
+</li>
+
+<li class="">
+        <a href="../../../../intranet/index.html">Intranet</a>
+        
+
+</li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://twitter.com/windmilltourney" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+          <li><a href="https://www.facebook.com/WindmillUltimate" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+          <li><a href="http://www.youtube.com/user/windmillwindup" target="_blank"><i class="fa fa-youtube fa-lg"></i></a></li>
+          <li><a href="https://vimeo.com/channels/648612" target="_blank"><i class="fa fa-vimeo-square fa-lg"></i></a></li>
+        </ul>
+      </div>
+     </div>
+ </nav>
+
+
+  <div id="base-content">
+    
+
+  <div class="container">
+    <div id="section-header">
+      <div class="spotlight">
+  <img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/286/Screen%20Shot%202014-01-02%20at%2022.34.51%20.png" class="bg" />
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="restrainer">
+        
+        <h1>Results 2017</h1>
+        
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+  
+    <div class="container">
+      <div id="navsub">
+        <ul class="nav nav-tabs">
+          
+            
+            
+            <li ><a href="../../../index.html">Results</a></li>
+            
+
+<li class="sibling">
+        <a href="../../../spirit-scores/index.html">Spirit Scores</a>
+        
+
+</li>
+
+<li class="active">
+        <a href="../../index.html">Prediction Contest</a>
+        
+
+</li>
+
+          
+        </ul>
+      </div>
+    </div>
+  
+
+  <div class="container">
+    <div class="content">
+    
+
+  <div class="row">
+    <div class="col-md-8 neat-images cms-content">
+        <div class="plugin">
+  <p>Check the <a href="../index.html">outcome</a>!!</p>
+
+</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+        <h1>Dylan's Prediction</h1>
+        <ul>
+            <li>score: 658 (open: 108 + mixed: 490 + women: 60)</li>
+            <li>created: Tuesday, 6 June 2017, 17:55</li>
+            <li>last changed: Tuesday, 6 June 2017, 17:55</li>
+        </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    
+        <div class="col-md-4">
+            <h1>Open Division</h1>
+          <div class="team-list ">
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">1</span><br />
+                </div>
+                <img src="../../../../static/flags/us.5566dea3b847.png"></img>
+                <a target="_blank" href="../../../../signup/501/team-eric/index.html">Team E.R.I.C.</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted E.R.I.C. in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">2</span><br />
+                </div>
+                <img src="../../../../static/flags/gb.440946f64cf5.png"></img>
+                <a target="_blank" href="../../../../signup/467/clapham-ultimate/index.html">Clapham Ultimate</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted CU in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">3</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/107/heidees/index.html">Heidees</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Heidees in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">4</span><br />
+                </div>
+                <img src="../../../../static/flags/ch.c23c77ca1513.png"></img>
+                <a target="_blank" href="../../../../signup/470/freespeed/index.html">Freespeed</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Freespeed in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">5</span><br />
+                </div>
+                <img src="../../../../static/flags/gb.440946f64cf5.png"></img>
+                <a target="_blank" href="../../../../signup/446/fire-of-london/index.html">Fire of London</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Fire in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">6</span><br />
+                </div>
+                <img src="../../../../static/flags/at.d135212d8089.png"></img>
+                <a target="_blank" href="../../../../signup/508/catchup-graz/index.html">Catchup Graz</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Catchup in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">7</span><br />
+                </div>
+                <img src="../../../../static/flags/fr.ca7991644678.png"></img>
+                <a target="_blank" href="../../../../signup/468/tchac/index.html">Tchac</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Tchac in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">8</span><br />
+                </div>
+                <img src="../../../../static/flags/be.a1c7d055c291.png"></img>
+                <a target="_blank" href="../../../../signup/532/mooncatchers/index.html">Mooncatchers</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Moon in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">9</span><br />
+                </div>
+                <img src="../../../../static/flags/ie.3fdafac140f7.png"></img>
+                <a target="_blank" href="../../../../signup/484/ranelagh/index.html">Ranelagh</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Ranelagh in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">10</span><br />
+                </div>
+                <img src="../../../../static/flags/ie.3fdafac140f7.png"></img>
+                <a target="_blank" href="../../../../signup/546/pelt-ultimate/index.html">PELT Ultimate</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted PELT in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">11</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/477/frizzly-bears/index.html">Frizzly Bears</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted FrizzlyBears in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">12</span><br />
+                </div>
+                <img src="../../../../static/flags/be.a1c7d055c291.png"></img>
+                <a target="_blank" href="../../../../signup/504/gentle-open/index.html">Gentle Open</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Gentle in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">13</span><br />
+                </div>
+                <img src="../../../../static/flags/ru.695990a8e997.png"></img>
+                <a target="_blank" href="../../../../signup/485/aurora/index.html">Aurora</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Aurora in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">14</span><br />
+                </div>
+                <img src="../../../../static/flags/cz.be5cd664057a.png"></img>
+                <a target="_blank" href="../../../../signup/525/fuj/index.html">FUJ</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted FUJ in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">15</span><br />
+                </div>
+                <img src="../../../../static/flags/nl.3592e391492f.png"></img>
+                <a target="_blank" href="../../../../signup/534/force/index.html">Force</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Force in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">16</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/448/wall-city/index.html">Wall City</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Wall City in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">17</span><br />
+                </div>
+                <img src="../../../../static/flags/fi.7ffe0ba6def3.png"></img>
+                <a target="_blank" href="../../../../signup/463/otso/index.html">Otso</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Otso in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">18</span><br />
+                </div>
+                <img src="../../../../static/flags/sg.9a51b087000e.png"></img>
+                <a target="_blank" href="../../../../signup/488/hardcore-ultimate/index.html">Hardcore Ultimate</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Hardcore in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">19</span><br />
+                </div>
+                <img src="../../../../static/flags/gb.440946f64cf5.png"></img>
+                <a target="_blank" href="../../../../signup/545/east-midlands-open/index.html">East Midlands Open</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted EMO in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">20</span><br />
+                </div>
+                <img src="../../../../static/flags/pl.5b1373331d14.png"></img>
+                <a target="_blank" href="../../../../signup/424/polish-open-national-team/index.html">Polish Open National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Poland in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">21</span><br />
+                </div>
+                <img src="../../../../static/flags/at.d135212d8089.png"></img>
+                <a target="_blank" href="../../../../signup/435/thebigez/index.html">thebigEZ</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted thebigEZ in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">22</span><br />
+                </div>
+                <img src="../../../../static/flags/il.45f505117486.png"></img>
+                <a target="_blank" href="../../../../signup/474/touchless/index.html">Touchless</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted TL in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">23</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/423/frank-n/index.html">Frank N</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Frank N in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">24</span><br />
+                </div>
+                <img src="../../../../static/flags/at.d135212d8089.png"></img>
+                <a target="_blank" href="../../../../signup/457/fwd/index.html">FWD&gt;&gt;</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted FWD&gt;&gt; in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+            <h1>Mixed Division</h1>
+          <div class="team-list ">
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">1</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/513/germany-mixed-national-team/index.html">Germany Mixed National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Germany in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">2</span><br />
+                </div>
+                <img src="../../../../static/flags/nl.3592e391492f.png"></img>
+                <a target="_blank" href="../../../../signup/510/airborn/index.html">Airborn</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Airborn in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">3</span><br />
+                </div>
+                <img src="../../../../static/flags/fr.ca7991644678.png"></img>
+                <a target="_blank" href="../../../../signup/430/ah-ouh-puc/index.html">Ah Ouh Puc</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Ah Ouh Puc in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">4</span><br />
+                </div>
+                <img src="../../../../static/flags/us.5566dea3b847.png"></img>
+                <a target="_blank" href="../../../../signup/565/shenanigans/index.html">Shenanigans</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Shenanigans in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">5</span><br />
+                </div>
+                <img src="../../../../static/flags/au.5239254fe509.png"></img>
+                <a target="_blank" href="../../../../signup/458/duff/index.html">DUFF </a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted DUFF in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">6</span><br />
+                </div>
+                <img src="../../../../static/flags/us.5566dea3b847.png"></img>
+                <a target="_blank" href="../../../../signup/564/bangarang/index.html">Bangarang!</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Bangarang! in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">7</span><br />
+                </div>
+                <img src="../../../../static/flags/gb.440946f64cf5.png"></img>
+                <a target="_blank" href="../../../../signup/554/reading-ultimate/index.html">Reading Ultimate</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Reading in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">8</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/478/frau-rauscher-the-bembelboys/index.html">Frau Rauscher &amp; the Bembelboys</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted FR &amp; BB in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">9</span><br />
+                </div>
+                <img src="../../../../static/flags/uy.760565e8eeba.png"></img>
+                <a target="_blank" href="../../../../signup/500/charrua/index.html">Charrúa</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Charrúa in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">10</span><br />
+                </div>
+                <img src="../../../../static/flags/fr.ca7991644678.png"></img>
+                <a target="_blank" href="../../../../signup/444/friselis/index.html">Friselis</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Friselis in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">11</span><br />
+                </div>
+                <img src="../../../../static/flags/us.5566dea3b847.png"></img>
+                <a target="_blank" href="../../../../signup/490/brown-chicken-brown-cow/index.html">Brown Chicken Brown Cow </a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted BCBC in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">12</span><br />
+                </div>
+                <img src="../../../../static/flags/es.1817004ca5ac.png"></img>
+                <a target="_blank" href="../../../../signup/431/quijotesdulcineas-ultimate-madrid/index.html">Quijotes+Dulcineas Ultimate Madrid</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Q+D in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">13</span><br />
+                </div>
+                <img src="../../../../static/flags/ee.274afcfe938e.png"></img>
+                <a target="_blank" href="../../../../signup/511/sexy-legs/index.html">Sexy Legs</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Sexy Legs in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">14</span><br />
+                </div>
+                <img src="../../../../static/flags/us.5566dea3b847.png"></img>
+                <a target="_blank" href="../../../../signup/515/fizzy-lifting-drinks/index.html">Fizzy Lifting Drinks</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted FLD in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">15</span><br />
+                </div>
+                <img src="../../../../static/flags/us.5566dea3b847.png"></img>
+                <a target="_blank" href="../../../../signup/456/burt-handmacklin-fbi/index.html">Burt Handmacklin FBI</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Handmacklin in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">16</span><br />
+                </div>
+                <img src="../../../../static/flags/cz.be5cd664057a.png"></img>
+                <a target="_blank" href="../../../../signup/462/yellow-block/index.html">Yellow Block</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Yellow Block in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">17</span><br />
+                </div>
+                <img src="../../../../static/flags/ph.a2a1a5476bfd.png"></img>
+                <a target="_blank" href="../../../../signup/440/disc-maniac-delegates/index.html">Disc Maniac Delegates</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted DMD in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">18</span><br />
+                </div>
+                <img src="../../../../static/flags/pl.5b1373331d14.png"></img>
+                <a target="_blank" href="../../../../signup/465/poland-mixed-national-team/index.html">Poland Mixed National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Poland in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">19</span><br />
+                </div>
+                <img src="../../../../static/flags/nl.3592e391492f.png"></img>
+                <a target="_blank" href="../../../../signup/454/rusty-bikes/index.html">Rusty Bikes</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Rusty Bikes in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">20</span><br />
+                </div>
+                <img src="../../../../static/flags/ie.3fdafac140f7.png"></img>
+                <a target="_blank" href="../../../../signup/535/tribe-ultimate-frisbee-club/index.html">Tribe Ultimate Frisbee Club</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Tribe in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">21</span><br />
+                </div>
+                <img src="../../../../static/flags/ca.405706bacf29.png"></img>
+                <a target="_blank" href="../../../../signup/427/max-power/index.html">Max Power</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted MP in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">22</span><br />
+                </div>
+                <img src="../../../../static/flags/at.d135212d8089.png"></img>
+                <a target="_blank" href="../../../../signup/428/wunderteam/index.html">Wunderteam</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Wunderteam in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">23</span><br />
+                </div>
+                <img src="../../../../static/flags/hu.a436a7a1a57b.png"></img>
+                <a target="_blank" href="../../../../signup/491/hungary-mixed-national-team/index.html">Hungary Mixed National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Hungary in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">24</span><br />
+                </div>
+                <img src="../../../../static/flags/nl.3592e391492f.png"></img>
+                <a target="_blank" href="../../../../signup/438/grut/index.html">Grut</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Grut in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">25</span><br />
+                </div>
+                <img src="../../../../static/flags/gb.440946f64cf5.png"></img>
+                <a target="_blank" href="../../../../signup/475/jr/index.html">JR</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted JR in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">26</span><br />
+                </div>
+                <img src="../../../../static/flags/no.7ca73a245feb.png"></img>
+                <a target="_blank" href="../../../../signup/502/spinister-motives/index.html">Spinister Motives</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Spinister in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">27</span><br />
+                </div>
+                <img src="../../../../static/flags/us.5566dea3b847.png"></img>
+                <a target="_blank" href="../../../../signup/509/geos-disc-throwers/index.html">Geo&#39;s Disc Throwers</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted GDT in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">28</span><br />
+                </div>
+                <img src="../../../../static/flags/gb.440946f64cf5.png"></img>
+                <a target="_blank" href="../../../../signup/471/black-eagles/index.html">Black Eagles</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Bleagles in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">29</span><br />
+                </div>
+                <img src="../../../../static/flags/nl.3592e391492f.png"></img>
+                <a target="_blank" href="../../../../signup/422/fresh-urbs/index.html">Fresh Urbs</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Fresh Urbs in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">30</span><br />
+                </div>
+                <img src="../../../../static/flags/gb.440946f64cf5.png"></img>
+                <a target="_blank" href="../../../../signup/439/deep-space/index.html">Deep Space</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Deep Space in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">31</span><br />
+                </div>
+                <img src="../../../../static/flags/il.45f505117486.png"></img>
+                <a target="_blank" href="../../../../signup/436/oy-vey/index.html">Oy Vey!</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Oy Vey!  in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">32</span><br />
+                </div>
+                <img src="../../../../static/flags/us.5566dea3b847.png"></img>
+                <a target="_blank" href="../../../../signup/507/hammer-time/index.html">Hammer Time</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Hammer Time in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">33</span><br />
+                </div>
+                <img src="../../../../static/flags/cz.be5cd664057a.png"></img>
+                <a target="_blank" href="../../../../signup/441/terrible-monkeys/index.html">Terrible Monkeys</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Monkeys in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">34</span><br />
+                </div>
+                <img src="../../../../static/flags/sk.cade7dcdd891.png"></img>
+                <a target="_blank" href="../../../../signup/482/os-zla/index.html">Os zla</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted OsZla in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">35</span><br />
+                </div>
+                <img src="../../../../static/flags/at.d135212d8089.png"></img>
+                <a target="_blank" href="../../../../signup/499/mosquitos-ultimate-klosterneuburg/index.html">Mosquitos Ultimate Klosterneuburg</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Mosquitos in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">36</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/481/mainzelrenner/index.html">Mainzelrenner</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Mainz in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">37</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/487/rubiks-cube/index.html">Rubik&#39;s Cube</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Rubik&#39;s Cube in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">38</span><br />
+                </div>
+                <img src="../../../../static/flags/tr.55542e179b69.png"></img>
+                <a target="_blank" href="../../../../signup/494/turk-kasi/index.html">Turk Kasi</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted TK in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">39</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/528/hassliche-erdferkel/index.html">Hässliche Erdferkel</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Erdferkel in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">40</span><br />
+                </div>
+                <img src="../../../../static/flags/pl.5b1373331d14.png"></img>
+                <a target="_blank" href="../../../../signup/531/4hands/index.html">4hands</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted 4hands in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+            <h1>Women Division</h1>
+          <div class="team-list ">
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">1</span><br />
+                </div>
+                <img src="../../../../static/flags/ca.405706bacf29.png"></img>
+                <a target="_blank" href="../../../../signup/443/storm/index.html">Storm</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Storm in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">2</span><br />
+                </div>
+                <img src="../../../../static/flags/gb.440946f64cf5.png"></img>
+                <a target="_blank" href="../../../../signup/549/ice-box/index.html">Ice Box</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Ice Box in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">3</span><br />
+                </div>
+                <img src="../../../../static/flags/gb.440946f64cf5.png"></img>
+                <a target="_blank" href="../../../../signup/451/syc/index.html">SYC</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted SYC in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">4</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/447/german-u24-womens-national-team/index.html">German U24 Women&#39;s National Team</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted GER U24 in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">5</span><br />
+                </div>
+                <img src="../../../../static/flags/at.d135212d8089.png"></img>
+                <a target="_blank" href="../../../../signup/547/mantis/index.html">Mantis</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Mantis in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">6</span><br />
+                </div>
+                <img src="../../../../static/flags/it.a7cf4483a592.png"></img>
+                <a target="_blank" href="../../../../signup/433/cusb-shout/index.html">CUSB SHOUT</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Shout in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">7</span><br />
+                </div>
+                <img src="../../../../static/flags/be.a1c7d055c291.png"></img>
+                <a target="_blank" href="../../../../signup/522/rakata/index.html">Rakata</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Rakata in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">8</span><br />
+                </div>
+                <img src="../../../../static/flags/cz.be5cd664057a.png"></img>
+                <a target="_blank" href="../../../../signup/459/velka-morava/index.html">Velka Morava</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Velka in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">9</span><br />
+                </div>
+                <img src="../../../../static/flags/at.d135212d8089.png"></img>
+                <a target="_blank" href="../../../../signup/425/eyecatchers/index.html">Eyecatchers</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Eyecatchers in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">10</span><br />
+                </div>
+                <img src="../../../../static/flags/de.ebc7060c1f82.png"></img>
+                <a target="_blank" href="../../../../signup/540/jinx/index.html">JinX</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted JinX in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">11</span><br />
+                </div>
+                <img src="../../../../static/flags/ch.c23c77ca1513.png"></img>
+                <a target="_blank" href="../../../../signup/453/crazy-dogs-women/index.html">Crazy Dogs Women</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Crazy Dogs in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">12</span><br />
+                </div>
+                <img src="../../../../static/flags/nl.3592e391492f.png"></img>
+                <a target="_blank" href="../../../../signup/503/madurodames/index.html">MaduroDames</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Maduro in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">13</span><br />
+                </div>
+                <img src="../../../../static/flags/fr.ca7991644678.png"></img>
+                <a target="_blank" href="../../../../signup/551/yaka/index.html">YAKA</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted YAKA in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">14</span><br />
+                </div>
+                <img src="../../../../static/flags/ch.c23c77ca1513.png"></img>
+                <a target="_blank" href="../../../../signup/548/west/index.html">WEST</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted WEST in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+              <div class="team-entry">
+                <div class="pull-left">
+                  <span class="label label-info">15</span><br />
+                </div>
+                <img src="../../../../static/flags/pl.5b1373331d14.png"></img>
+                <a target="_blank" href="../../../../signup/561/donuts/index.html">Donuts</a>
+                <div class="pull-right">
+                  
+                      <span class="label label-default" title="Dylan predicted Donuts in the correct final rank.">
+                  
+                  0</span>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+    
+  </div>
+
+
+
+    </div>
+  </div>
+
+</div>
+
+
+
+  </div>
+  
+
+<div id="sponsors">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <span class="plugin_picture align-right">
+<a href="http://fiveultimate.com/">
+<img src="http://wwsite.s3.amazonaws.com/media/cms_page_media/58/Screenshot%202017-04-10%2016.46.11.png" alt="" />
+</a>
+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<div id="footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12">
+        <ul class="sitemap">
+          <h3>Sitemap</h3>
+          
+
+  
+
+  
+    <li class="">
+        <a href="../../../../signup/index.html">Registration</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../signup/pickup/index.html">Pickup</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../signup/volunteers/index.html">Volunteers</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../signup/guests/index.html">Guests</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="ancestor">
+        <a href="../../../index.html">Results</a>
+        
+          <ul>
+            
+
+  
+    <li class="sibling">
+        <a href="../../../spirit-scores/index.html">Spirit Scores</a>
+        
+    </li>
+  
+
+  
+    <li class="selected">
+        <a href="../../index.html">Prediction Contest</a>
+        
+          <ul>
+            
+
+  
+    <li class="descendant">
+        <a href="../../rules/index.html">Prediction Rules</a>
+        
+    </li>
+  
+
+  
+    <li class="descendant">
+        <a href="../../prediction-prizes/index.html">Prediction Prizes</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news.html">News</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../news/categories/index.html">Categories</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/tags/index.html">Tags</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../news/tags/predictioncontest/index.html">predictioncontest</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/tags/Windmill2015/index.html">Windmill2015</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/index.html">Authors</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../news/authors/aljo/index.html">Aljaž Jazz Gaberšek</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/nan/index.html">Nan Derosa</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/ravi/index.html">Ravi Vasudevan</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/lisa/index.html">Lisa Kouwenberg</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/katie/index.html">Katie Stephenson</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/tim.dejong/index.html">Tim de Jong</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/les/index.html">Les Kleuver</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../news/authors/bmark/index.html">bmark</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/index.html">Tournament info</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/fee/index.html">Fees and Deadlines</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/directions/index.html">Directions</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/team-selection/index.html">Team Selection</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/accommodation/index.html">Accommodation</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/rules-and-format/index.html">Rules and format</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/spirit-captains/index.html">Spirit Captains</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/food/index.html">Food</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../tournament-info/faq/index.html">FAQ</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/index.html">About</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../about/crew/index.html">Crew</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/what-ultimate/index.html">What is Ultimate</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/green-windmill/index.html">Green Windmill</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/history/index.html">History</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/sponsors/index.html">Sponsors</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/amsterdam/index.html">Amsterdam</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/windmill-gear/index.html">Windmill Gear</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/contact-us/index.html">Contact us</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../about/i-wanna-be-windmill/index.html">I wanna BE the Windmill</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../event/index.html">Event</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../event/play-schedule/index.html">Playing Schedule</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../event/entertainment-schedule/index.html">Entertainment Schedule</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../event/map/index.html">Map</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/index.html">Media</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/index.html">Photos</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2016/index.html">Photos 2016</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2016/2016-thursday/index.html">2016 Thursday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2016/2016-friday/index.html">2016 Friday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2016/2016-saturday/index.html">2016 Saturday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2016/2016-sunday/index.html">2016 Sunday</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2016/2016-teampictures/index.html">2016 Teampictures</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/index.html">Photos 2015</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/2015-atmosphere/index.html">2015 Atmosphere</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/2015-activities/index.html">2015 Activities</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/2015-best/index.html">2015 Best of</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/2015-parties/index.html">2015 Parties</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/2015-finals/index.html">2015 Finals</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/2015-open/index.html">2015 Open</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/2015-mixed/index.html">2015 Mixed</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/2015-women/index.html">2015 Women</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2015/2015-prize-ceremony/index.html">2015 Prize Ceremony</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/index.html">Photos 2014</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-best/index.html">2014 Best of</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-activities/index.html">2014 Activities</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-atmosphere/index.html">2014 Atmosphere</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-parties/index.html">2014 Parties</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-final/index.html">2014 Finals</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-open/index.html">2014 Open</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-mixed/index.html">2014 Mixed</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-women/index.html">2014 Women</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-prize-ceremony/index.html">2014 Prize Ceremony</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/photos/photos-2014/2014-team-pictures/index.html">2014 Team Pictures</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/video/index.html">Video</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../the-media/video/video-2015/index.html">Video 2015</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/video/video-2014/index.html">Video 2014</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/video/video-2013/index.html">Video 2013</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/video/video-2012/index.html">Video 2012</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/video/video-2011/index.html">Video 2011</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/video/video-2010/index.html">Video 2010</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/video/video-2009/index.html">Video 2009</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/video/video-2008/index.html">Video 2008</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/video/video-2007/index.html">Video 2007</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/documentary/index.html">Documentary</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../the-media/press/index.html">Press</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/index.html">Intranet</a>
+        
+          <ul>
+            
+
+  
+    <li class="">
+        <a href="../../../../intranet/how-tos/index.html">How to&#39;s-CUC</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/how-s-pec/index.html">How to&#39;s-PEC</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/how-s-fab-copy/index.html">How to&#39;s-FAB</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/how-s-fav/index.html">How to&#39;s-FAV</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/tasksheet/index.html">What Can I Do</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/newsletters/index.html">Newsletters</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/one-day-well-laugh/index.html">One Day We&#39;ll Laugh...</a>
+        
+    </li>
+  
+
+  
+    <li class="">
+        <a href="../../../../intranet/decisions/index.html">Decisions</a>
+        
+    </li>
+  
+
+          </ul>
+        
+    </li>
+  
+
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="plugin">
+  <h3>Contact us</h3>
+
+<p>Have questions, feedback or something cool to share? <a href="../../../../about/contact-us/index.html">visit our contact page</a></p>
+
+</div>
+      </div>
+
+      <div class="col-md-6">
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+  <script type="text/javascript">
+      STATIC = "/static/website/";
+  </script>
+
+  <script type="text/javascript" src="../../../../static/website/components/jquery/jquery.min.ccd0edd113b7.js"></script>
+  <script type="text/javascript" src="../../../../static/website/bootstrap/js/bootstrap.min.1bee61361b1c.js"></script>
+  <script type="text/javascript" src="../../../../static/website/bootstrap/js/ekko-lightbox.757cd416fcab.js"></script>
+
+  
+
+  
+
+
+<!-- google anafantasticalitics //-->
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-7370068-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  </body>
+</html>
